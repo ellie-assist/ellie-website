@@ -1,0 +1,63 @@
+---
+---
+
+<div class="header">
+  <div class="header-content">
+    <ol>
+      <li><a href="/" class="header-link">Home</a></li>
+      <li><a href="/pricing" class="header-link">Pricing</a></li>
+      <li>
+        <a href="/downloads" class="header-link">Downloads</a>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<style>
+  /* Header */
+  .header {
+    height: 60px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .header-content ol {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .header-title {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .header-link {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .header-link-right {
+    margin-left: auto;
+  }
+  .header-link:hover {
+    background: #eeeeee;
+  }
+  .header ol {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .header ol li:last-child {
+    margin-left: auto;
+  }
+</style>
