@@ -1,0 +1,68 @@
+name: Ellie Website
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  deploy:
+    name: 👷‍♂️ Deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.16]
+    env:
+      CI: true
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+          persist-credentials: false
+
+      - name: 👾 Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 👀 Cache Node Modules
+        id: node-cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('yarn.lock') }}
+
+      - name: 🛰 Install dependencies
+        # if: steps.node-cache.outputs.cache-hit != 'true'
+        run: |
+          yarn --frozen-lockfile --production=false
+
+      - name: 👷‍♀️ Build
+        run: |
+          yarn build
+
+      - name: 🐰 Deploy to Bunny
+        uses: own3d/bunny-action@main
+        env:
+          BUNNY_STORAGE_USERNAME: ellie-website
+          BUNNY_STORAGE_PASSWORD: 124768e3-6266-4c15-a6fa026401b4-b799-487b
+          BUNNY_PULL_ZONE_ID: 212288
+        with:
+          args: deploy --dir=dist
+
+      - name: 💬 Report
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: 🚀 Deployed Ellie website from main
+
+      - name: 💬 Report Failure
+        if: failure()
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: 💩 Ellie website deploy failed
