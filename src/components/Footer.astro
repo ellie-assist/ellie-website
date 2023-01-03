@@ -1,24 +1,34 @@
+---
+import { t, setDefaultNamespace } from "i18next";
+import { Trans } from "astro-i18next/components";
+
+setDefaultNamespace("common");
+---
+
 <div class="footer">
   <div class="content">
-    <h3 class="footer-title"><a href="/">EllieAI</a></h3>
+    <h3 class="footer-title"><a href="/">Ellie</a></h3>
     <p>
-      Powered by OpenAI, learns your writing style and replies to emails as if
-      you wrote them.
+      {t("footer.description")}
     </p>
-    <p>This web page was written in HTML by hand! Not by an AI ;)</p>
+    <p>{t("footer.disclaimer")}</p>
     <p>
-      <a href="/privacy">Privacy Policy</a> •
-      <a href="/terms">Terms of Service</a> • <a href="/help">Help</a> •
-      <a href="/downloads">Downloads</a> •
-      <a href="https://github.com/squarecat/ellie/releases">Releases</a>
+      <a href="/privacy">{t("nav.privacy")}</a> •
+      <a href="/terms">{t("nav.terms")}</a> •
+      <a href="/help">{t("nav.help")}</a> •
+      <a href="/downloads">{t("nav.downloads")}</a> •
+      <a href="https://github.com/squarecat/ellie/releases">
+        {t("nav.releases")}
+      </a>
     </p>
     <br /><br />
     <div class="contact">
-      <p><a href="/forgot">Forgot your licence key</a></p>
-      <p><a href="/billing">Manage your subscription</a></p>
+      <p><a href="/forgot">{t("nav.forgot")}</a></p>
+      <p><a href="/billing">{t("nav.manage-subscription")}</a></p>
       <p>
-        Need help? Email us
-        <a href="mailto:hi@ellieai.com">hi@ellieai.com</a>
+        <Trans i18nKey="nav.need-help">
+          <a href="mailto:hi@ellieai.com">hi@ellieai.com</a>
+        </Trans>
       </p>
     </div>
   </div>

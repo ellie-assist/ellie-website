@@ -1,0 +1,18 @@
+{
+  "context": {
+    "title": "Ellie understands context",
+    "content": "<0>Ellie takes context from the email thread to <1>craft intelligent replies</1>.</0><2>We promise you'll be blown away by Ellie's responses!</2>"
+  },
+  "tailor": {
+    "title": "Tailor Ellie's reply",
+    "content": "You can provide <0>extra context</0> to Ellie for the perfect reply for every email. "
+  },
+  "multilingual": {
+    "title": "Ellie is multilingual",
+    "content": "Ellie will reply in <0>any language</0> to match the email being replied to. "
+  },
+  "iterate": {
+    "title": "Iterate on Ellie's replies",
+    "content": "You can <0>revise Ellie's response</0> to something, to tweak exactly what you want Ellie to say. "
+  }
+}

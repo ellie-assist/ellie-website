@@ -1,0 +1,73 @@
+{
+  "one": {
+    "title": "Does Ellie read my emails?",
+    "content": [
+      "No, Ellie doesn't access your emails. You can provide Ellie with some example email data so that the AI will match your style better, and when replying to a thread Ellie will read the most recent replies so that it can generate some context and create the most relevant reply."
+    ]
+  },
+  "two": {
+    "title": "What browsers are supported?",
+    "links": ["/downloads"],
+    "content": [
+      "Ellie is available as a Chrome or Firefox Extension. Visit the <0>downloads</0> page for more information."
+    ]
+  },
+  "three": {
+    "title": "What email clients are supported?",
+    "links": ["/help"],
+    "content": [
+      "So far only Gmail is fully supported but you can use the toolbar popup to generate a reply to emails in other clients. We'll roll out full support for other web-based clients soon.",
+      "Visit the <0>help</0> to learn how to use the popup for Outlook, Fastmail, Apple Mail and more."
+    ]
+  },
+  "four": {
+    "title": "Why is there a limit on the number of replies?",
+    "links": ["/pricing"],
+    "content": [
+      "Sorry! Training AI and generating content costs a fair amount of money. We're a small team without funding so we have to charge for our work!",
+      "You can sign up for one of our <0>paid plans</0> to get more replies!"
+    ]
+  },
+  "five": {
+    "title": "What are revisions?",
+    "content": [
+      "You can tell Ellie to revise sections of an email by highlighting it and clicking 'revise'. Ellie will try to come up with a different sentence that fits in that space.",
+      "You can revise each email up to 5 times."
+    ]
+  },
+  "six": {
+    "title": " Why did you make this?",
+    "content": [
+      "We think that there is a power imbalance in email. Although its one of the most useful inventions of all time, as a single email user, you have no control over who can email you, or what they can put in front of you to briefly grab your attention.",
+      "There's almost no penalty for sending mass-emails to as many people as possible, most of which are a complete waste of time and energy.",
+      "At least by using Ellie we can claw a small amount of power back, by automating our replies to these automated emails, so that they can no longer monopolise our time.",
+      "Others are also using Ellie to overcome reply anxiety, or as a tool to help with dyslexia or language & grammar skills.",
+      "If you're using Ellie in an interesting way, please let us know! We'd love to hear about it!"
+    ]
+  },
+  "seven": {
+    "title": "I don't want you to read my private emails!",
+    "content": [
+      "We believe everyone has a fundamental right to the privacy of their data (and have built a product already on that premise).",
+      "Your email replies are only used by Ellie to generate a response. We don't store the email data and promise to never share, sell, or do anything shady with your data.",
+      "The reason we can promise this is because we're independent developers, with no investment or other outside funding. We survive by building cool products and getting cool people to pay for them, and don't need to sacrifice our ethics!"
+    ]
+  },
+  "eight": {
+    "title": "Who are you!?",
+    "links": [
+      "https://twitter.com/dinkydani21",
+      "https://twitter.com/jamesivings"
+    ],
+    "content": [
+      "Nice to meet you! We are <0>Danielle</0> and <1>James</1>, two nomad developers travelling the world on our small sailboat and building cool stuff!"
+    ]
+  },
+  "nine": {
+    "title": "Can we write a story about Ellie?",
+    "links": ["mailto:hi@ellieai.com"],
+    "content": [
+      "If you're a member of the press and want to chat, <0>send us an email!</0>"
+    ]
+  }
+}

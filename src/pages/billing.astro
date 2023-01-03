@@ -1,23 +1,25 @@
 ---
+import { changeLanguage, t } from "i18next";
 import Main from "../layouts/Main.astro";
+
+changeLanguage("en");
 ---
 
 <Main title="Manage subscription - EllieAI">
   <div class="page">
     <div class="section">
       <div class="content">
-        <h2>Manage your subscription</h2>
+        <h2>{t("manage.title")}</h2>
         <p>
-          Update your billing details, view invoice history, upgrade or cancel
-          your plan.
+          {t("manage.description")}
         </p>
         <a
           href="https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo"
-          class="btn">Manage subscription</a
+          class="btn">{t("manage.button")}</a
         >
         <br />
         <br />
-        <p>Or visit this direct link:</p>
+        <p>{t("manage.or-link")}</p>
         <p>
           <a href="https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo"
             >https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo</a

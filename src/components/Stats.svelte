@@ -1,4 +1,9 @@
 <script>
+  // import { changeLanguage, setDefaultNamespace, t } from "i18next";
+
+  // changeLanguage("en");
+  // setDefaultNamespace("common");
+
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
     : "https://api.ellieai.com";
@@ -19,8 +24,9 @@
 
 <div id="stats" class="stats" style:opacity>
   <p>
-    Join <strong id="total-users">{totalUsers}</strong> users, who have used
-    Ellie to generate over
+    Join
+    <strong id="total-users">{totalUsers}</strong> users, who have used Ellie to
+    generate over
     <strong id="replies-generated">{repliesGenerated}</strong> email replies!
   </p>
 </div>

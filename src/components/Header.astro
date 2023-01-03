@@ -1,20 +1,28 @@
 ---
+import { t, setDefaultNamespace } from "i18next";
+import { LanguageSelector, Trans } from "astro-i18next/components";
+import LanguageDropdown from "./LanguageDropdown.svelte";
+
+setDefaultNamespace("common");
 ---
 
 <div class="header">
   <div class="header-content">
     <ol>
-      <li><a href="/" class="header-link">Home</a></li>
-      <li><a href="/pricing" class="header-link">Pricing</a></li>
+      <li><a href="/" class="header-link">{t("nav.home")}</a></li>
+      <li><a href="/pricing" class="header-link">{t("nav.pricing")}</a></li>
+      <li class="right">
+        <LanguageSelector showFlag={true} class="language-select" />
+        <!-- <LanguageDropdown client:load /> -->
+      </li>
       <li>
-        <a href="/downloads" class="header-link">Downloads</a>
+        <a href="/downloads" class="header-link">{t("nav.downloads")}</a>
       </li>
     </ol>
   </div>
 </div>
 
 <style>
-  /* Header */
   .header {
     height: 60px;
     padding: 0 10px;
@@ -39,13 +47,12 @@
     font-weight: 500;
   }
   .header-link {
-    padding: 10px;
+    display: inline-block;
+    padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
   }
-  .header-link-right {
-    margin-left: auto;
-  }
+
   .header-link:hover {
     background: #eeeeee;
   }
@@ -57,7 +64,25 @@
     justify-content: flex-start;
   }
 
-  .header ol li:last-child {
+  .header ol .right {
     margin-left: auto;
+  }
+
+  .language-select {
+    max-height: 35px;
+    padding: 8px 0px 8px 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .language-select:hover {
+    background: #eeeeee;
   }
 </style>

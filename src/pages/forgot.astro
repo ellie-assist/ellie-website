@@ -1,5 +1,8 @@
 ---
+import { t, changeLanguage } from "i18next";
 import Main from "../layouts/Main.astro";
+
+changeLanguage("en");
 ---
 
 <script>
@@ -40,15 +43,14 @@ import Main from "../layouts/Main.astro";
   <div class="page">
     <div class="section">
       <div class="content">
-        <h1>Forgot your licence key?</h1>
+        <h1>{t("forgot.title")}</h1>
         <div id="submit-container">
           <p>
-            Enter your email address and we'll send your licence key to you
-            again.
+            {t("forgot.description")}
           </p>
           <form id="signup-form">
             <div class="form-group">
-              <label for="email-address">Your email address:</label><br />
+              <label for="email-address">{t("labels.your-email")}</label><br />
               <input
                 required
                 type="email"
@@ -58,14 +60,16 @@ import Main from "../layouts/Main.astro";
               />
             </div>
             <div class="form-group">
-              <button id="submit-btn" type="submit" class="btn">Submit</button>
+              <button id="submit-btn" type="submit" class="btn"
+                >{t("submit")}</button
+              >
             </div>
           </form>
         </div>
 
         <div id="result" class="hidden">
-          <p>Your licence key has been emailed to you :)</p>
-          <p><strong>PLEASE CHECK YOUR SPAM FOLDER for the email!</strong></p>
+          <p>{t("forgot.emailed-to-you")}</p>
+          <p><strong>{t("forgot.check-spam")}</strong></p>
         </div>
       </div>
     </div>

@@ -1,56 +1,21 @@
 ---
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
 import Main from "../layouts/Main.astro";
 import FAQ from "../components/FAQ.astro";
 import Stats from "../components/Stats.svelte";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import Video from "../components/Video.svelte";
+
+setDefaultNamespace("common");
+changeLanguage("en");
 ---
 
-<script>
-  function setupVideo(id) {
-    const vid = document.getElementById(id);
-    const playBtn = document.getElementById(`play-${id}`);
-    const vidContainer = document.getElementById(`container-${id}`);
-    let isPlaying = true;
-    playBtn.classList.add("hidden");
-    vid.addEventListener("pause", (event) => {
-      vid.classList.remove("hidden");
-      isPlaying = false;
-    });
-    vid.addEventListener("playing", (event) => {
-      playBtn.classList.add("hidden");
-      isPlaying = true;
-    });
-    vid.addEventListener("canplay", (event) => {
-      // show play button
-      playBtn.classList.remove("hidden");
-    });
-    vidContainer.addEventListener("click", function () {
-      if (isPlaying) {
-        vid.pause();
-        playBtn.classList.remove("hidden");
-      } else {
-        vid.play();
-        // videoImage.classList.add('hidden');
-        vid.classList.remove("hidden");
-        playBtn.classList.add("hidden");
-      }
-    });
-  }
-
-  function onLoad() {
-    setupVideo("video-1");
-    setupVideo("video-2");
-    setupVideo("video-3");
-  }
-
-  document.addEventListener("DOMContentLoaded", onLoad);
-</script>
-
-<Main title="Sign up for Ellie - Your AI Email Assistant">
+<Main title={t("meta.title")}>
   <div class="page">
     <div class="hero">
       <div class="content">
         <h1 class="hero-title">
-          Meet Ellie, your AI email assistant
+          {t("hero.title")}
           <svg
             role="presentation"
             class="heart"
@@ -68,31 +33,14 @@ import Stats from "../components/Stats.svelte";
           </svg>
         </h1>
         <p class="hero-lead">
-          Ellie learns from your writing style and crafts replies as if they
-          were written by you
+          {t("hero.description")}
         </p>
-        <div id="container-video-1" class="email-container">
-          <div class="video-wrapper">
-            <video id="video-1" class="hero-img" autoplay muted>
-              <source src="https://ellie.b-cdn.net/hero.mov" />
-            </video>
-          </div>
-          <div id="play-video-1" class="play-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              width="32"
-              height="32"
-              fill="none"
-              stroke="currentcolor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            >
-              <path d="M10 2 L10 30 24 16 Z"></path>
-            </svg>
-          </div>
-        </div>
+        <Video
+          flat
+          innerClass="hero-img"
+          client:load
+          url="https://ellie.b-cdn.net/hero.mov"
+        />
       </div>
     </div>
 
@@ -102,7 +50,7 @@ import Stats from "../components/Stats.svelte";
         <span class="btn-group">
           <span>
             <a class="btn cta" href="/downloads">
-              <span>Try for free</span>
+              <span>{t("main.cta")}</span>
               <span class="browser-icons">
                 <img
                   class="browser-icon"
@@ -116,12 +64,10 @@ import Stats from "../components/Stats.svelte";
                 />
               </span>
             </a>
-            <span class="available"
-              >v0.3.1 Available for Chrome and Firefox
-            </span>
+            <span class="available">{t("main.version")}</span>
           </span>
           <a class="btn cta secondary" href="/pricing">
-            <span>Purchase licence</span>
+            <span>{t("main.purchase")}</span>
           </a>
         </span>
       </div>
@@ -130,12 +76,14 @@ import Stats from "../components/Stats.svelte";
     <section class="container">
       <div class="content">
         <div class="price-banner">
-          <p>Happy New Year! 🎉</p>
-          <p>
-            Enjoy 25% off all plans with the promo code
-            <strong class="promo-code">NY2023</strong>
-          </p>
-          <p>Available this week only!</p>
+          <Trans i18nKey="banner.hny">
+            <p>Happy New Year! 🎉</p>
+            <p>
+              Enjoy 25% off all plans with the promo code
+              <strong class="promo-code">NY2023</strong>
+            </p>
+            <p>Available this week only!</p>
+          </Trans>
         </div>
         <div class="ph-embed">
           <a
@@ -144,7 +92,7 @@ import Stats from "../components/Stats.svelte";
           >
             <img
               src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=371830&theme=neutral"
-              alt="Ellie - Your AI Email Assistant - 💌 GPT-3 powered assistant that can reply to your emails! | Product Hunt"
+              alt={t("external.phBadgeAlt")}
               style="width: 250px; height: 54px"
               width="250"
               height="54"
@@ -161,12 +109,14 @@ import Stats from "../components/Stats.svelte";
 
     <section class="section image-section image-right">
       <div class="section-text">
-        <h2>Ellie understands context</h2>
-        <p>
-          Ellie takes context from the email thread to
-          <strong>craft intelligent replies</strong>.
-        </p>
-        <p>We promise you'll be blown away by Ellie's responses!</p>
+        <h2>{t("features:context.title")}</h2>
+        <Trans i18nKey="context.content" ns="features">
+          <p>
+            Ellie takes context from the email thread to
+            <strong>craft intelligent replies</strong>.
+          </p>
+          <p>We promise you'll be blown away by Ellie's responses!</p>
+        </Trans>
         <div class="inline-review">
           <svg
             width="121"
@@ -205,17 +155,20 @@ import Stats from "../components/Stats.svelte";
           </svg>
           <blockquote>
             <p class="review-text">
-              <span class="review-highlight"
-                >Ellie knows exactly what I want to say</span
-              >, and the exact right way to say it.
+              <Trans i18nKey="jared" ns="testimonials">
+                <span class="review-highlight"
+                  >Ellie knows exactly what I want to say</span
+                >, and the exact right way to say it.
+              </Trans>
             </p>
+
             <p class="review-author">- Jared</p>
           </blockquote>
         </div>
       </div>
       <div class="image-container">
         <img
-          src="assets/context-email.png"
+          src="/assets/context-email.png"
           role="presentation"
           alt="Showing Ellie write a context filled email"
           class="example-image"
@@ -233,10 +186,12 @@ import Stats from "../components/Stats.svelte";
         />
       </div>
       <div class="section-text">
-        <h2>Ellie is multilingual</h2>
+        <h2>{t("features:multilingual.title")}</h2>
         <p>
-          Ellie will reply in <strong>any language</strong> to match the email being
-          replied to.
+          <Trans i18nKey="multilingual.content" ns="features">
+            Ellie will reply in <strong>any language</strong> to match the email
+            being replied to.
+          </Trans>
         </p>
         <div class="inline-review">
           <svg
@@ -276,11 +231,12 @@ import Stats from "../components/Stats.svelte";
           </svg>
           <blockquote>
             <p class="review-text">
-              <span>
+              <Trans i18nKey="julie" ns="testimonials">
                 I struggled to compose formal emails in English, but now Ellie
-                writes them and
-              </span>
-              <span class="review-highlight">saves me SO much time!</span> 🤩
+                writes them and <span class="review-highlight"
+                  >saves me SO much time!</span
+                > 🤩
+              </Trans>
             </p>
             <p class="review-author">- Julie Berteaux</p>
           </blockquote>
@@ -290,14 +246,13 @@ import Stats from "../components/Stats.svelte";
 
     <section class="section image-section image-right">
       <div class="section-text">
-        <h2>
-          Iterate on Ellie's replies
-          <!-- <span class="coming-soon">Coming in v0.1.6</span> -->
-        </h2>
+        <h2>{t("features:iterate.title")}</h2>
 
         <p>
-          You can <strong>revise</strong> Ellie's response to something, to tweak
-          exactly what you want Ellie to say.
+          <Trans i18nKey="iterate.content" ns="features">
+            You can <strong>revise</strong> Ellie's response to something, to tweak
+            exactly what you want Ellie to say.
+          </Trans>
         </p>
 
         <div class="inline-review">
@@ -338,70 +293,39 @@ import Stats from "../components/Stats.svelte";
           </svg>
           <blockquote>
             <p class="review-text">
-              Very easy to use.
-              <span class="review-highlight"
-                >Ellie has made writing emails so much faster!</span
-              >
-              Thank you!
+              <Trans i18nKey="hicham" ns="testimonials">
+                Very easy to use.
+                <span class="review-highlight"
+                  >Ellie has made writing emails so much faster!</span
+                >
+                Thank you!
+              </Trans>
             </p>
             <p class="review-author">- Hicham Annik</p>
           </blockquote>
         </div>
       </div>
-      <div class="image-container" id="container-video-2">
-        <!-- <div id="video-container" class="email-container"> -->
-        <div class="video-wrapper">
-          <video id="video-2" class="hero-img" autoplay muted>
-            <source src="https://ellie.b-cdn.net/revisions.mov" />
-          </video>
-        </div>
-        <div id="play-video-2" class="play-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            width="32"
-            height="32"
-            fill="none"
-            stroke="currentcolor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          >
-            <path d="M10 2 L10 30 24 16 Z"></path>
-          </svg>
-          <!-- </div> -->
-        </div>
-      </div>
+
+      <Video
+        innerClass="hero-img"
+        client:visible
+        url="https://ellie.b-cdn.net/revisions.mov"
+      />
     </section>
 
     <section class="section image-section image-left">
-      <div id="container-video-3" class="image-container">
-        <div class="video-wrapper">
-          <video id="video-3" class="hero-img" autoplay muted>
-            <source src="https://ellie.b-cdn.net/context.mov" />
-          </video>
-        </div>
-        <div id="play-video-3" class="play-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            width="32"
-            height="32"
-            fill="none"
-            stroke="currentcolor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          >
-            <path d="M10 2 L10 30 24 16 Z"></path>
-          </svg>
-        </div>
-      </div>
+      <Video
+        innerClass="hero-img"
+        client:visible
+        url="https://ellie.b-cdn.net/context.mov"
+      />
       <div class="section-text">
-        <h2>Tailor Ellie's reply</h2>
+        <h2>{t("features:tailor.title")}</h2>
         <p>
-          You can provide <strong>extra context</strong> to Ellie for the perfect
-          reply for every email.
+          <Trans i18nKey="tailor.content" ns="features">
+            You can provide <strong>extra context</strong> to Ellie for the perfect
+            reply for every email.
+          </Trans>
         </p>
         <div class="inline-review">
           <svg
@@ -441,9 +365,11 @@ import Stats from "../components/Stats.svelte";
           </svg>
           <blockquote>
             <p class="review-text">
-              <span> With Ellie</span>
-              <span class="review-highlight">I can answer every email</span> and
-              not waste any time.
+              <Trans i18nKey="joan" ns="testimonials">
+                With Ellie
+                <span class="review-highlight">I can answer every email</span>
+                and not waste any time.
+              </Trans>
             </p>
             <p class="review-author">- Joan</p>
           </blockquote>

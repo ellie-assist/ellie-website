@@ -1,5 +1,10 @@
 ---
+import { setDefaultNamespace, t, changeLanguage } from "i18next";
 import Main from "../layouts/Main.astro";
+import { Trans } from "astro-i18next/components";
+
+changeLanguage("en");
+setDefaultNamespace("downloads");
 ---
 
 <script>
@@ -46,26 +51,31 @@ import Main from "../layouts/Main.astro";
   document.getElementById("invite-code").value = inviteCode;
 </script>
 
-<Main title="Downloads - EllieAI, Your AI Email Assistant">
+<Main title={t("meta.title")}>
   <div class="page">
     <div class="content">
-      <h1>Ellie Downloads</h1>
+      <h1>{t("title")}</h1>
 
       <div id="submit-container" class="signup">
-        <p>
-          Ellie requires a <strong>FREE Licence Key</strong>. <br />This will
-          allow Ellie to generate you up
-          <strong>2 replies</strong>
-          per day.
-        </p>
-        <p>
-          If you need more replies you can
-          <a href="/pricing">upgrade to a paid plan</a>!
-        </p>
+        <Trans i18nKey="licence-description" ns="downloads">
+          <p>
+            Ellie requires a <strong>FREE Licence Key</strong>.
+          </p>
+          <p>
+            This will allow Ellie to generate you up
+            <strong>2 replies</strong>
+            per day.
+          </p>
+          <p>
+            If you need more replies you can
+            <a href="/pricing">upgrade to a paid plan</a>!
+          </p>
+        </Trans>
         <br />
         <form id="signup-form">
           <div class="form-group">
-            <label for="email-address">Your email address:</label><br />
+            <label for="email-address">{t("common:labels.your-email")}</label
+            ><br />
             <input
               required
               type="email"
@@ -77,14 +87,9 @@ import Main from "../layouts/Main.astro";
 
           <div class="form-group">
             <input type="checkbox" id="get-updates" class="form-checkbox" />
-            <label for="get-updates"
-              >Get updates about Ellie to your email address</label
-            >
+            <label for="get-updates">{t("labels.get-updates")}</label>
             <div>
-              <span
-                >We promise not to spam you, our emails won't be created with AI
-                ;)</span
-              >
+              <span>{t("labels.no-spam")}</span>
             </div>
           </div>
           <div class="form-group">
@@ -94,14 +99,18 @@ import Main from "../layouts/Main.astro";
               id="terms-confirm"
               class="form-checkbox"
             />
-            <label for="terms-confirm"
-              >I agree to the <a href="/terms">terms</a>
+            <label for="terms-confirm">
+              <Trans i18nKey="labels.terms" ns="downloads">
+                I agree to the <a href="/terms">terms</a>
+              </Trans>
             </label>
             <div>
-              <span>
-                Remember <strong>you</strong> are still responsible for the emails
-                you send. Please check anything that Ellie generates thoroughly!
-              </span>
+              <p>
+                <Trans i18nKey="labels.disclaimer" ns="downloads">
+                  Remember <strong>you</strong> are still responsible for the emails
+                  you send. Please check anything that Ellie generates thoroughly!
+                </Trans>
+              </p>
             </div>
           </div>
 
@@ -109,7 +118,7 @@ import Main from "../layouts/Main.astro";
 
           <div class="form-group">
             <button id="submit-btn" type="submit" class="btn cta-btn">
-              Get Licence Key<svg
+              {t("cta")}<svg
                 style="margin-left: 5px"
                 role="presentation"
                 xmlns="http://www.w3.org/2000/svg"
@@ -131,26 +140,25 @@ import Main from "../layouts/Main.astro";
     </div>
     <div id="result" class="section result hidden">
       <div class="content">
-        <h2>Success! ✅</h2>
-        <p>
-          Thanks for signing up!
-          <br />
-        </p>
-        <p>
-          <strong
-            >Your licence key has been emailed to you! Make sure to check your
-            spam!</strong
-          >
-        </p>
-        <p>You'll need to enter this after you install the extension.</p>
+        <h2>{t("success")}</h2>
+        <Trans i18nKey="result" ns="downloads">
+          <p>Thanks for signing up!</p>
+          <p>
+            <strong>
+              Your licence key has been emailed to you! Make sure to check your
+              spam!
+            </strong>
+          </p>
+          <p>You'll need to enter this after you install the extension.</p>
+        </Trans>
       </div>
     </div>
     <div class="content">
       <div class="extension-section">
         <h2>Chrome</h2>
+
         <p>
-          Ellie is available on the Chrome Store. Please follow the instructions
-          to add to Chrome!
+          {t("chrome.available")}
         </p>
         <a
           href="https://chrome.google.com/webstore/detail/ellie-your-ai-email-assis/mhcnlcilgicfodlpjcacgglchmpoojcp"
@@ -162,13 +170,12 @@ import Main from "../layouts/Main.astro";
             alt=""
             role="presentation"
           />
-          <span>Get Ellie for Chrome</span>
+          <span>{t("chrome.get")}</span>
         </a>
 
         <h2>Firefox</h2>
         <p>
-          Ellie is available in the Firefox store. Please follow the
-          instructions to add to Firefox!
+          {t("firefox.available")}
         </p>
         <a
           href="https://addons.mozilla.org/en-US/firefox/addon/ellie-your-ai-email-assistant/"
@@ -180,35 +187,8 @@ import Main from "../layouts/Main.astro";
             alt=""
             role="presentation"
           />
-          <span>Get Ellie for Firefox</span>
+          <span>{t("firefox.get")}</span>
         </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="content">
-      <h3 class="footer-title"><a href="/">EllieAI</a></h3>
-      <p>
-        Powered by OpenAI, learns your writing style and replies to emails as if
-        you wrote them.
-      </p>
-      <p>This web page was written in HTML by hand! Not by an AI ;)</p>
-      <p>
-        <a href="/privacy">Privacy Policy</a> •
-        <a href="/terms">Terms of Service</a> •
-        <a href="/help">Help</a> •
-        <a href="/downloads">Downloads</a> •
-        <a href="https://github.com/squarecat/ellie/releases">Releases</a>
-      </p>
-      <br /><br />
-      <div class="contact">
-        <p><a href="/forgot">Forgot your licence key</a></p>
-        <p><a href="/billing">Manage your subscription</a></p>
-        <p>
-          Need help? Email us
-          <a href="mailto:hi@ellieai.com">hi@ellieai.com</a>
-        </p>
       </div>
     </div>
   </div>

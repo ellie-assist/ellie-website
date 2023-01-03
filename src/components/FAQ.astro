@@ -1,8 +1,57 @@
+---
+import { Trans } from "astro-i18next/components";
+import { t, setDefaultNamespace } from "i18next";
+import questions from "../../public/locales/en/faq.json";
+
+setDefaultNamespace("faq");
+---
+
 <section class="faq section">
   <div class="content">
     <h2>FAQ</h2>
     <ul>
+      {
+        Object.entries(questions).map(([num, question]) => (
+          <li>
+            <div class="question">
+              <strong>{t(`faq:${num}.title`)}</strong>
+            </div>
+            {question.content.map((content, i) => (
+              <p>
+                <Trans i18nKey={`${num}.content.${i}`} ns="faq">
+                  {question.links ? (
+                    question.links.map((l) => <a href={l}>a</a>)
+                  ) : (
+                    <span />
+                  )}
+                </Trans>
+              </p>
+            ))}
+          </li>
+        ))
+      }
+      <!-- <li>
+        <div class="question">
+          <strong>Who are you!?</strong>
+        </div>
+        <p>
+          Nice to meet you! We are
+          <a href="https://twitter.com/dinkydani21">Danielle</a> and
+          <a href="https://twitter.com/jamesivings">James</a>, two nomad
+          developers travelling the world on our small sailboat and building
+          cool stuff!
+        </p>
+      </li>
       <li>
+        <div class="question">
+          <strong>Can we write a story about Ellie?</strong>
+        </div>
+        <p>
+          If you're a member of the press and want to chat,
+          <a href="mailto:hi@ellieai.com">send us an email</a>!
+        </p>
+      </li> -->
+      <!-- <li>
         <div class="question">
           <strong>Does Ellie read my emails?</strong>
         </div>
@@ -111,27 +160,7 @@
           don't need to sacrifice our ethics!
         </p>
       </li>
-      <li>
-        <div class="question">
-          <strong>Who are you!?</strong>
-        </div>
-        <p>
-          Nice to meet you! We are
-          <a href="https://twitter.com/dinkydani21">Danielle</a> and
-          <a href="https://twitter.com/jamesivings">James</a>, two nomad
-          developers travelling the world on our small sailboat and building
-          cool stuff!
-        </p>
-      </li>
-      <li>
-        <div class="question">
-          <strong>Can we write a story about Ellie?</strong>
-        </div>
-        <p>
-          If you're a member of the press and want to chat,
-          <a href="mailto:hi@ellieai.com">send us an email</a>!
-        </p>
-      </li>
+       -->
     </ul>
   </div>
 </section>
