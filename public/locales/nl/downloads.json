@@ -1,0 +1,26 @@
+
+
+{
+  "meta": {
+    "title": "Downloads - EllieAI, Uw AI-e-mailassistent"
+  },
+  "title": "Ellie Downloads",
+  "licence-description": "<0>Ellie vereist een <1>GRATIS licentiesleutel</1>.</0><2>Dit stelt Ellie in staat om u maximaal <3>2 antwoorden</3> per dag te genereren.</2><4>Als u meer antwoorden nodig heeft, kunt u <5>upgraden naar een betaald plan</5>!</4>",
+  "labels": {
+    "get-updates": "Ontvang updates over Ellie op uw e-mailadres",
+    "no-spam": "We beloven u niet te spammen, onze e-mails worden niet gemaakt met AI ;)",
+    "terms": "Ik ga akkoord met de <0>voorwaarden</0>",
+    "disclaimer": "Onthoud dat <0>u</0> nog steeds verantwoordelijk bent voor de e-mails die u verzendt. Controleer alles wat Ellie genereert grondig!"
+  },
+  "cta": "Verkrijg licentiesleutel",
+  "success": "Succes! ✅",
+  "result": "<0>Bedankt voor het aanmelden!</0><1><2>Uw licentiesleutel is naar u gemaild! Zorg ervoor dat u uw spam controleert!</2></1><3>U moet deze invoeren nadat u de extensie hebt geïnstalleerd.</3>",
+  "chrome": {
+    "available": "Ellie is beschikbaar in de Chrome Store. Volg de instructies om aan Chrome toe te voegen!",
+    "get": "Krijg Ellie voor Chrome"
+  },
+  "firefox": {
+    "available": "Ellie is beschikbaar in de Firefox Store. Volg de instructies om aan Firefox toe te voegen!",
+    "get": "Krijg Ellie voor Firefox"
+  }
+}

@@ -52,7 +52,7 @@ Output JSON config in French:
 Given the following language config:
 ${JSON.stringify(localeJsonNs, null, 2)}
 
-Write a JSON config for ${language}:`;
+Write a JSON config for ${language}. It doesn't have to be a direct translation, you should paraphrase if it would make more sense:`;
 }
 
 async function requestOpenAITranslation(p) {

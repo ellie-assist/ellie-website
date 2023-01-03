@@ -1,0 +1,20 @@
+
+
+{
+  "context": {
+     "title": "Ellie begrijpt context",
+     "content": "<0>Ellie neemt context uit de e-mailthread om <1>intelligente antwoorden te maken</1>.<2>We beloven dat je versteld zult staan van Ellies antwoorden!</2>"
+  },
+  "tailor": {
+     "title": "Pas Ellies antwoord aan",
+     "content": "Je kunt Ellie <0>extra context</0> geven voor het perfecte antwoord op elke e-mail. "
+  },
+  "multilingual": {
+     "title": "Ellie is meertalig",
+     "content": "Ellie zal antwoorden in <0>elke taal</0> om aan te sluiten bij de e-mail die wordt beantwoord. "
+  },
+  "iterate": {
+     "title": "Iteratie op Ellies antwoorden",
+     "content": "Je kunt Ellies antwoord <0>aanpassen</0> om precies te zeggen wat je wilt dat Ellie zegt. "
+  }
+}
