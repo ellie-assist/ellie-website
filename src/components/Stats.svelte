@@ -1,8 +1,5 @@
 <script>
-  // import { changeLanguage, setDefaultNamespace, t } from "i18next";
   export let shown;
-  // changeLanguage("en");
-  // setDefaultNamespace("common");
 
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
