@@ -1,0 +1,20 @@
+
+
+{
+  "context": {
+    "title": "Ellie理解上下文",
+    "content": "<0>Ellie从电子邮件线程中获取上下文，以<1>制作智能回复</1>。</0><2>我们保证您会被Ellie的回复所吓倒！</2>"
+  },
+  "tailor": {
+    "title": "定制Ellie的回复",
+    "content": "您可以为Ellie提供<0>额外的上下文</0>，以便为每封电子邮件提供完美的回复。"
+  },
+  "multilingual": {
+    "title": "Ellie是多语言的",
+    "content": "Ellie将以<0>任何语言</0>回复，以匹配要回复的电子邮件。"
+  },
+  "iterate": {
+    "title": "迭代Ellie的回复",
+    "content": "您可以<0>修改Ellie的回复</0>，以精确调整您希望Ellie说的内容。"
+  }
+}

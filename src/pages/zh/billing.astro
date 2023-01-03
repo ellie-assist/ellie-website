@@ -1,0 +1,31 @@
+---
+import { changeLanguage, t } from "i18next";
+import Main from "../../layouts/Main.astro";
+
+changeLanguage("zh");
+---
+
+<Main title={t("manage.meta.title")}>
+  <div class="page">
+    <div class="section">
+      <div class="content">
+        <h2>{t("manage.title")}</h2>
+        <p>
+          {t("manage.description")}
+        </p>
+        <a
+          href="https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo"
+          class="btn">{t("manage.button")}</a
+        >
+        <br />
+        <br />
+        <p>{t("manage.or-link")}</p>
+        <p>
+          <a href="https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo"
+            >https://billing.stripe.com/p/login/5kA7uDfL714d4GQ6oo</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</Main>
