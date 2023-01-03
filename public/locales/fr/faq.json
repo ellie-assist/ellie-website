@@ -1,0 +1,73 @@
+{
+  "one": {
+    "title": "Est-ce que Ellie lit mes e-mails ?",
+    "content": [
+      "Non, Ellie n'accède pas à vos e-mails. Vous pouvez fournir à Ellie des exemples de données de messagerie afin que l'IA corresponde mieux à votre style et lors de la réponse à un fil, Ellie lira les réponses les plus récentes afin qu'elle puisse générer un contexte et créer la réponse la plus pertinente."
+    ]
+  },
+  "two": {
+    "title": "Quel navigateur est pris en charge ?",
+    "links": ["/downloads"],
+    "content": [
+      "Ellie est disponible sous forme d'extension Chrome ou Firefox. Visitez la page <0>téléchargements</0> pour plus d'informations."
+    ]
+  },
+  "three": {
+    "title": "Quel client de messagerie est pris en charge ?",
+    "links": ["/help"],
+    "content": [
+      "Pour l'instant, seul Gmail est entièrement pris en charge, mais vous pouvez utiliser le menu contextuel pour générer une réponse aux e-mails dans d'autres clients. Nous déploierons bientôt un support complet pour d'autres clients basés sur le Web.",
+      "Visitez l'<0>aide</0> pour apprendre à utiliser le menu contextuel pour Outlook, Fastmail, Apple Mail et plus encore."
+    ]
+  },
+  "four": {
+    "title": "Pourquoi y a-t-il une limite sur le nombre de réponses ?",
+    "links": ["/pricing"],
+    "content": [
+      "Désolé ! Former l'IA et générer du contenu coûte une somme raisonnable d'argent. Nous sommes une petite équipe sans financement, alors nous devons facturer notre travail !",
+      "Vous pouvez vous inscrire à l'un de nos <0>plans payants</0> pour obtenir plus de réponses !"
+    ]
+  },
+  "five": {
+    "title": "Qu'est-ce que les révisions ?",
+    "content": [
+      "Vous pouvez demander à Ellie de réviser des sections d'un e-mail en le mettant en surbrillance et en cliquant sur «réviser». Ellie essaiera de trouver une phrase différente qui s'insère dans cet espace.",
+      "Vous pouvez réviser chaque e-mail jusqu'à 5 fois."
+    ]
+  },
+  "six": {
+    "title": "Pourquoi avez-vous fait cela ?",
+    "content": [
+      "Nous pensons qu'il y a un déséquilibre de pouvoir dans les e-mails. Bien qu'il s'agisse de l'une des plus utiles inventions de tous les temps, en tant qu'utilisateur unique d'e-mail, vous n'avez aucun contrôle sur qui peut vous envoyer un e-mail ou ce qu'ils peuvent mettre devant vous pour attirer brièvement votre attention.",
+      "Il n'y a presque pas de pénalité pour envoyer des e-mails de masse à autant de personnes que possible, dont la plupart sont une perte complète de temps et d'énergie.",
+      "Au moins en utilisant Ellie, nous pouvons reprendre une petite partie du pouvoir, en automatisant nos réponses à ces e-mails automatisés, afin qu'ils ne puissent plus monopoliser notre temps.",
+      "D'autres utilisent également Ellie pour surmonter l'anxiété des réponses, ou comme outil pour aider les personnes dyslexiques ou ayant des difficultés en langue et en grammaire.",
+      "Si vous utilisez Ellie d'une manière intéressante, faites-le nous savoir ! Nous aimerions en entendre parler !"
+    ]
+  },
+  "seven": {
+    "title": "Je ne veux pas que vous lisiez mes e-mails privés !",
+    "content": [
+      "Nous croyons que chacun a le droit fondamental à la confidentialité de ses données (et avons déjà construit un produit sur cette base).",
+      "Vos réponses par e-mail ne sont utilisées que par Ellie pour générer une réponse. Nous ne stockons pas les données de messagerie et promettons de ne jamais partager, vendre ou faire quoi que ce soit de louche avec vos données.",
+      "La raison pour laquelle nous pouvons faire cette promesse est que nous sommes des développeurs indépendants, sans investissement ni autre financement extérieur. Nous survivons en construisant des produits cool et en obtenant des gens cools pour les payer, et nous n'avons pas besoin de sacrifier nos principes !"
+    ]
+  },
+  "eight": {
+    "title": "Qui êtes-vous ?!",
+    "links": [
+      "https://twitter.com/dinkydani21",
+      "https://twitter.com/jamesivings"
+    ],
+    "content": [
+      "Ravi de vous rencontrer ! Nous sommes <0>Danielle</0> et <1>James</1>, deux développeurs nomades qui voyagent dans le monde entier sur notre petit voilier et construisons des trucs cools !"
+    ]
+  },
+  "nine": {
+    "title": "Pouvons-nous écrire une histoire sur Ellie ?",
+    "links": ["mailto:hi@ellieai.com"],
+    "content": [
+      "Si vous êtes membre de la presse et que vous souhaitez discuter, <0>envoyez-nous un e-mail !</0>"
+    ]
+  }
+}

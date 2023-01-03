@@ -1,0 +1,26 @@
+
+
+{
+  "meta": {
+    "title": "Téléchargements - EllieAI, votre assistant de messagerie IA"
+  },
+  "title": "Téléchargements Ellie",
+  "licence-description": "<0>Ellie nécessite une <1>clé de licence GRATUITE</1>.</0><2>Cela permettra à Ellie de générer jusqu'à <3>2 réponses</3> par jour.</2><4>Si vous avez besoin de plus de réponses, vous pouvez <5>passer à un plan payant</5>!</4>",
+  "labels": {
+    "get-updates": "Recevez des mises à jour sur Ellie par e-mail",
+    "no-spam": "Nous promettons de ne pas vous spammer, nos e-mails ne seront pas créés avec IA ;)",
+    "terms": "J'accepte les <0>conditions</0>",
+    "disclaimer": "Rappelez-vous que <0>vous</0> restez responsable des e-mails que vous envoyez. Veuillez vérifier soigneusement tout ce que génère Ellie!"
+  },
+  "cta": "Obtenir la clé de licence",
+  "success": "Succès! ✅",
+  "result": "<0>Merci de vous être inscrit!</0><1><2>Votre clé de licence vous a été envoyée par e-mail! Assurez-vous de vérifier votre spam!</2></1><3>Vous devrez entrer ceci après avoir installé l'extension.</3>",
+  "chrome": {
+    "available": "Ellie est disponible sur le Chrome Store. Veuillez suivre les instructions pour l'ajouter à Chrome!",
+    "get": "Obtenez Ellie pour Chrome"
+  },
+  "firefox": {
+    "available": "Ellie est disponible dans le magasin Firefox. Veuillez suivre les instructions pour l'ajouter à Firefox!",
+    "get": "Obtenez Ellie pour Firefox"
+  }
+}

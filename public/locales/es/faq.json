@@ -1,0 +1,73 @@
+{
+  "one": {
+    "title": "¿Lee Ellie mis correos electrónicos?",
+    "content": [
+      "No, Ellie no accede a sus correos electrónicos. Puede proporcionar a Ellie algunos datos de correo electrónico de ejemplo para que la IA coincida mejor con su estilo, y cuando responda a un hilo, Ellie leerá las respuestas más recientes para que pueda generar algún contexto y crear la respuesta más relevante."
+    ]
+  },
+  "two": {
+    "title": "¿Qué navegadores son compatibles?",
+    "links": ["/downloads"],
+    "content": [
+      "Ellie está disponible como una extensión de Chrome o Firefox. Visite la página <0>descargas</0> para obtener más información."
+    ]
+  },
+  "three": {
+    "title": "¿Qué clientes de correo electrónico son compatibles?",
+    "links": ["/help"],
+    "content": [
+      "Hasta ahora solo Gmail está totalmente soportado, pero puede usar el cuadro de diálogo emergente de la barra de herramientas para generar una respuesta a los correos electrónicos en otros clientes. Pronto implementaremos un soporte completo para otros clientes basados en web.",
+      "Visite la <0>ayuda</0> para aprender cómo usar el cuadro de diálogo emergente para Outlook, Fastmail, Apple Mail y más."
+    ]
+  },
+  "four": {
+    "title": "¿Por qué hay un límite en el número de respuestas?",
+    "links": ["/pricing"],
+    "content": [
+      "¡Lo sentimos! Entrenar a la IA y generar contenido cuesta una cantidad justa de dinero. ¡Somos un pequeño equipo sin financiación, por lo que tenemos que cobrar por nuestro trabajo!",
+      "¡Puede inscribirse en uno de nuestros planes <0>pagados</0> para obtener más respuestas!"
+    ]
+  },
+  "five": {
+    "title": "¿Qué son las revisiones?",
+    "content": [
+      "Puede decirle a Ellie que revise secciones de un correo electrónico resaltándolo y haciendo clic en 'revise'. Ellie intentará encontrar una frase diferente que encaje en ese espacio.",
+      "Puede revisar cada correo electrónico hasta 5 veces."
+    ]
+  },
+  "six": {
+    "title": "¿Por qué hiciste esto?",
+    "content": [
+      "Creemos que hay un desequilibrio de poder en el correo electrónico. Aunque es una de las invenciones más útiles de todos los tiempos, como usuario de correo electrónico único, no tiene control sobre quién puede enviarle correos electrónicos ni sobre qué pueden poner delante de usted para captar brevemente su atención.",
+      "Casi no hay penalización por enviar correos electrónicos masivos a tantas personas como sea posible, la mayoría de los cuales son un completo desperdicio de tiempo y energía.",
+      "Al menos al usar Ellie podemos recuperar una pequeña cantidad de poder, al automatizar nuestras respuestas a estos correos electrónicos automatizados, para que ya no puedan monopolizar nuestro tiempo.",
+      "Otros también están usando Ellie para superar la ansiedad de responder, o como una herramienta para ayudar con la dislexia o las habilidades lingüísticas y gramaticales.",
+      "Si está usando Ellie de una manera interesante, ¡por favor háganoslo saber! ¡Nos encantaría saberlo!"
+    ]
+  },
+  "seven": {
+    "title": "¡No quiero que leas mis correos electrónicos privados!",
+    "content": [
+      "Creemos que todos tienen el derecho fundamental a la privacidad de sus datos (y ya hemos construido un producto en esa premisa).",
+      "Sus respuestas de correo electrónico solo se usan por Ellie para generar una respuesta. No almacenamos los datos del correo electrónico y prometemos nunca compartir, vender ni hacer nada turbio con sus datos.",
+      "La razón por la que podemos prometer esto es porque somos desarrolladores independientes, sin inversión ni otro financiamiento externo. ¡Sobrevivimos construyendo productos geniales y consiguiendo que la gente genial los pague, y no necesitamos sacrificar nuestra ética!"
+    ]
+  },
+  "eight": {
+    "title": "¿Quiénes son ustedes!?",
+    "links": [
+      "https://twitter.com/dinkydani21",
+      "https://twitter.com/jamesivings"
+    ],
+    "content": [
+      "¡Mucho gusto! Somos <0>Danielle</0> y <1>James</1>, dos desarrolladores nómadas viajando por el mundo en nuestro pequeño velero y construyendo cosas geniales!"
+    ]
+  },
+  "nine": {
+    "title": "¿Podemos escribir una historia sobre Ellie?",
+    "links": ["mailto:hi@ellieai.com"],
+    "content": [
+      "Si eres miembro de la prensa y quieres charlar, <0>envíanos un correo electrónico!</0>"
+    ]
+  }
+}

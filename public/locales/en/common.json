@@ -48,6 +48,9 @@
     "check-spam": "PLEASE CHECK YOUR SPAM FOLDER for the email!"
   },
   "manage": {
+    "meta": {
+      "title": "Manage subscription - Ellie"
+    },
     "title": "Manage your subscription",
     "description": "Update your billing details, view invoice history, upgrade or cancel your plan.",
     "button": "Manage subscription",

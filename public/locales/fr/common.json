@@ -1,0 +1,64 @@
+
+
+{
+  "meta": {
+    "title": "Inscrivez-vous à Ellie - Votre assistant de messagerie IA",
+    "description": "Ellie apprend à partir de votre style d'écriture et rédige des réponses comme si elles avaient été écrites par vous",
+    "ogImageAlt": "Ellie - Votre assistant de messagerie IA, apprend à partir de votre style d'écriture et rédige des réponses comme si elles avaient été écrites par vous",
+    "ogTitle": "Ellie - Votre assistant de messagerie IA"
+  },
+  "hero": {
+    "title": "Rencontrez Ellie, votre assistante de messagerie IA",
+    "description": "Ellie apprend à partir de votre style d'écriture et rédige des réponses comme si elles avaient été écrites par vous"
+  },
+  "stats": {
+    "join": "Rejoignez",
+    "foo": "<0>0</0> utilisateurs, qui ont utilisé Ellie pour générer plus de <1>0</1> réponses par e-mail!"
+  },
+  "banner": {
+    "hny": "<0>Bonne année! 🎉</0><1>Profitez de 25% de réduction sur tous les plans avec le code promo<2>NY2023</2></1><3>Disponible cette semaine seulement!</3>"
+  },
+  "main": {
+    "cta": "Essayez gratuitement",
+    "version": "v0.3.1 Disponible pour Chrome et Firefox",
+    "purchase": "Acheter une licence"
+  },
+  "external": {
+    "phBadgeAlt": "Ellie - Votre assistant de messagerie IA - 💌 Assistant alimenté par GPT-3 qui peut répondre à vos e-mails! | Product Hunt"
+  },
+  "footer": {
+    "description": "Propulsé par OpenAI, apprend votre style d'écriture et répond aux e-mails comme si vous les aviez écrits.",
+    "disclaimer": "Cette page web a été écrite en HTML à la main! Pas par une IA ;)"
+  },
+  "nav": {
+    "pricing": "Tarification",
+    "home": "Accueil",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "help": "Aide",
+    "downloads": "Téléchargements",
+    "releases": "Sorties",
+    "forgot": "Mot de passe oublié",
+    "manage-subscription": "Gérer votre abonnement",
+    "need-help": "Besoin d'aide? Envoyez-nous un email <0>hi@ellieai.com</0>"
+  },
+  "submit": "Soumettre",
+  "forgot": {
+    "title": "Mot de passe oublié?",
+    "description": "Entrez votre adresse e-mail et nous vous renverrons à nouveau votre clé de licence.",
+    "emailed-to-you": "Votre clé de licence a été envoyée par e-mail :)",
+    "check-spam": "VEUILLEZ VÉRIFIER VOTRE DOSSIER SPAM pour l'email!"
+  },
+  "manage": {
+    "meta": {
+      "title": "Gérer l'abonnement - Ellie"
+    },
+    "title": "Gérer votre abonnement",
+    "description": "Mettez à jour vos informations de facturation, consultez l'historique des factures, mettez à niveau ou annulez votre plan.",
+    "button": "Gérer l'abonnement",
+    "or-link": "Ou visitez ce lien direct:"
+  },
+  "labels": {
+    "your-email": "Votre adresse e-mail:"
+  }
+}

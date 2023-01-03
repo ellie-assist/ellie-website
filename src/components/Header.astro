@@ -1,5 +1,6 @@
 ---
 import { t, setDefaultNamespace } from "i18next";
+import { localizePath } from "astro-i18next";
 import { LanguageSelector, Trans } from "astro-i18next/components";
 import LanguageDropdown from "./LanguageDropdown.svelte";
 
@@ -9,14 +10,21 @@ setDefaultNamespace("common");
 <div class="header">
   <div class="header-content">
     <ol>
-      <li><a href="/" class="header-link">{t("nav.home")}</a></li>
-      <li><a href="/pricing" class="header-link">{t("nav.pricing")}</a></li>
+      <li>
+        <a href={localizePath("/")} class="header-link">{t("nav.home")}</a>
+      </li>
+      <li>
+        <a href={localizePath("/pricing")} class="header-link"
+          >{t("nav.pricing")}</a>
+      </li>
       <li class="right">
         <LanguageSelector showFlag={true} class="language-select" />
         <!-- <LanguageDropdown client:load /> -->
       </li>
       <li>
-        <a href="/downloads" class="header-link">{t("nav.downloads")}</a>
+        <a href={localizePath("/downloads")} class="header-link"
+          >{t("nav.downloads")}</a
+        >
       </li>
     </ol>
   </div>

@@ -1,12 +1,12 @@
 ---
-import i18next, { changeLanguage, setDefaultNamespace, t } from "i18next";
-import Main from "../layouts/Main.astro";
-import FAQ from "../components/FAQ.astro";
-import Stats from "../components/Stats.svelte";
+import { changeLanguage, setDefaultNamespace, t } from "i18next";
+import Main from "../../../layouts/Main.astro";
+import FAQ from "../../../components/FAQ.astro";
+import Stats from "../../../components/Stats.svelte";
 import { Trans, HeadHrefLangs } from "astro-i18next/components";
-import Video from "../components/Video.svelte";
+import Video from "../../../components/Video.svelte";
 
-changeLanguage("en");
+changeLanguage("es");
 
 setDefaultNamespace("common");
 ---
@@ -47,7 +47,7 @@ setDefaultNamespace("common");
 
     <section class="download-section">
       <div class="container">
-        <Stats client:only shown={i18next.language === "en"} />
+        <Stats client:only />
         <span class="btn-group">
           <span>
             <a class="btn cta" href="/downloads">

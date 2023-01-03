@@ -1,6 +1,6 @@
 <script>
   // import { changeLanguage, setDefaultNamespace, t } from "i18next";
-
+  export let shown;
   // changeLanguage("en");
   // setDefaultNamespace("common");
 
@@ -19,7 +19,9 @@
     repliesGenerated = usage.totalRepliesGenerated;
     opacity = 1;
   }
-  getStats();
+  if (shown) {
+    getStats();
+  }
 </script>
 
 <div id="stats" class="stats" style:opacity>

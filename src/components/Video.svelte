@@ -94,9 +94,6 @@
     justify-content: center;
   }
 
-  .play-btn svg {
-  }
-
   .video-container {
     position: relative;
     padding: 5px 5px 0px 5px;
