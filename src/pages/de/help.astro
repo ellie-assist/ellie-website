@@ -1,0 +1,241 @@
+---
+import { changeLanguage } from "i18next";
+import Main from "../../layouts/Main.astro";
+
+changeLanguage("de");
+---
+
+<Main title="Help - EllieAI - Your AI Email Assistant">
+  <div class="page">
+    <div class="content">
+      <h1>How to use Ellie</h1>
+      <ol>
+        <li><a href="/help#getting-started">🏁 Getting started</a></li>
+        <li>
+          <a href="/help#basic-training"
+            >✏️ Improving the replies Ellie writes</a>
+        </li>
+        <li>
+          <a href="/help#using-the-popup">✨ Using the Generate Reply pop-up</a>
+        </li>
+      </ol>
+    </div>
+    <div class="help">
+      <div class="content">
+        <div id="getting-started">
+          <h2>🏁 Getting started</h2>
+          <p>
+            Ellie can write replies to emails directly in your Gmail. Here's how
+            to get setup:
+          </p>
+          <ul>
+            <li>
+              <div class="help-step">
+                <h3>1. Get licence key</h3>
+                <p>
+                  Start by <a href="/downloads">getting a FREE licence key</a>.
+                  Your licence key will be emailed to you.
+                </p>
+                <p><strong>Please make sure to check spam folder!</strong></p>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>2. Install the extension</h3>
+                <p>
+                  Install the extension for <a href="/downloads"
+                    >Chrome or Firefox</a
+                  >.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>3. Open the settings</h3>
+                <p>Open the extension settings page.</p>
+                <p>
+                  Ellie will open the options when you install the extension. To
+                  open settings again click the
+                  <strong>?</strong> in toolbar pop-up or in the compose box in Gmail.
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/settings-btn.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/settings-btn2.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>4. Enter your details</h3>
+                <p>
+                  Enter your name so Ellie knows who to sign the emails from,
+                  and navigate to the licence key page.
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/setup1.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+
+                <hr />
+
+                <p>
+                  Enter your licence key - <strong
+                    >make sure to press save!</strong>
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/setup2.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="help-step">
+                <h3>5. Start using Ellie</h3>
+                <p>
+                  Open Gmail, click reply to an email, and let Ellie craft you a
+                  reply!
+                </p>
+                <p>
+                  Select the tone to reply and whether you are interested or
+                  not, and click Write ✏️
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/setup3.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="basic-training" class="help-topic">
+          <h2>✏️ Improving the replies Ellie writes</h2>
+          <p>
+            Ellie will be able to generate replies without any training, however
+            by providing a few examples it will start to mimic your writing
+            style and language. Here's how:
+          </p>
+          <ul>
+            <li>
+              <div class="help-step">
+                <h3>1. Open the settings</h3>
+                <p>
+                  To open settings click the <strong>?</strong> in toolbar pop-up
+                  or in the compose box in Gmail.
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/settings-btn.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/settings-btn2.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>2. Provide examples</h3>
+                <p>
+                  Add 1 or 2 examples of emails you received and your reply.
+                  Remember: try and keep the examples short!
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/training1.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="using-the-popup" class="help-topic">
+          <h2>✨ Using the Generate Reply pop-up</h2>
+          <p>
+            Ellie can write replies to emails anywhere via a pop-up. This is a
+            great shortcut to use Ellie for other email providers such as
+            Outlook, Fastmail, Apple Mail etc, or even LinkedIn and Twitter
+            DM's. Here's how to use it:
+          </p>
+          <ul>
+            <li>
+              <div class="help-step">
+                <h3>1. Open your email provider</h3>
+                <p>
+                  Open your email provider such as Outlook, Fastmail, Apple Mail
+                  etc and click reply to an email.
+                </p>
+                <p>
+                  You can use the popup from any page, but Ellie works best with
+                  email or message content.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>2. Use the popup to generate a reply</h3>
+                <p>
+                  Highlight some text on the page to give Ellie context for the
+                  reply and click the toolbar icon for Ellie. Select your tone
+                  and if you're interested, and click write!
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/popup1.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="help-step">
+                <h3>3. Paste your reply</h3>
+                <p>
+                  The reply is automatically copied to your clipboard so you can
+                  paste it into your mail provider easily!
+                </p>
+                <div class="help-image">
+                  <img
+                    src="assets/images/help/popup2.png"
+                    alt=""
+                    role="presentation"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</Main>

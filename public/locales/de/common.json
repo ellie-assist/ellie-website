@@ -1,0 +1,64 @@
+
+
+{
+  "meta": {
+     "title": "Melden Sie sich bei Ellie an - Ihr AI-E-Mail-Assistent",
+     "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
+     "ogImageAlt": "Ellie - Ihr AI-E-Mail-Assistent, lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
+     "ogTitle": "Ellie - Ihr AI-E-Mail-Assistent"
+  },
+  "hero": {
+     "title": "Lernen Sie Ellie kennen, Ihren AI-E-Mail-Assistenten",
+     "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden"
+  },
+  "stats": {
+    "join": "Beitreten",
+    "foo": "<0>0</0> Benutzer, die Ellie verwendet haben, um über <1>0</1> E-Mail-Antworten zu generieren!"
+  },
+  "banner": {
+    "hny": "<0>Frohes neues Jahr! 🎉</0><1>Genießen Sie 25% Rabatt auf alle Pläne mit dem Promo-Code<2>NY2023</2></1><3>Nur diese Woche verfügbar!</3>"
+  },
+  "main": {
+    "cta": "Kostenlos testen",
+    "version": "v0.3.1 Verfügbar für Chrome und Firefox",
+    "purchase": "Lizenz kaufen"
+  },
+  "external": {
+    "phBadgeAlt": "Ellie - Ihr AI-E-Mail-Assistent - 💌 GPT-3-gesteuerter Assistent, der Ihre E-Mails beantworten kann! | Product Hunt"
+  },
+  "footer": {
+    "description": "Powered by OpenAI, lernt Ihren Schreibstil und antwortet auf E-Mails, als ob Sie sie geschrieben hätten.",
+    "disclaimer": "Diese Webseite wurde von Hand in HTML geschrieben! Nicht von einer KI ;)"
+  },
+  "nav": {
+    "pricing": "Preise",
+    "home": "Startseite",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "help": "Hilfe",
+    "downloads": "Downloads",
+    "releases": "Veröffentlichungen",
+    "forgot": "Lizenzschlüssel vergessen",
+    "manage-subscription": "Abonnement verwalten",
+    "need-help": "Brauchen Sie Hilfe? Schicken Sie uns eine E-Mail <0>hi@ellieai.com</0>"
+  },
+  "submit": "Senden",
+  "forgot": {
+    "title": "Haben Sie Ihren Lizenzschlüssel vergessen?",
+    "description": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen Ihren Lizenzschlüssel erneut zu.",
+    "emailed-to-you": "Ihr Lizenzschlüssel wurde Ihnen per E-Mail zugesandt :)",
+    "check-spam": "BITTE ÜBERPRÜFEN SIE IHREN SPAM-ORDNER auf die E-Mail!"
+  },
+  "manage": {
+    "meta": {
+      "title": "Abonnement verwalten - Ellie"
+    },
+    "title": "Verwalten Sie Ihr Abonnement",
+    "description": "Aktualisieren Sie Ihre Rechnungsdaten, sehen Sie sich die Rechnungshistorie an, upgraden Sie oder kündigen Sie Ihren Plan.",
+    "button": "Abonnement verwalten",
+    "or-link": "Oder besuchen Sie diesen direkten Link:"
+  },
+  "labels": {
+    "your-email": "Ihre E-Mail-Adresse:"
+  }
+}

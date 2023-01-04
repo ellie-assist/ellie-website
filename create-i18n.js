@@ -86,6 +86,7 @@ async function requestOpenAITranslation(p) {
 async function run() {
   const files = await fs.readdir("public/locales/en");
   for (let file of files) {
+    // const file = "faq.json";
     console.log(`${file}...`);
     const jsonConfig = await fs.readFile(`public/locales/en/${file}`);
     const content = jsonConfig.toString();

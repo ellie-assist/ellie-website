@@ -1,6 +1,6 @@
 export default {
   defaultLocale: "en",
-  locales: ["en", "fr", "es", "nl", "zh", "ru"],
+  locales: ["en", "fr", "es", "nl", "zh", "ru", "de"],
   namespaces: [
     "common",
     "faq",

@@ -1,0 +1,20 @@
+
+
+{
+  "context": {
+    "title": "Ellie versteht den Kontext",
+    "content": "<0>Ellie nimmt den Kontext aus dem E-Mail-Thread, um <1>intelligente Antworten zu formulieren</1>. </0><2>Wir versprechen Ihnen, dass Sie von Ellies Antworten begeistert sein werden!</2>"
+  },
+  "tailor": {
+    "title": "Passen Sie die Antwort von Ellie an",
+    "content": "Sie können Ellie <0>zusätzlichen Kontext</0> liefern, um die perfekte Antwort für jede E-Mail zu erhalten. "
+  },
+  "multilingual": {
+    "title": "Ellie ist mehrsprachig",
+    "content": "Ellie wird in <0>jeder Sprache</0> antworten, um der E-Mail zu entsprechen, auf die geantwortet wird. "
+  },
+  "iterate": {
+    "title": "Iterieren Sie über Ellies Antworten",
+    "content": "Sie können Ellies Antwort <0>überarbeiten</0>, um genau das zu erhalten, was Sie von Ellie hören möchten. "
+  }
+}

@@ -1,15 +1,13 @@
-
-
 {
   "meta": {
-     "title": "Meld je aan voor Ellie - Jouw AI e-mail assistent",
-     "description": "Ellie leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn",
-     "ogImageAlt": "Ellie - Jouw AI e-mail assistent, leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn",
-     "ogTitle": "Ellie - Jouw AI e-mail assistent"
+    "title": "Meld je aan voor Ellie - Jouw AI e-mail assistent",
+    "description": "Ellie leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn",
+    "ogImageAlt": "Ellie - Jouw AI e-mail assistent, leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn",
+    "ogTitle": "Ellie - Jouw AI e-mail assistent"
   },
   "hero": {
-     "title": "Ontmoet Ellie, jouw AI e-mail assistent",
-     "description": "Ellie leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn"
+    "title": "Ontmoet Ellie, jouw AI e-mail assistent",
+    "description": "Ellie leert van je schrijfstijl en maakt antwoorden alsof ze door jou geschreven zijn"
   },
   "stats": {
     "join": "Meld je aan",
@@ -32,7 +30,7 @@
   },
   "nav": {
     "pricing": "Prijzen",
-    "home": "Thuis",
+    "home": "Home",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden",
     "help": "Help",
