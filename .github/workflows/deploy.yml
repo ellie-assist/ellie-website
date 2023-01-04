@@ -47,7 +47,7 @@ jobs:
         uses: own3d/bunny-action@main
         env:
           BUNNY_STORAGE_USERNAME: ellie-website
-          BUNNY_STORAGE_PASSWORD: 124768e3-6266-4c15-a6fa026401b4-b799-487b
+          BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_ZONE_PASSWORD }}
           BUNNY_PULL_ZONE_ID: 212288
         with:
           args: deploy --dir=dist
