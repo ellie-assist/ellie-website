@@ -1,15 +1,13 @@
-
-
 {
   "meta": {
-     "title": "注册Ellie - 您的AI电子邮件助手",
-     "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的",
-     "ogImageAlt": "Ellie - 您的AI电子邮件助手，从您的写作风格中学习，并制作回复，就好像它们是由您编写的",
-     "ogTitle": "Ellie - 您的AI电子邮件助手"
+    "title": "注册Ellie - 您的AI电子邮件助手",
+    "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的",
+    "ogImageAlt": "Ellie - 您的AI电子邮件助手，从您的写作风格中学习，并制作回复，就好像它们是由您编写的",
+    "ogTitle": "Ellie - 您的AI电子邮件助手"
   },
   "hero": {
-     "title": "认识Ellie，您的AI电子邮件助手",
-     "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的"
+    "title": "认识Ellie，您的AI电子邮件助手",
+    "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的"
   },
   "stats": {
     "join": "加入",
@@ -28,7 +26,7 @@
   },
   "footer": {
     "description": "由OpenAI提供支持，学习您的写作风格并回复电子邮件，就好像您写了它们一样。",
-    "disclaimer": "此网页是手工编写的HTML！不是AI ;)"
+    "disclaimer": "这个网页是手工用HTML编写的！不是由人工智能，<0>但翻译是由GPT-3完成的</0>"
   },
   "nav": {
     "pricing": "定价",

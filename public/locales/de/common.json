@@ -1,15 +1,13 @@
-
-
 {
   "meta": {
-     "title": "Melden Sie sich bei Ellie an - Ihr AI-E-Mail-Assistent",
-     "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
-     "ogImageAlt": "Ellie - Ihr AI-E-Mail-Assistent, lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
-     "ogTitle": "Ellie - Ihr AI-E-Mail-Assistent"
+    "title": "Melden Sie sich bei Ellie an - Ihr AI-E-Mail-Assistent",
+    "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
+    "ogImageAlt": "Ellie - Ihr AI-E-Mail-Assistent, lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden",
+    "ogTitle": "Ellie - Ihr AI-E-Mail-Assistent"
   },
   "hero": {
-     "title": "Lernen Sie Ellie kennen, Ihren AI-E-Mail-Assistenten",
-     "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden"
+    "title": "Lernen Sie Ellie kennen, Ihren AI-E-Mail-Assistenten",
+    "description": "Ellie lernt aus Ihrem Schreibstil und formuliert Antworten, als ob sie von Ihnen geschrieben wurden"
   },
   "stats": {
     "join": "Beitreten",
@@ -28,7 +26,7 @@
   },
   "footer": {
     "description": "Powered by OpenAI, lernt Ihren Schreibstil und antwortet auf E-Mails, als ob Sie sie geschrieben hätten.",
-    "disclaimer": "Diese Webseite wurde von Hand in HTML geschrieben! Nicht von einer KI ;)"
+    "disclaimer": "Diese Webseite wurde von Hand in HTML geschrieben! Nicht von einer KI, <0>aber die Übersetzungen wurden von GPT-3 gemacht</0>"
   },
   "nav": {
     "pricing": "Preise",

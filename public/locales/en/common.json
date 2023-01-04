@@ -26,7 +26,7 @@
   },
   "footer": {
     "description": "Powered by OpenAI, learns your writing style and replies to emails as if you wrote them.",
-    "disclaimer": "This web page was written in HTML by hand! Not by an AI ;)"
+    "disclaimer": "This web page was written in HTML by hand! Not by an AI, <0>but translations were done by GPT-3</0> ;)"
   },
   "nav": {
     "pricing": "Pricing",

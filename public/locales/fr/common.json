@@ -1,5 +1,3 @@
-
-
 {
   "meta": {
     "title": "Inscrivez-vous à Ellie - Votre assistant de messagerie IA",
@@ -28,7 +26,7 @@
   },
   "footer": {
     "description": "Propulsé par OpenAI, apprend votre style d'écriture et répond aux e-mails comme si vous les aviez écrits.",
-    "disclaimer": "Cette page web a été écrite en HTML à la main! Pas par une IA ;)"
+    "disclaimer": "Cette page web a été écrite à la main en HTML! Pas par une IA, <0>mais les traductions ont été faites par GPT-3</0> ;)"
   },
   "nav": {
     "pricing": "Tarification",

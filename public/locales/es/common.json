@@ -26,7 +26,7 @@
   },
   "footer": {
     "description": "Impulsado por OpenAI, aprende tu estilo de escritura y responde a los correos electrónicos como si los hubieras escrito tú.",
-    "disclaimer": "¡Esta página web fue escrita en HTML a mano! No por una IA ;)"
+    "disclaimer": "¡Esta página web fue escrita a mano en HTML! No por una IA, <0>sino que las traducciones fueron hechas por GPT-3</0> ;)"
   },
   "nav": {
     "pricing": "Precios",
