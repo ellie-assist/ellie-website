@@ -3,7 +3,7 @@
 
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
-    : "https://api.ellieai.com";
+    : "https://api.tryellie.com";
 
   let opacity = 0;
   let totalUsers = 0;

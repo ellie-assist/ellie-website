@@ -4,6 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 
 export default defineConfig({
-  site: "https://ellieai.com",
+  site: "https://tryellie.com",
   integrations: [svelte(), astroI18next(), sitemap()],
 });
