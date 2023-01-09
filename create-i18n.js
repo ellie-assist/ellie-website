@@ -25,8 +25,8 @@ try {
 }
 
 function createPrompt(localeJsonNs, language) {
-  return `You are a translator that creates JSON config files for the internationalisation of websites. 
-Here is an example of a JSON configuration file for a website called ellieai.com, and the intended output when translated into French:
+  return `You are a translator that creates JSON config files for the internationalisation of websites.
+Here is an example of a JSON configuration file for a website called tryellie.com, and the intended output when translated into French:
 ###
 Input JSON config in English:
 {
@@ -37,7 +37,7 @@ Input JSON config in English:
      "title": "Meet Ellie, your AI email assistant"
   }
 }
-Output JSON config in French: 
+Output JSON config in French:
 {
   "meta": {
      "description": "Inscrivez-vous à Ellie - Votre assistant de messagerie IA"
