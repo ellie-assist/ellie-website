@@ -13,8 +13,9 @@
     "join": "Unirse",
     "foo": "<0>0</0> usuarios, ¡que han usado a Ellie para generar más de <1>0</1> respuestas de correo electrónico!"
   },
-  "banner": {
-    "hny": "<0>¡Feliz Año Nuevo! 🎉</0><1>Disfruta del 25% de descuento en todos los planes con el código de promoción<2>NY2023</2></1><3>¡Disponible solo esta semana!</3>"
+  "proof": {
+    "rating": "Calificado 5 de 5",
+    "installs": "2000+ instalaciones en la Chrome Web Store y Firefox Add-ons"
   },
   "main": {
     "cta": "Prueba gratis",
