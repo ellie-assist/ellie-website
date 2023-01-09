@@ -24,8 +24,8 @@
 <div id="stats" class="stats" style:opacity>
   <p>
     Join
-    <strong id="total-users">{totalUsers}</strong> users, who have used Ellie to
-    generate over
+    <strong id="total-users">{totalUsers}</strong> people, who have used Ellie to
+    write over
     <strong id="replies-generated">{repliesGenerated}</strong> email replies!
   </p>
 </div>

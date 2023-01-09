@@ -1,0 +1,108 @@
+---
+import { Trans } from "astro-i18next/components";
+import { t, setDefaultNamespace } from "i18next";
+import Stars from "./Stars.astro";
+import StarsLarge from "./StarsLarge.astro";
+
+setDefaultNamespace("common");
+---
+
+<section class="proof-section">
+  <div class="proof-stars">
+    <StarsLarge />
+    <p class="proof-rating">{t("proof.rating")}</p>
+    <p class="proof-happy">{t("proof.installs")}</p>
+  </div>
+  <div class="proof-reviews">
+    <div class="inline-review">
+      <Stars />
+      <blockquote>
+        <p class="review-text">
+          <Trans i18nKey="mathias" ns="testimonials">
+            Ellie has
+            <span class="review-highlight"
+              >made everything so much easier.</span
+            >
+          </Trans>
+        </p>
+
+        <p class="review-author">- Mathias Laurvig</p>
+      </blockquote>
+    </div>
+    <div class="inline-review">
+      <Stars />
+      <blockquote>
+        <p class="review-text">
+          <Trans i18nKey="richard" ns="testimonials">
+            I love this extension.
+            <span class="review-highlight"
+              >Ellie helps me churn through email </span
+            > responses.
+          </Trans>
+        </p>
+
+        <p class="review-author">- Richard Brus</p>
+      </blockquote>
+    </div>
+    <div class="inline-review">
+      <Stars />
+      <blockquote>
+        <p class="review-text">
+          <Trans i18nKey="james" ns="testimonials">
+            Ellie
+            <span class="review-highlight"
+              >saves me time every morning</span
+            > answering emails.
+          </Trans>
+        </p>
+
+        <p class="review-author">- James Potter</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<style>
+  .proof-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    text-align: center;
+  }
+  .proof-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proof-reviews {
+    display: flex;
+    gap: 20px;
+  }
+  .proof-reviews .inline-review {
+    flex: 1;
+  }
+  @media(max-width: 800px) {
+    .proof-reviews {
+      flex-direction: column;
+    }
+    .proof-reviews .inline-review {
+      margin-top: 20px;
+    }
+  }
+  .proof-rating {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  .proof-happy {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+</style>
