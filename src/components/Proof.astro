@@ -2,14 +2,13 @@
 import { Trans } from "astro-i18next/components";
 import { t, setDefaultNamespace } from "i18next";
 import Stars from "./Stars.astro";
-import StarsLarge from "./StarsLarge.astro";
 
 setDefaultNamespace("common");
 ---
 
 <section class="proof-section">
   <div class="proof-stars">
-    <StarsLarge />
+    <Stars large />
     <p class="proof-rating">{t("proof.rating")}</p>
     <p class="proof-happy">{t("proof.installs")}</p>
   </div>
@@ -20,8 +19,7 @@ setDefaultNamespace("common");
         <p class="review-text">
           <Trans i18nKey="mathias" ns="testimonials">
             Ellie has
-            <span class="review-highlight"
-              >made everything so much easier.</span
+            <span class="review-highlight">made everything so much easier.</span
             >
           </Trans>
         </p>
@@ -36,8 +34,8 @@ setDefaultNamespace("common");
           <Trans i18nKey="richard" ns="testimonials">
             I love this extension.
             <span class="review-highlight"
-              >Ellie helps me churn through email </span
-            > responses.
+              >Ellie helps me churn through email
+            </span> responses.
           </Trans>
         </p>
 
@@ -50,9 +48,8 @@ setDefaultNamespace("common");
         <p class="review-text">
           <Trans i18nKey="james" ns="testimonials">
             Ellie
-            <span class="review-highlight"
-              >saves me time every morning</span
-            > answering emails.
+            <span class="review-highlight">saves me time every morning</span> answering
+            emails.
           </Trans>
         </p>
 
@@ -84,7 +81,7 @@ setDefaultNamespace("common");
   .proof-reviews .inline-review {
     flex: 1;
   }
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     .proof-reviews {
       flex-direction: column;
     }
