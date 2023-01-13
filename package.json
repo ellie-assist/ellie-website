@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "i18n": "npx astro-i18next generate",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",

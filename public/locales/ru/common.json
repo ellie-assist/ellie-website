@@ -19,7 +19,7 @@
   },
   "main": {
     "cta": "Попробуйте бесплатно",
-    "version": "v0.3.1 Доступно для Chrome and Firefox",
+    "version": "v1.0.0 Доступно для Chrome and Firefox",
     "purchase": "Купить лицензию"
   },
   "external": {
