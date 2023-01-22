@@ -453,11 +453,14 @@ changeLanguage(i18next.language);
         margin-right: -3px;
       }
 
+      .price-title {
+        text-align: center;
+      }
       .price-banner {
         background: var(--purple-lighter);
         border: 1px solid var(--border-color);
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 20px 20px;
         font-weight: 500;
         text-align: center;
       }
@@ -469,6 +472,7 @@ changeLanguage(i18next.language);
         background: white;
         padding: 2px 3px;
         border-radius: 5px;
+        margin-left: 5px;
       }
       .promo-note {
         font-size: 12px;
@@ -640,6 +644,16 @@ changeLanguage(i18next.language);
       }
 
       .cta.secondary:visited {
+        color: #292b36;
+      }
+
+      .cta.banner {
+        margin: 20px auto 0 auto;
+      }
+      .cta.banner:hover,
+      .cta.banner:focus,
+      .cta.banner:active {
+        background-color: var(--border-color);
         color: #292b36;
       }
 

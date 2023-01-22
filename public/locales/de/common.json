@@ -13,6 +13,9 @@
     "join": "Beitreten",
     "foo": "<0>0</0> Benutzer, die Ellie verwendet haben, um über <1>0</1> E-Mail-Antworten zu generieren!"
   },
+  "banner": {
+    "hny": "<0>Frohes Luna Neujahr! 🧧</0><1>Genießen Sie 50% Rabatt auf alle Pläne mit dem Promo-Code <2>CHAT50</2></1><3>Nur diese Woche verfügbar!</3>"
+  },
   "proof": {
     "rating": "Bewertet 5 von 5",
     "installs": "2000+ Installationen im Chrome Web Store und Firefox Add-ons"
