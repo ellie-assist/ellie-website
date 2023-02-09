@@ -13,12 +13,9 @@
     "join": "Unirse",
     "foo": "<0>0</0> usuarios, ¡que han usado a Ellie para generar más de <1>0</1> respuestas de correo electrónico!"
   },
-  "banner": {
-    "hny": "<0>¡Feliz Año Nuevo Lunar! 🧧</0><1>Disfruta del 50% de descuento en todos los planes con el código promocional <2>RABBIT50</2></1><3>¡Solo disponible esta semana!</3>"
-  },
   "proof": {
-    "rating": "Calificado 5 de 5",
-    "installs": "2000+ instalaciones en la Chrome Web Store y Firefox Add-ons"
+    "rating": "Calificado 4 de 5",
+    "installs": "4000+ instalaciones en la Chrome Web Store y Firefox Add-ons"
   },
   "main": {
     "cta": "Prueba gratis",

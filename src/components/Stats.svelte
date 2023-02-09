@@ -1,4 +1,5 @@
 <script>
+  import numeral from 'numeral';
   export let shown;
 
   const apiUrl = window.location.href.includes("localhost")
@@ -9,13 +10,19 @@
   let totalUsers = 0;
   let repliesGenerated = 0;
 
+  function formatStat(n)  {
+    if (!n) return '0';
+    return numeral(n).format('0,0');
+  }
+
   async function getStats() {
     const result = await (await fetch(`${apiUrl}/extension/stats`)).json();
     const { usage } = result;
-    totalUsers = result.totalUsers;
-    repliesGenerated = usage.totalRepliesGenerated;
+    totalUsers = formatStat(result.totalUsers);
+    repliesGenerated = formatStat(usage.totalRepliesGenerated);
     opacity = 1;
   }
+
   if (shown) {
     getStats();
   }
