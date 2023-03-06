@@ -13,6 +13,9 @@
     "join": "Beitreten",
     "foo": "<0>0</0> Benutzer, die Ellie verwendet haben, um über <1>0</1> E-Mail-Antworten zu generieren!"
   },
+  "banner": {
+    "promo": "<0>Ellie ist jetzt blitzschnell ⚡️</0><1>Ellie schreibt jetzt Antworten 10x schneller als zuvor! Genießen Sie 50% Rabatt auf alle Pläne mit dem Promo-Code <2>FASTER50</2></1><3>Nur diese Woche erhältlich!</3>"
+  },
   "proof": {
     "rating": "Bewertet 4 von 5",
     "installs": "4000+ Installationen im Chrome Web Store und Firefox Add-ons"
