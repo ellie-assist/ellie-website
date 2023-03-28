@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "演示Ellie - 您的AI电子邮件助手",
+    "description": "使用我们的简单演示自己尝试Ellie。询问Ellie关于自己的任何问题，它都会回答！",
+    "ogImageAlt": "Ellie - 您的AI电子邮件助手，从您的书写风格中学习，并像您编写的一样制作回复",
+    "ogTitle": "Ellie - 您的AI电子邮件助手"
+  },
+  "header": "<0>从Ellie获取帮助！</0>",
+  "lead": "<0>Ellie已经接受过培训，可以帮助您回答有关它本身的任何问题，只需在下面输入您的问题，就像您要向我们发送电子邮件一样，Ellie就会回复！</0>",
+  "upgrade": "<0>您可以使用我们的<1>专业计划</1>训练Ellie学习任何主题。</0>",
+  "outro": "<0>请注意：由于OpenAI和LLM的性质，即使经过数据集的训练，回复也不总是100％准确 - 因此仍然重要检查Ellie的输出是否有误。</0>",
+  "source": "该回复的数据来源于：",
+  "askBtn": "问Ellie",
+  "btnThinkingText": "思考中...",
+  "replyText": "嗨，Ellie！\n\n您回复电子邮件的能力如何？\n\n谢谢！\n詹姆斯",
+  "training": "<0>这个Ellie的演示版是在<1>tryellie.com</1>和<2>help.tryellie.com</2>网站上训练的。</0>"
+}

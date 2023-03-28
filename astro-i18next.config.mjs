@@ -3,6 +3,7 @@ export default {
   locales: ["en", "fr", "es", "zh", "ru", "de"],
   namespaces: [
     "common",
+    "demo",
     "faq",
     "features",
     "testimonials",

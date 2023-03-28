@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Demo Ellie - Your AI Email Assistant",
+    "description": "Try Ellie out yourself with our simple demo. Ask Ellie any question about itself and it will respond!",
+    "ogImageAlt": "Ellie - Your AI Email Assistant, learns from your writing style and crafts replies as if they were written by you",
+    "ogTitle": "Ellie - Your AI Email Assistant"
+  },
+  "header": "<0>Get help from Ellie!</0>",
+  "lead": "<0>Ellie has been trained to help you with any questions about itself, just enter your question below as if you were sending us an email, and Ellie will reply!</0>",
+  "upgrade": "<0>You can train Ellie to learn about any topic with our <1>Pro plan</1>.</0>",
+  "outro": "<0>Note: Due to the nature of OpenAI and LLMs, even when trained on a dataset the replies wont always be 100% accurate - so it's still important to check Ellie's output for mistakes.</0>",
+  "source": "Data for this reply was sourced from:",
+  "askBtn": "Ask Ellie",
+  "btnThinkingText": "Thinking...",
+  "replyText": "Hey Ellie!\n\nHow good are you at replying to emails?\n\nThanks!\nJames",
+  "training": "<0>This demo version of Ellie has been trained on the <1>tryellie.com</1> and <2>help.tryellie.com</2> websites.</0>"
+}

@@ -1,0 +1,57 @@
+---
+import i18next, { changeLanguage, setDefaultNamespace, t } from "i18next";
+import Main from "../../layouts/Main.astro";
+import Demo from "../../components/Demo.svelte";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+
+changeLanguage("es");
+
+setDefaultNamespace("demo");
+const translations = {
+    source: t("source"),
+    askBtn: t("askBtn"),
+    btnThinkingText: t("btnThinkingText"),
+    replyText: t("replyText"),
+};
+---
+
+<Main title={t("meta.title")}>
+  <div class="page">
+    <div class="content">
+      <Trans i18nKey="header" ns="demo">
+        <h1>Get help from Ellie!</h1>
+      </Trans>
+      <Trans i18nKey="lead" ns="demo">
+        <p>
+          Ellie has been trained to help you with any questions about itself,
+          just enter your question below as if you were sending us an email, and
+          Ellie will reply!
+        </p>
+      </Trans>
+
+      <Demo client:only translations={translations} />
+
+      <Trans i18nKey="training" ns="demo">
+        <p>
+          This demo version of Ellie has been trained on the <a
+            href="https://tryellie.com">tryellie.com</a
+          > and <a href="https://help.tryellie.com">help.tryellie.com</a> websites.
+        </p>
+      </Trans>
+      <Trans i18nKey="upgrade" ns="demo">
+        <p>
+          You can train Ellie to learn about any topic with our <a
+            href="/pricing">Pro plan</a
+          >.
+        </p>
+      </Trans>
+      <Trans i18nKey="outro" ns="demo">
+        <p>
+          Note: Due to the nature of OpenAI and LLMs, even when trained on a
+          dataset the replies wont always be 100% accurate - so it's still
+          important to check Ellie's output for mistakes.
+        </p>
+      </Trans>
+    </div>
+  </div>
+</Main>

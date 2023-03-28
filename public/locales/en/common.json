@@ -21,9 +21,10 @@
     "installs": "4000+ installs on the Chrome Web Store and Firefox Add-ons"
   },
   "main": {
-    "cta": "Try for free",
+    "cta": "Install for free",
     "version": "v1.0.0 Available for Chrome and Firefox",
-    "purchase": "Purchase licence"
+    "purchase": "Purchase licence",
+    "demo": "Try a demo"
   },
   "external": {
     "phBadgeAlt": "Ellie - Your AI Email Assistant - 💌 GPT-3 powered assistant that can reply to your emails! | Product Hunt"
@@ -35,6 +36,7 @@
   "nav": {
     "pricing": "Pricing",
     "home": "Home",
+    "demo": "Demo",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "help": "Help",
