@@ -52,7 +52,8 @@
         isDone = done;
       } while (!isDone);
 
-      source = source.split(",");
+      source = source.split(",").filter(Boolean);
+      console.log(source);
       disabled = false;
     } catch (err) {
       console.error(err);
@@ -72,11 +73,13 @@
     {disabled}>{translations.askBtn}</Button
   >
   <pre class="output" id="demo-output">{output}</pre>
-  <p data-visible={isDone} class="source">
-    {translations.source}
-    {#each source as s, index}<a href={s}>{s}</a
-      >{#if index === source.length}.{:else},{/if}{/each}.
-  </p>
+  {#if source.length}
+    <p data-visible={isDone} class="source">
+      {translations.source}
+      {#each source as s, index}<a href={s}>{s}</a
+        >{#if index === source.length}.{:else},{/if}{/each}.
+    </p>
+  {/if}
 </div>
 
 <style>
