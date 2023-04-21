@@ -1,5 +1,3 @@
-
-
 {
   "one": {
     "title": "Liest Ellie meine E-Mails?",
@@ -18,8 +16,8 @@
     "title": "Welche E-Mail-Clients werden unterstützt?",
     "links": ["/help"],
     "content": [
-      "Bisher wird nur Gmail vollständig unterstützt, aber Sie können das Symbolleisten-Popup verwenden, um auf E-Mails in anderen Clients zu antworten. Wir werden bald vollständige Unterstützung für andere webbasierte Clients bereitstellen.",
-      "Besuchen Sie die <0>Hilfe</0>, um zu erfahren, wie Sie das Popup für Outlook, Fastmail, Apple Mail und mehr verwenden."
+      "Bisher werden Gmail und Fastmail vollständig unterstützt, aber Sie können die Symbolleisten-Popup verwenden, um Antworten auf E-Mails in anderen Clients zu generieren. Wir werden in Kürze eine vollständige Unterstützung für andere webbasierte Clients bereitstellen.",
+      "Besuchen Sie die <0>Hilfe</0>, um zu erfahren, wie Sie das Popup für Outlook, Apple Mail und mehr verwenden können."
     ]
   },
   "four": {

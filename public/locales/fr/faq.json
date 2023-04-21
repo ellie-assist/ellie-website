@@ -16,8 +16,8 @@
     "title": "Quel client de messagerie est pris en charge ?",
     "links": ["/help"],
     "content": [
-      "Pour l'instant, seul Gmail est entièrement pris en charge, mais vous pouvez utiliser le menu contextuel pour générer une réponse aux e-mails dans d'autres clients. Nous déploierons bientôt un support complet pour d'autres clients basés sur le Web.",
-      "Visitez l'<0>aide</0> pour apprendre à utiliser le menu contextuel pour Outlook, Fastmail, Apple Mail et plus encore."
+      "Jusqu'à présent, Gmail et Fastmail sont entièrement pris en charge, mais vous pouvez utiliser la fenêtre contextuelle de la barre d'outils pour générer une réponse aux e-mails dans d'autres clients. Nous déploierons bientôt une prise en charge complète pour d'autres clients basés sur le Web.",
+      "Visitez l'<0>aide</0> pour apprendre comment utiliser la fenêtre contextuelle pour Outlook, Apple Mail et plus encore."
     ]
   },
   "four": {

@@ -16,8 +16,8 @@
     "title": "What email clients are supported?",
     "links": ["/help"],
     "content": [
-      "So far only Gmail is fully supported but you can use the toolbar popup to generate a reply to emails in other clients. We'll roll out full support for other web-based clients soon.",
-      "Visit the <0>help</0> to learn how to use the popup for Outlook, Fastmail, Apple Mail and more."
+      "So far Gmail and Fastmail are fully supported, but you can use the toolbar popup to generate a reply to emails in other clients. We'll roll out full support for other web-based clients soon.",
+      "Visit the <0>help</0> to learn how to use the popup for Outlook, Apple Mail and more."
     ]
   },
   "four": {

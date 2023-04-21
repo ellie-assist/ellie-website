@@ -16,8 +16,8 @@
     "title": "¿Qué clientes de correo electrónico son compatibles?",
     "links": ["/help"],
     "content": [
-      "Hasta ahora solo Gmail está totalmente soportado, pero puede usar el cuadro de diálogo emergente de la barra de herramientas para generar una respuesta a los correos electrónicos en otros clientes. Pronto implementaremos un soporte completo para otros clientes basados en web.",
-      "Visite la <0>ayuda</0> para aprender cómo usar el cuadro de diálogo emergente para Outlook, Fastmail, Apple Mail y más."
+      "Hasta ahora, Gmail y Fastmail son totalmente compatibles, pero puede utilizar la ventana emergente de la barra de herramientas para generar una respuesta a los correos electrónicos en otros clientes. Pronto implementaremos soporte completo para otros clientes basados en la web.",
+      "Visite la <0>ayuda</0> para aprender cómo utilizar la ventana emergente para Outlook, Apple Mail y más."
     ]
   },
   "four": {
