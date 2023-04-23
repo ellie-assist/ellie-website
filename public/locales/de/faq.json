@@ -29,10 +29,13 @@
     ]
   },
   "five": {
-    "title": "Was sind Revisionen?",
+    "title": "Warum haben Sie das gemacht?",
     "content": [
-      "Sie können Ellie mitteilen, Abschnitte einer E-Mail durch Hervorhebung zu überarbeiten und auf 'Überarbeiten' zu klicken. Ellie wird versuchen, einen anderen Satz zu finden, der in diesem Raum passt.",
-      "Sie können jede E-Mail bis zu 5 Mal überarbeiten."
+      "Wir glauben, dass es in E-Mails ein Machtungleichgewicht gibt. Obwohl es eine der nützlichsten Erfindungen aller Zeiten ist, hat ein einzelner E-Mail-Benutzer keine Kontrolle darüber, wer ihm E-Mails schicken kann oder was er vor sich stellen muss, um seine Aufmerksamkeit kurz zu erregen.",
+      "Es gibt fast keine Strafe dafür, Massen-E-Mails an so viele Menschen wie möglich zu senden, von denen die meisten eine völlige Verschwendung von Zeit und Energie sind.",
+      "Zumindest indem wir Ellie verwenden, können wir ein kleines bisschen Macht zurückgewinnen, indem wir unsere Antworten auf diese automatisierten E-Mails automatisieren, sodass sie nicht mehr unsere Zeit monopolisieren können.",
+      "Andere verwenden Ellie auch, um die Antwortangst zu überwinden oder als Werkzeug, um bei Dyslexie oder Sprach- und Grammatikkenntnissen zu helfen.",
+      "Wenn Sie Ellie auf interessante Weise verwenden, lassen Sie es uns bitte wissen! Wir würden gerne davon hören!"
     ]
   },
   "six": {
