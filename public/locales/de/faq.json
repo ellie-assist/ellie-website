@@ -14,7 +14,7 @@
   },
   "three": {
     "title": "Welche E-Mail-Clients werden unterstützt?",
-    "links": ["/help"],
+    "links": ["https://help.tryellie.com"],
     "content": [
       "Bisher werden Gmail und Fastmail vollständig unterstützt, aber Sie können die Symbolleisten-Popup verwenden, um Antworten auf E-Mails in anderen Clients zu generieren. Wir werden in Kürze eine vollständige Unterstützung für andere webbasierte Clients bereitstellen.",
       "Besuchen Sie die <0>Hilfe</0>, um zu erfahren, wie Sie das Popup für Outlook, Apple Mail und mehr verwenden können."
@@ -36,13 +36,10 @@
     ]
   },
   "six": {
-    "title": "Warum haben Sie das gemacht?",
+    "title": "Wie funktioniert das Unterrichten von Ellie mit neuen Informationen?",
     "content": [
-      "Wir glauben, dass es in E-Mails ein Machtungleichgewicht gibt. Obwohl es eine der nützlichsten Erfindungen aller Zeiten ist, hat ein einzelner E-Mail-Benutzer keine Kontrolle darüber, wer ihm E-Mails schicken kann oder was er vor sich stellen muss, um seine Aufmerksamkeit kurz zu erregen.",
-      "Es gibt fast keine Strafe dafür, Massen-E-Mails an so viele Menschen wie möglich zu senden, von denen die meisten eine völlige Verschwendung von Zeit und Energie sind.",
-      "Zumindest indem wir Ellie verwenden, können wir ein kleines bisschen Macht zurückgewinnen, indem wir unsere Antworten auf diese automatisierten E-Mails automatisieren, sodass sie nicht mehr unsere Zeit monopolisieren können.",
-      "Andere verwenden Ellie auch, um die Antwortangst zu überwinden oder als Werkzeug, um bei Dyslexie oder Sprach- und Grammatikkenntnissen zu helfen.",
-      "Wenn Sie Ellie auf interessante Weise verwenden, lassen Sie es uns bitte wissen! Wir würden gerne davon hören!"
+      "Sie können Ellie Dokumente oder URLs zur Verfügung stellen. Ellie liest die Dokumente und durchsucht die URLs, um <0>Informationen zu lernen</0>.",
+      "Wenn Ellie der Meinung ist, dass einige der Informationen, die es gelernt hat, relevant für die E-Mail sind, auf die es derzeit antwortet, wird es diese Informationen intelligent in seine Antwort einbeziehen."
     ]
   },
   "seven": {

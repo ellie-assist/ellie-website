@@ -1,5 +1,3 @@
-
-
 {
   "context": {
     "title": "Ellie理解上下文",
@@ -16,5 +14,11 @@
   "iterate": {
     "title": "迭代Ellie的回复",
     "content": "您可以<0>修改Ellie的回复</0>，以精确调整您希望Ellie说的内容。"
+  },
+  "learning": {
+    "title": "教Ellie任何东西！",
+
+    "content": "Ellie可以<0>学习您提供的任何信息</0>，并在其回复中使用该信息。",
+    "caption": "我们向Ellie提供了一份包含我们2022年销售信息的pdf文件，这样它现在可以回答关于我们税务的电子邮件了。"
   }
 }

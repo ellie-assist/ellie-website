@@ -14,7 +14,7 @@
   },
   "three": {
     "title": "What email clients are supported?",
-    "links": ["/help"],
+    "links": ["https://help.tryellie.com"],
     "content": [
       "So far Gmail and Fastmail are fully supported, but you can use the toolbar popup to generate a reply to emails in other clients. We'll roll out full support for other web-based clients soon.",
       "Visit the <0>help</0> to learn how to use the popup for Outlook, Apple Mail and more."
@@ -29,13 +29,6 @@
     ]
   },
   "five": {
-    "title": "What are revisions?",
-    "content": [
-      "You can tell Ellie to revise sections of an email by highlighting it and clicking 'revise'. Ellie will try to come up with a different sentence that fits in that space.",
-      "You can revise each email up to 5 times."
-    ]
-  },
-  "six": {
     "title": " Why did you make this?",
     "content": [
       "We think that there is a power imbalance in email. Although its one of the most useful inventions of all time, as a single email user, you have no control over who can email you, or what they can put in front of you to briefly grab your attention.",
@@ -43,6 +36,13 @@
       "At least by using Ellie we can claw a small amount of power back, by automating our replies to these automated emails, so that they can no longer monopolise our time.",
       "Others are also using Ellie to overcome reply anxiety, or as a tool to help with dyslexia or language & grammar skills.",
       "If you're using Ellie in an interesting way, please let us know! We'd love to hear about it!"
+    ]
+  },
+  "six": {
+    "title": "How does teaching Ellie new information work?",
+    "content": [
+      "You can provide Ellie with documents or URLs. Ellie will read the documents and crawl the URLs to <0>learn</0> the information.",
+      "If Ellie thinks that some of the information that it has learned is relevant to the email it's currently replying to, then it will intelligently include that information in it's reply."
     ]
   },
   "seven": {

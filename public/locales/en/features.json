@@ -14,5 +14,10 @@
   "iterate": {
     "title": "Iterate on Ellie's replies",
     "content": "You can <0>revise Ellie's response</0> to something, to tweak exactly what you want Ellie to say. "
+  },
+  "learning": {
+    "title": "Teach Ellie anything!",
+    "content": "Ellie can <0>learn any information you provide</0>, and use that information in it's replies.",
+    "caption": "We provided Ellie with a pdf containing our 2022 sales information so that it can now answer emails about our taxes."
   }
 }

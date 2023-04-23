@@ -18,11 +18,11 @@
   },
   "proof": {
     "rating": "评分5颗星",
-    "installs": "Chrome网页商店和Firefox插件安装量超过2000。"
+    "installs": "Chrome网页商店和Firefox插件安装量超过7000。"
   },
   "main": {
     "cta": "免费试用",
-    "version": "v1.0.0 适用于Chrome和Firefox",
+    "version": "v1.3.1 适用于Chrome和Firefox",
     "purchase": "购买许可证"
   },
   "external": {

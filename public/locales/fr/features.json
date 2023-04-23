@@ -1,20 +1,23 @@
-
-
 {
   "context": {
-     "title": "Ellie comprend le contexte",
-     "content": "<0>Ellie tire le contexte de la conversation par email pour <1>créer des réponses intelligentes</1>.</0><2>Nous vous promettons que vous serez étonné par les réponses d'Ellie!</2>"
+    "title": "Ellie comprend le contexte",
+    "content": "<0>Ellie tire le contexte de la conversation par email pour <1>créer des réponses intelligentes</1>.</0><2>Nous vous promettons que vous serez étonné par les réponses d'Ellie!</2>"
   },
   "tailor": {
-     "title": "Personnalisez la réponse d'Ellie",
-     "content": "Vous pouvez fournir <0>plus de contexte</0> à Ellie pour obtenir la réponse parfaite pour chaque email. "
+    "title": "Personnalisez la réponse d'Ellie",
+    "content": "Vous pouvez fournir <0>plus de contexte</0> à Ellie pour obtenir la réponse parfaite pour chaque email. "
   },
   "multilingual": {
-     "title": "Ellie est multilingue",
-     "content": "Ellie répondra dans <0>n'importe quelle langue</0> pour correspondre à l'email à laquelle elle répond. "
+    "title": "Ellie est multilingue",
+    "content": "Ellie répondra dans <0>n'importe quelle langue</0> pour correspondre à l'email à laquelle elle répond. "
   },
   "iterate": {
-     "title": "Itérez sur les réponses d'Ellie",
-     "content": "Vous pouvez <0>réviser la réponse d'Ellie</0> à quelque chose, pour ajuster exactement ce que vous voulez que Ellie dise. "
+    "title": "Itérez sur les réponses d'Ellie",
+    "content": "Vous pouvez <0>réviser la réponse d'Ellie</0> à quelque chose, pour ajuster exactement ce que vous voulez que Ellie dise. "
+  },
+  "learning": {
+    "title": "Enseignez tout à Ellie!",
+    "content": "Ellie peut <0>apprendre toutes les informations que vous fournissez</0> et utiliser ces informations dans ses réponses.",
+    "caption": "Nous avons fourni à Ellie un PDF contenant nos informations de vente 2022 afin qu'elle puisse maintenant répondre aux courriels concernant nos impôts."
   }
 }

@@ -14,7 +14,7 @@
   },
   "three": {
     "title": "¿Qué clientes de correo electrónico son compatibles?",
-    "links": ["/help"],
+    "links": ["https://help.tryellie.com"],
     "content": [
       "Hasta ahora, Gmail y Fastmail son totalmente compatibles, pero puede utilizar la ventana emergente de la barra de herramientas para generar una respuesta a los correos electrónicos en otros clientes. Pronto implementaremos soporte completo para otros clientes basados en la web.",
       "Visite la <0>ayuda</0> para aprender cómo utilizar la ventana emergente para Outlook, Apple Mail y más."
@@ -36,13 +36,10 @@
     ]
   },
   "six": {
-    "title": "¿Por qué hiciste esto?",
+    "title": "¿Cómo funciona enseñarle nueva información a Ellie?",
     "content": [
-      "Creemos que hay un desequilibrio de poder en el correo electrónico. Aunque es una de las invenciones más útiles de todos los tiempos, como usuario de correo electrónico único, no tiene control sobre quién puede enviarle correos electrónicos ni sobre qué pueden poner delante de usted para captar brevemente su atención.",
-      "Casi no hay penalización por enviar correos electrónicos masivos a tantas personas como sea posible, la mayoría de los cuales son un completo desperdicio de tiempo y energía.",
-      "Al menos al usar Ellie podemos recuperar una pequeña cantidad de poder, al automatizar nuestras respuestas a estos correos electrónicos automatizados, para que ya no puedan monopolizar nuestro tiempo.",
-      "Otros también están usando Ellie para superar la ansiedad de responder, o como una herramienta para ayudar con la dislexia o las habilidades lingüísticas y gramaticales.",
-      "Si está usando Ellie de una manera interesante, ¡por favor háganoslo saber! ¡Nos encantaría saberlo!"
+      "Puede proporcionarle a Ellie documentos o URLs. Ellie leerá los documentos y rastreará las URLs para <0>aprender</0> la información.",
+      "Si Ellie cree que alguna de la información que ha aprendido es relevante para el correo electrónico al que está respondiendo actualmente, entonces la incluirá inteligentemente en su respuesta."
     ]
   },
   "seven": {

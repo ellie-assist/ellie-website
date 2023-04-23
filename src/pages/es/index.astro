@@ -165,14 +165,60 @@ setDefaultNamespace("common");
     </section>
 
     <section class="section image-section image-left">
-      <div class="image-container">
-        <img
-          src="/assets/language.png"
-          role="presentation"
-          alt="Showing Ellie write a context filled email"
-          class="example-image"
-        />
+      <figure>
+        <div class="image-container">
+          <img
+            src="/assets/training.png"
+            role="presentation"
+            alt="Showing Ellie learned information about our company taxes, and used that in it's reply"
+            class="example-image"
+          />
+        </div>
+        <figcaption>
+          <svg
+            style={{ position: "relative", top: "1px" }}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="10"
+            height="10"
+            fill="none"
+            stroke="currentcolor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="4"
+          >
+            <path d="M16 14 L16 23 M16 8 L16 10"></path>
+            <circle cx="16" cy="16" r="14"></circle>
+          </svg>
+          {t("features:learning.caption")}
+        </figcaption>
+      </figure>
+
+      <div class="section-text">
+        <h2>{t("features:learning.title")}</h2>
+        <p>
+          <Trans i18nKey="learning.content" ns="features">
+            Ellie can <strong>learn any information you provide</strong>, and
+            use that information in it's replies.
+          </Trans>
+        </p>
+        <div class="inline-review">
+          <Stars />
+          <blockquote>
+            <p class="review-text">
+              <Trans i18nKey="victor" ns="testimonials">
+                Ellie saves me so much time, it's now <span
+                  class="review-highlight">my favourite productivity tool!</span
+                >
+              </Trans>
+            </p>
+            <p class="review-author">- Victor M</p>
+          </blockquote>
+        </div>
       </div>
+    </section>
+
+    <section class="section image-section image-right">
       <div class="section-text">
         <h2>{t("features:multilingual.title")}</h2>
         <p>
@@ -196,9 +242,17 @@ setDefaultNamespace("common");
           </blockquote>
         </div>
       </div>
+      <div class="image-container">
+        <img
+          src="/assets/language.png"
+          role="presentation"
+          alt="Showing Ellie write a context filled email"
+          class="example-image"
+        />
+      </div>
     </section>
 
-    <section class="section image-section image-right">
+    <!-- <section class="section image-section image-left">
       <div class="section-text">
         <h2>{t("features:iterate.title")}</h2>
 
@@ -231,7 +285,7 @@ setDefaultNamespace("common");
         client:visible
         url="https://ellie.b-cdn.net/revisions.mov"
       />
-    </section>
+    </section> -->
 
     <section class="section image-section image-left">
       <Video

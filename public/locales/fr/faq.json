@@ -14,7 +14,7 @@
   },
   "three": {
     "title": "Quel client de messagerie est pris en charge ?",
-    "links": ["/help"],
+    "links": ["https://help.tryellie.com"],
     "content": [
       "Jusqu'à présent, Gmail et Fastmail sont entièrement pris en charge, mais vous pouvez utiliser la fenêtre contextuelle de la barre d'outils pour générer une réponse aux e-mails dans d'autres clients. Nous déploierons bientôt une prise en charge complète pour d'autres clients basés sur le Web.",
       "Visitez l'<0>aide</0> pour apprendre comment utiliser la fenêtre contextuelle pour Outlook, Apple Mail et plus encore."
@@ -36,13 +36,10 @@
     ]
   },
   "six": {
-    "title": "Pourquoi avez-vous fait cela ?",
+    "title": "Comment fonctionne l'enseignement de nouvelles informations à Ellie?",
     "content": [
-      "Nous pensons qu'il y a un déséquilibre de pouvoir dans les e-mails. Bien qu'il s'agisse de l'une des plus utiles inventions de tous les temps, en tant qu'utilisateur unique d'e-mail, vous n'avez aucun contrôle sur qui peut vous envoyer un e-mail ou ce qu'ils peuvent mettre devant vous pour attirer brièvement votre attention.",
-      "Il n'y a presque pas de pénalité pour envoyer des e-mails de masse à autant de personnes que possible, dont la plupart sont une perte complète de temps et d'énergie.",
-      "Au moins en utilisant Ellie, nous pouvons reprendre une petite partie du pouvoir, en automatisant nos réponses à ces e-mails automatisés, afin qu'ils ne puissent plus monopoliser notre temps.",
-      "D'autres utilisent également Ellie pour surmonter l'anxiété des réponses, ou comme outil pour aider les personnes dyslexiques ou ayant des difficultés en langue et en grammaire.",
-      "Si vous utilisez Ellie d'une manière intéressante, faites-le nous savoir ! Nous aimerions en entendre parler !"
+      "Vous pouvez fournir à Ellie des documents ou des URL. Ellie lira les documents et explorera les URL pour <0>apprendre</0> les informations.",
+      "Si Ellie pense que certaines des informations qu'elle a apprises sont pertinentes pour l'e-mail auquel elle répond actuellement, alors elle les inclura intelligemment dans sa réponse."
     ]
   },
   "seven": {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Sign up for Ellie - Your AI Email Assistant",
+    "title": "Ellie - Your AI Email Assistant. Sign up today for free!",
     "description": "Ellie learns from your writing style and crafts replies as if they were written by you. Powered by GPT-4.",
     "ogImageAlt": "Ellie - Your AI Email Assistant, learns from your writing style and crafts replies as if they were written by you",
     "ogTitle": "Ellie - Your AI Email Assistant"
@@ -18,11 +18,11 @@
   },
   "proof": {
     "rating": "Rated 4 out of 5",
-    "installs": "4000+ installs on the Chrome Web Store and Firefox Add-ons"
+    "installs": "7000+ installs on the Chrome Web Store and Firefox Add-ons"
   },
   "main": {
     "cta": "Install for free",
-    "version": "v1.0.0 Available for Chrome and Firefox",
+    "version": "v1.3.1 Available for Chrome and Firefox",
     "purchase": "Purchase licence",
     "demo": "Try a demo"
   },

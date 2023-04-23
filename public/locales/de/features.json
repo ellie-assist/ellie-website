@@ -1,5 +1,3 @@
-
-
 {
   "context": {
     "title": "Ellie versteht den Kontext",
@@ -16,5 +14,10 @@
   "iterate": {
     "title": "Iterieren Sie über Ellies Antworten",
     "content": "Sie können Ellies Antwort <0>überarbeiten</0>, um genau das zu erhalten, was Sie von Ellie hören möchten. "
+  },
+  "learning": {
+    "title": "Lehren Sie Ellie alles!",
+    "content": "Ellie kann <0>jede von Ihnen bereitgestellte Information lernen</0> und diese Informationen in ihren Antworten verwenden.",
+    "caption": "Wir haben Ellie eine PDF-Datei mit unseren Verkaufsinformationen für 2022 zur Verfügung gestellt, damit sie nun E-Mails zu unseren Steuern beantworten kann."
   }
 }
