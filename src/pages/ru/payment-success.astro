@@ -1,0 +1,79 @@
+---
+import { setDefaultNamespace, t, changeLanguage } from "i18next";
+import { Trans } from "astro-i18next/components";
+import Main from "../../layouts/Main.astro";
+import LicenceKey from "../../components/LicenceKey.svelte";
+
+changeLanguage("ru");
+
+setDefaultNamespace("success");
+---
+
+<style>
+  .download-btns {
+    padding: 2em 0 0 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+  }
+
+  .lead-text {
+    margin-top: 2em;
+  }
+  .getting-started {
+    margin-bottom: 2em;
+  }
+</style>
+
+<Main title="Privacy Policy - Ellie, Your AI Email Assistant">
+  <div class="page">
+    <div class="content">
+      <h2>{t("title")}</h2>
+      <p>{t("intro")}: <LicenceKey client:only /></p>
+      <p>
+        {t("licenceKeyEmail")}
+      </p>
+      <hr />
+      <Trans i18nKey="lead" ns="success">
+        <p class="lead-text">
+          Ellie is a <strong>browser extension</strong>, you can install Ellie
+          for Chrome or Firefox with the following buttons:
+        </p>
+      </Trans>
+      <div class="download-btns">
+        <a
+          href="https://chrome.google.com/webstore/detail/ellie-your-ai-email-assis/mhcnlcilgicfodlpjcacgglchmpoojcp"
+          class="btn download-btn"
+        >
+          <img
+            class="browser-img"
+            src="/assets/images/browsers/chrome_128x128.png"
+            alt=""
+            role="presentation"
+          />
+          <span>{t("chrome.get")}</span>
+        </a>
+
+        <a
+          href="https://addons.mozilla.org/en-US/firefox/addon/ellie-your-ai-email-assistant/"
+          class="btn download-btn"
+        >
+          <img
+            class="browser-img"
+            src="/assets/images/browsers/firefox_128x128.png"
+            alt=""
+            role="presentation"
+          />
+          <span>{t("firefox.get")}</span>
+        </a>
+      </div>
+      <Trans i18nKey="gettingStarted" ns="success">
+        <p class="getting-started">
+          Once Ellie is installed, you'll be shown the Ellie onboarding page
+          automatically. Simply click the <strong>🔑 Licence Key</strong> button
+          at the top right and enter your licence key!
+        </p>
+      </Trans>
+    </div>
+  </div>
+</Main>

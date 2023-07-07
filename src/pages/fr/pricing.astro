@@ -2,6 +2,7 @@
 import { setDefaultNamespace, t, changeLanguage } from "i18next";
 import Main from "../../layouts/Main.astro";
 import { Trans } from "astro-i18next/components";
+import Pricing from "../../components/pricing.svelte";
 
 changeLanguage("fr");
 
@@ -37,13 +38,7 @@ setDefaultNamespace("pricing");
     </section> -->
 
     <div id="submit-container" class="signup">
-      <div class="pricing-table">
-        <stripe-pricing-table
-          pricing-table-id="prctbl_1MFpmIKX00qb5MmaMrQuVWbq"
-          publishable-key="pk_live_51MErfjKX00qb5MmaXELY7r6Da90Lds6EOQTYSYD4BsUNeIVH1kwhlESrpa3yFLXOG8brqjzFg8zNRc3jjo0T5yFj00oM46qfct"
-        >
-        </stripe-pricing-table>
-      </div>
+      <Pricing client:only />
     </div>
   </div>
 </Main>

@@ -9,6 +9,7 @@ export default {
     "testimonials",
     "pricing",
     "downloads",
+    "success",
   ],
   defaultNamespace: "common",
 };

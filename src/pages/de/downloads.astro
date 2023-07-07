@@ -35,6 +35,8 @@ setDefaultNamespace("downloads");
     btn.removeAttribute("disabled");
     btn.innerText = "Submit";
 
+    await Reflio.signup(email);
+
     const json = await output.json();
     if (json.errored) {
       alert(json.message);

@@ -1,0 +1,15 @@
+{
+  "title": "¡Gracias por tu pago!",
+  "intro": "Tu clave de licencia es",
+  "chrome": {
+    "available": "Ellie está disponible en la Tienda de Chrome. ¡Sigue las instrucciones para agregarlo a Chrome!",
+    "get": "Obtén Ellie para Chrome"
+  },
+  "firefox": {
+    "available": "Ellie está disponible en la tienda de Firefox. ¡Sigue las instrucciones para agregarlo a Firefox!",
+    "get": "Obtén Ellie para Firefox"
+  },
+  "lead": "<0>Ellie es una <1>extensión para navegadores</1>, puedes instalar Ellie para Chrome o Firefox con los siguientes botones:</0>",
+  "gettingStarted": "<0>Una vez instalado Ellie, se mostrará automáticamente la página de inicio de Ellie. ¡Simplemente haz clic en el botón <1>🔑 Clave de licencia</1> en la parte superior derecha de la pantalla e ingresa tu clave de licencia!</0>",
+  "licenceKeyEmail": "Su clave también ha sido enviada por correo electrónico."
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Thanks for your payment!",
+  "intro": "Your licence key is",
+  "chrome": {
+    "available": "Ellie is available on the Chrome Store. Please follow the instructions to add to Chrome!",
+    "get": "Get Ellie for Chrome"
+  },
+  "firefox": {
+    "available": "Ellie is available in the Firefox store. Please follow the instructions to add to Firefox!",
+    "get": "Get Ellie for Firefox"
+  },
+  "lead": "<0>Ellie is a <1>browser extension</1>, you can install Ellie for Chrome or Firefox with the following buttons:</0>",
+  "gettingStarted": "<0>Once Ellie is installed, you'll be shown the Ellie onboarding page automatically. Simply click the <1>🔑 Licence Key</1> button at the top right of the screen and enter your licence key!</0>",
+  "licenceKeyEmail": "Your key has also been emailed to you."
+}
