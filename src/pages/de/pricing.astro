@@ -1,8 +1,7 @@
 ---
 import { setDefaultNamespace, t, changeLanguage } from "i18next";
 import Main from "../../layouts/Main.astro";
-import { Trans } from "astro-i18next/components";
-import Pricing from "../../components/pricing.svelte";
+import PricingComponent from "../../components/Pricing.svelte";
 
 changeLanguage("de");
 
@@ -38,7 +37,7 @@ setDefaultNamespace("pricing");
     </section> -->
 
     <div id="submit-container" class="signup">
-      <Pricing client:only />
+      <PricingComponent client:only />
     </div>
   </div>
 </Main>
