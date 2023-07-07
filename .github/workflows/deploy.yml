@@ -40,6 +40,9 @@ jobs:
           yarn --frozen-lockfile --production=false
 
       - name: 👷‍♀️ Build
+        env:
+          PUBLIC_STRIPE_PK: ${{ secrets.PUBLIC_STRIPE_PK }}
+          PUBLIC_STRIPE_PRICING_TABLE_ID: ${{ secrets.PUBLIC_STRIPE_PRICING_TABLE_ID }}
         run: |
           yarn build
 
