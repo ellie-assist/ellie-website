@@ -17,6 +17,12 @@ setDefaultNamespace("success");
     flex-direction: row;
   }
 
+  @media (max-width: 600px) {
+    .download-btns {
+      flex-direction: column;
+    }
+  }
+
   .lead-text {
     margin-top: 2em;
   }
@@ -25,7 +31,7 @@ setDefaultNamespace("success");
   }
 </style>
 
-<Main title="Privacy Policy - Ellie, Your AI Email Assistant">
+<Main title="Payment successful! Ellie, Your AI Email Assistant">
   <div class="page">
     <div class="content">
       <h2>{t("title")}</h2>
