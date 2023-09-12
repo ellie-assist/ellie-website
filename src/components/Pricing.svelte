@@ -1,5 +1,7 @@
 <script>
   let affiliate_id = "none";
+  let customerEmail = null;
+
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -13,6 +15,10 @@
     }
 
     console.log("Ref data", affiliate_id);
+    const p = new URLSearchParams(window.location.search);
+    if (p.has("e")) {
+      customerEmail = decodeURIComponent(p.get("e"));
+    }
   }
 </script>
 
@@ -21,5 +27,6 @@
     pricing-table-id={import.meta.env.PUBLIC_STRIPE_PRICING_TABLE_ID}
     publishable-key={import.meta.env.PUBLIC_STRIPE_PK}
     client-reference-id={affiliate_id}
+    customer-email={customerEmail}
   />
 </div>
