@@ -84,6 +84,10 @@
     color: var(--text-color);
   }
 
+  .muted:visited {
+    color: var(--text-color);
+  }
+
   .muted:hover,
   .muted:focus,
   .muted:active {

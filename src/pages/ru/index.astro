@@ -16,7 +16,8 @@ import DemoBanner from "../../components/DemoBanner.svelte";
 changeLanguage("ru");
 
 setDefaultNamespace("common");
-const p = i18next.getResource(i18next.language, "pricing", "prices", {});
+const locale = i18next.language || "en";
+const p = i18next.getResource(i18next.language, "pricing", "", {});
 ---
 
 <Main title={t("meta.title")}>
@@ -156,7 +157,7 @@ const p = i18next.getResource(i18next.language, "pricing", "prices", {});
       </div>
     </section>
 
-    <DemoBanner />
+    {locale === "en" ? <DemoBanner /> : null}
 
     <section class="section image-section image-left">
       <figure>
@@ -296,8 +297,10 @@ const p = i18next.getResource(i18next.language, "pricing", "prices", {});
 
     <hr />
     <HeaderText>Pricing</HeaderText>
-    <NewPricingComponent translations={p} client:only />
-    <DownloadComponent />
+    <NewPricingComponent translations={p} locale={locale} client:only />
+
+    {locale === "en" ? <DownloadComponent /> : null}
+
     <br /><br /><br /><br /><br /><br />
     <HeaderText>FAQ</HeaderText>
     <FAQ />

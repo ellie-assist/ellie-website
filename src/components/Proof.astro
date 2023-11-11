@@ -1,15 +1,16 @@
 ---
 import { Trans } from "astro-i18next/components";
-import { t, setDefaultNamespace } from "i18next";
+import i18next, { t, setDefaultNamespace } from "i18next";
 import Stats from "./Stats.svelte";
 import Stars from "./Stars.svelte";
 
 setDefaultNamespace("common");
+const locale = i18next.language || "en";
 ---
 
 <section class="proof-section">
   <div class="proof-stars">
-    <Stats client:only />
+    {locale === "en" ? <Stats client:only /> : null}
 
     <!-- <Stars large />
     <p class="proof-rating">{t("proof.rating")}</p> -->

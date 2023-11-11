@@ -8,7 +8,7 @@
   // debugger;
   export let translations;
   export let locale;
-  console.log("tranlations", translations);
+
   const stripeParams = new URLSearchParams({
     prefilled_promo_code: "BLACKFRIDAY40",
     locale,
@@ -43,7 +43,6 @@
   }
 
   function translate(key) {
-    debugger;
     return key.split(".").reduce((out, k) => {
       return out[k] ?? "";
     }, translations);
