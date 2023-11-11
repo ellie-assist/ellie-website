@@ -1,9 +1,115 @@
-
-
 {
   "meta": {
-    "title": "Preise - Ellie - Ihr AI E-Mail-Assistent"
+    "title": "Preisgestaltung - Ellie - Ihr KI-E-Mail-Assistent"
   },
-  "title": "Einfache und erschwingliche Preise",
-  "promo": "Stellen Sie sicher, dass Sie den Gutscheincode beim Checkout eingeben, um Ihren Rabatt zu erhalten!"
+  "header": "Preisgestaltung",
+  "title": "Perfekte E-Mail-Antworten in <0>100x weniger Zeit</0>. Sparen Sie jeden Tag Stunden an Aufwand mit Ellie!",
+  "lead": "Alle Tarife ermöglichen den Zugang zu unseren Chrome- und Firefox-Erweiterungen. Ellie wird in jeder Sprache antworten und Ihren Tonfall nachahmen.",
+  "promo": "🎉 Froher früher Black Friday! Genießen Sie 40% Rabatt!",
+  "type": {
+    "personal": "Zur persönlichen Nutzung",
+    "business": "Für Teams"
+  },
+  "actions": {
+    "free": "Kostenlos ausprobieren",
+    "casual": "Jetzt kaufen",
+    "teams": "Ihr Team erstellen"
+  },
+  "monthly": "monatlich",
+  "teamsMonthly": "monatlich pro Sitzplatz",
+  "activate": "Nach der Zahlung erhalten Sie einen Lizenzschlüssel, der zur Aktivierung der Browsererweiterung verwendet wird.",
+  "proof": {
+    "lead": "Tausende von Menschen nutzen Ellie, um ihre E-Mail-Antworten zu verfassen. Beginnen Sie noch heute damit, Zeit beim Schreiben von E-Mails zu sparen!",
+    "social": "Ellie weiß genau, was ich sagen will, und genau den richtigen Weg, es zu sagen."
+  },
+  "prices": {
+    "free": {
+      "lead": "Probieren Sie Ellie mit Basisfunktionen aus",
+      "features": {
+        "replies": {
+          "label": "<0>2 Antworten</0> pro Tag",
+          "description": "Ellie wird für Sie diese Anzahl von E-Mails pro Tag kostenlos schreiben"
+        },
+        "ai": {
+          "label": "Basis KI-Modell <0>(GPT-3-turbo)</0>",
+          "description": "So intelligent wird Ellie beim Verfassen Ihrer Antworten sein. Das Basis-Modell wird perfekt für einfache E-Mails sein, aber komplexere Gedankengänge erfordern unsere intelligenteren Modelle."
+        }
+      }
+    },
+    "casual": {
+      "lead": "Für Personen, die mit E-Mails überwältigt sind und Hilfe benötigen",
+      "features": {
+        "replies": {
+          "label": "<0>10 Antworten</0> pro Tag",
+          "description": "Ellie wird für Sie diese Anzahl von E-Mails pro Tag schreiben"
+        },
+        "ai": {
+          "label": "Intelligentes KI-Modell <0>(GPT-4)</0>",
+          "description": "So intelligent wird Ellie beim Verfassen Ihrer Antworten sein. Unser intelligentes Modell funktioniert gut mit komplexeren E-Mails."
+        },
+        "training": {
+          "label": "Fortgeschrittenes KI-Training",
+          "description": "Mit unserem fortgeschrittenen Trainingsmechanismus können Sie Ellie Informationen über alles beibringen. Ellie wird diese Informationen verwenden, wenn sie beim Verfassen einer Antwort relevant sind."
+        }
+      }
+    },
+    "business": {
+      "lead": "Für kleine Teams, die ihren Posteingang leben und viele E-Mails pro Tag senden.",
+      "features": {
+        "replies": {
+          "label": "<0>100 Antworten</0> pro Tag und Sitzplatz",
+          "description": "Ellie wird für jedes Ihrer Teammitglieder diese Anzahl von E-Mails pro Tag schreiben"
+        },
+        "ai": {
+          "label": "Intelligentes KI-Modell <0>(GPT-4)</0>",
+          "description": "So intelligent wird Ellie beim Verfassen Ihrer Antworten sein. Unser intelligentes Modell funktioniert gut mit komplexeren E-Mails."
+        },
+        "training": {
+          "label": "Fortgeschrittenes KI-Training",
+          "description": "Mit unserem fortgeschrittenen Trainingsmechanismus können Sie Ellie Informationen über alles beibringen. Ellie wird diese Informationen verwenden, wenn sie beim Verfassen einer Antwort relevant sind."
+        },
+        "roles": {
+          "label": "Rollen",
+          "description": "Ellie kann basierend auf der Art der E-Mail, auf die Sie antworten, verschiedene Rollen zugewiesen bekommen. Zum Beispiel geben Sie Ellie Zugang zu Ihrer Supportdokumentation und weisen Sie dies einer Kundenbetreuungsrolle zu."
+        },
+        "teams": {
+          "label": "Team-Sharing",
+          "description": "Ihre fortgeschrittenen Trainingsmaterialien und Rollen werden unter Ihrem gesamten Team geteilt."
+        },
+        "support": {
+          "label": "E-Mail-Support",
+          "description": "Unsere Kundensupport-Spezialisten werden Ihnen gerne per E-Mail innerhalb von 2 Werktagen (normalerweise schneller) helfen."
+        }
+      }
+    },
+    "pro": {
+      "lead": "Für große Teams und Unternehmen, die hunderte von E-Mails pro Tag senden.",
+      "features": {
+        "replies": {
+          "label": "<0>Unbegrenzte Antworten</0> pro Tag",
+          "description": "Ellie wird so viele E-Mails schreiben, wie Sie benötigen!"
+        },
+        "ai": {
+          "label": "Angepasstes KI-Modell <0>(feinabgestimmtes GPT-4)</0>",
+          "description": "Geben Sie uns Ihr E-Mail-Archiv und wir werden ein speziell für Sie zugeschnittenes KI-Modell feinabstimmen!"
+        },
+        "training": {
+          "label": "Fortgeschrittenes KI-Training",
+          "description": "Mit unserem fortgeschrittenen Trainingsmechanismus können Sie Ellie Informationen über alles beibringen. Ellie wird diese Informationen verwenden, wenn sie beim Verfassen einer Antwort relevant sind."
+        },
+        "roles": {
+          "label": "Rollen",
+          "description": "Ellie kann basierend auf der Art der E-Mail, auf die Sie antworten, verschiedene Rollen zugewiesen bekommen. Zum Beispiel geben Sie Ellie Zugang zu Ihrer Supportdokumentation und weisen Sie dies einer Kundenbetreuungsrolle zu."
+        },
+        "teams": {
+          "label": "Team-Sharing",
+          "description": "Ihr KI-Modell, die fortgeschrittenen Trainingsmaterialien und Rollen werden unter Ihrem gesamten Team geteilt."
+        },
+        "support": {
+          "label": "E-Mail-Support",
+          "description": "Unsere Kundensupport-Spezialisten werden Ihnen gerne per E-Mail innerhalb von 1 Werktag (normalerweise schneller) helfen und stehen telefonisch zur Verfügung, um Sie bei der Einrichtung von Ellie zu unterstützen."
+        }
+      }
+    }
+  }
 }

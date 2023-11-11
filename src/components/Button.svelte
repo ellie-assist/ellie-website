@@ -1,21 +1,41 @@
 <script>
+  export let muted;
   export let isLoading;
   export let onClick = () => {};
   export let loadingText = "Loading...";
+  export let href;
+
+  let classes = ["btn"];
+  if (muted) {
+    classes = [...classes, "muted"];
+  }
+  classes = [...classes, ...($$restProps.class ?? [])];
 </script>
 
-<button
-  class="btn"
-  on:click={onClick}
-  data-loading={isLoading}
-  {...$$restProps}
->
-  {#if isLoading}
-    <span>{loadingText}</span>
-  {:else}
+{#if href}
+  <a
+    class={classes.join(" ")}
+    {href}
+    on:click={onClick}
+    data-loading={isLoading}
+    {...$$restProps}
+  >
     <slot />
-  {/if}
-</button>
+  </a>
+{:else}
+  <button
+    class={classes.join(" ")}
+    on:click={onClick}
+    data-loading={isLoading}
+    {...$$restProps}
+  >
+    {#if isLoading}
+      <span>{loadingText}</span>
+    {:else}
+      <slot />
+    {/if}
+  </button>
+{/if}
 
 <style>
   .btn {
@@ -23,7 +43,7 @@
       "Open Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    width: 240px;
+    width: auto;
     background-color: var(--btn-color);
     color: white;
     height: 40px;
@@ -34,14 +54,14 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     user-select: none;
     outline: none;
     text-decoration: none;
     border: 1px solid var(--btn-color-border);
-    padding: 0;
+    padding: 0 15px;
     transition: background-color 200ms ease-in-out, outline 200ms ease-in-out;
   }
 
@@ -57,5 +77,17 @@
 
   .btn:disabled {
     opacity: 0.5;
+  }
+
+  .muted {
+    background-color: white;
+    color: var(--text-color);
+  }
+
+  .muted:hover,
+  .muted:focus,
+  .muted:active {
+    background-color: white;
+    outline: none;
   }
 </style>

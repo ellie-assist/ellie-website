@@ -6,38 +6,34 @@ import questions from "../../public/locales/en/faq.json";
 setDefaultNamespace("faq");
 ---
 
-<section class="faq section">
-  <div class="content">
-    <h2>FAQ</h2>
-    <ul>
-      {
-        Object.entries(questions).map(([num, question]) => (
-          <li>
-            <div class="question">
-              <strong>{t(`faq:${num}.title`)}</strong>
-            </div>
-            {question.content.map((content, i) => (
-              <p>
-                <Trans i18nKey={`${num}.content.${i}`} ns="faq">
-                  {question.links ? (
-                    question.links.map((l) => <a href={l}>a</a>)
-                  ) : (
-                    <span />
-                  )}
-                </Trans>
-              </p>
-            ))}
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+<section class="faq">
+  <ul>
+    {
+      Object.entries(questions).map(([num, question]) => (
+        <li>
+          <div class="question">
+            <strong>{t(`faq:${num}.title`)}</strong>
+          </div>
+          {question.content.map((content, i) => (
+            <p>
+              <Trans i18nKey={`${num}.content.${i}`} ns="faq">
+                {question.links ? (
+                  question.links.map((l) => <a href={l}>a</a>)
+                ) : (
+                  <span />
+                )}
+              </Trans>
+            </p>
+          ))}
+        </li>
+      ))
+    }
+  </ul>
 </section>
 
 <style>
   .faq {
-    padding: 50px 0;
-    border-top: 1px solid #d5d5d5;
+    padding: 20px 0;
   }
 
   .faq p {
@@ -49,9 +45,27 @@ setDefaultNamespace("faq");
   }
 
   .faq ul {
+    display: flex;
+    margin: 0;
     padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
   }
+
+  .faq li {
+    width: 40%;
+    padding: 20px 15px;
+  }
+
+  @media (max-width: 560px) {
+    .faq li {
+      width: 90%;
+      padding: 5px 15px;
+    }
+  }
+
   .faq h4 {
     font-weight: 500;
   }

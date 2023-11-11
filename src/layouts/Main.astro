@@ -110,7 +110,9 @@ changeLanguage(i18next.language);
         --purple-light: #dbc7ff;
         --purple-lighter: #eadfff;
         --btn-color: #a06dfd;
-        --btn-color-border: #404040;
+        --btn-color-border: #5e4c984d;
+        /* --btn-color-border: #404040; */
+
         --btn-color-hover: #9257ff;
         --btn-secondary-color-hover: #9257ff20;
 
@@ -439,27 +441,6 @@ changeLanguage(i18next.language);
         padding-top: 10px;
       }
 
-      .faq {
-        padding: 50px 0;
-        border-top: 1px solid #d5d5d5;
-      }
-
-      .faq p {
-        margin-top: 0.5em;
-      }
-
-      .question {
-        margin-top: 1.5em;
-      }
-
-      .faq ul {
-        padding: 0;
-        list-style: none;
-      }
-      .faq h4 {
-        font-weight: 500;
-      }
-
       .manage {
         padding: 2em 0;
       }
@@ -473,6 +454,41 @@ changeLanguage(i18next.language);
         padding: 50px 15px;
       }
 
+      .section-full {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 15px;
+      }
+
+      .section-text-full {
+        text-align: center;
+      }
+
+      .section-text-full h2 {
+        font-size: 28px;
+      }
+
+      .context-image {
+        display: block;
+        width: 90%;
+        max-width: 1100px;
+        margin: 3em auto 0 auto;
+        text-align: center;
+      }
+
+      .context-image img {
+      }
+
+      @media (max-width: 850px) {
+        .context-image img {
+          width: 100%;
+          max-width: 640px;
+        }
+      }
+
       .section .email-container {
         border-bottom: 1px solid var(--border-color);
       }
@@ -481,9 +497,6 @@ changeLanguage(i18next.language);
         margin-right: -3px;
       }
 
-      .price-title {
-        text-align: center;
-      }
       .price-banner {
         background: var(--purple-lighter);
         border: 1px solid var(--border-color);
@@ -521,12 +534,6 @@ changeLanguage(i18next.language);
         margin: 0 auto 50px auto;
       }
 
-      .price-title {
-        font-size: 20px;
-        font-weight: 500;
-        margin: 0 0 10px 0;
-      }
-
       .price-price {
         font-size: 20px;
         font-weight: 500;
@@ -555,6 +562,22 @@ changeLanguage(i18next.language);
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
         padding: 2px 1px;
         line-height: 20px;
+      }
+
+      .discount {
+        margin: 1.5em auto 0 auto;
+        text-align: center;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 10px;
+        background-color: rgb(242, 236, 255);
+        font-weight: bold;
+        border: 1px solid #5e4c984d;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .discount p {
+        margin: 0;
       }
 
       .review-highlight:before {
@@ -629,7 +652,7 @@ changeLanguage(i18next.language);
 
       .download-section {
         width: 100%;
-        padding: 45px 0;
+        padding: 2em 0;
       }
       .banner-section {
         max-width: 600px;
@@ -640,7 +663,7 @@ changeLanguage(i18next.language);
         display: flex;
         flex-direction: row;
         box-shadow: 1px 1px 3px #0f183260;
-        border: 0;
+        /* border: 0; */
         outline: 1px solid var(--btn-color);
       }
 
@@ -894,6 +917,14 @@ changeLanguage(i18next.language);
       }
       .demo-banner .banner-container .btn {
         margin: 0 auto;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        width: 100%;
+        background-color: var(--purple-lighter);
+        margin: 2em 0 4em 0;
       }
     </style>
   </body>

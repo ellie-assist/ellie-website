@@ -1,13 +1,14 @@
 {
   "meta": {
-    "title": "注册Ellie - 您的AI电子邮件助手",
-    "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的。 由GPT-4驱动。",
-    "ogImageAlt": "Ellie - 您的AI电子邮件助手，从您的写作风格中学习，并制作回复，就好像它们是由您编写的",
+    "title": "Ellie - 您的AI电子邮件助手。立即免费注册！",
+    "description": "Ellie - 您的AI电子邮件助手，从您的写作风格中学习，回复电子邮件，仿佛它们是您写的。",
+    "ogImageAlt": "Ellie - 您的AI电子邮件助手，从您的写作风格中学习，并创建电子邮件回复，仿佛它们是您写的。",
     "ogTitle": "Ellie - 您的AI电子邮件助手"
   },
   "hero": {
-    "title": "认识Ellie，您的AI电子邮件助手",
-    "description": "Ellie从您的写作风格中学习，并制作回复，就好像它们是由您编写的。 由GPT-4驱动。"
+    "title": "专业、定制的电子邮件，用您的风格写作。 <0> 每天在您的收件箱节省数小时 </0>",
+    "discount": "🎉在黑色星期五享受所有计划的40％优惠！",
+    "description": "Ellie，您的AI电子邮件助手，从您的写作风格中学习，并创建电子邮件回复，仿佛它们是您写的！"
   },
   "stats": {
     "join": "加入",
@@ -18,12 +19,13 @@
   },
   "proof": {
     "rating": "评分5颗星",
-    "installs": "Chrome网页商店和Firefox插件安装量超过7000。"
+    "installs": "Chrome网页商店和Firefox插件安装量超过9000。"
   },
   "main": {
     "cta": "免费试用",
-    "version": "v1.6.3 适用于Chrome和Firefox",
-    "purchase": "购买许可证"
+    "version": "适用于Chrome和Firefox",
+    "purchase": "购买许可证",
+    "demo": "尝试演示"
   },
   "external": {
     "phBadgeAlt": "Ellie - 您的AI电子邮件助手 - 💌 GPT-3驱动的助手可以回复您的电子邮件！ | Product Hunt"

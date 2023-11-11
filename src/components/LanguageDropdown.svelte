@@ -1,5 +1,6 @@
 <script>
   import { language } from "astro-i18next";
+  console.log("The selected language", language);
   const languages = [
     {
       value: "en",
@@ -23,6 +24,7 @@
   ];
 
   let currentLang = languages.find((l) => l.value === language).label;
+  debugger;
   let isShown = false;
 
   function toggle() {

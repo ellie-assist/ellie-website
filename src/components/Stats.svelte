@@ -1,18 +1,18 @@
 <script>
-  import numeral from 'numeral';
+  import numeral from "numeral";
   export let shown;
 
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
     : "https://api.tryellie.com";
-
-  let opacity = 0;
+  // const apiUrl = "https://api.tryellie.com";
+  let opacity = 1;
   let totalUsers = 0;
   let repliesGenerated = 0;
 
-  function formatStat(n)  {
-    if (!n) return '0';
-    return numeral(n).format('0,0');
+  function formatStat(n) {
+    if (!n) return "0";
+    return numeral(n).format("0,0");
   }
 
   async function getStats() {
@@ -30,9 +30,21 @@
 
 <div id="stats" class="stats" style:opacity>
   <p>
-    Join
-    <strong id="total-users">{totalUsers}</strong> people, who have used Ellie to
-    write over
-    <strong id="replies-generated">{repliesGenerated}</strong> email replies!
+    <span class="proof-emails">{repliesGenerated}</span> professional emails
+    already generated for<br />
+    <span class="proof-emails">{totalUsers}</span>
+    happy customers!
   </p>
 </div>
+
+<style>
+  .stats p {
+    font-size: 2.25em;
+    line-height: 38px !important;
+  }
+  .proof-emails {
+    /* font-size: 2.5em; */
+    font-weight: bold;
+    color: var(--btn-color);
+  }
+</style>

@@ -7,14 +7,18 @@
   },
   "two": {
     "title": "What browsers are supported?",
-    "links": ["/downloads"],
+    "links": [
+      "/downloads"
+    ],
     "content": [
       "Ellie is available as a Chrome or Firefox Extension. Visit the <0>downloads</0> page for more information."
     ]
   },
   "three": {
     "title": "What email clients are supported?",
-    "links": ["https://help.tryellie.com"],
+    "links": [
+      "https://help.tryellie.com"
+    ],
     "content": [
       "So far Gmail and Fastmail are fully supported, but you can use the toolbar popup to generate a reply to emails in other clients. We'll roll out full support for other web-based clients soon.",
       "Visit the <0>help</0> to learn how to use the popup for Outlook, Apple Mail and more."
@@ -22,9 +26,11 @@
   },
   "four": {
     "title": "Why is there a limit on the number of replies?",
-    "links": ["/pricing"],
+    "links": [
+      "/pricing"
+    ],
     "content": [
-      "Sorry! Training AI and generating content costs a fair amount of money. We're a small team without funding so we have to charge for our work!",
+      "Sorry! Training AI and generating content costs a fair amount of money. We're a small team without external funding so we have to charge for our work!",
       "You can sign up for one of our <0>paid plans</0> to get more replies!"
     ]
   },
@@ -65,7 +71,9 @@
   },
   "nine": {
     "title": "Can we write a story about Ellie?",
-    "links": ["mailto:hi@tryellie.com"],
+    "links": [
+      "mailto:hi@tryellie.com"
+    ],
     "content": [
       "If you're a member of the press and want to chat, <0>send us an email!</0>"
     ]

@@ -1,7 +1,115 @@
 {
   "meta": {
-    "title": "Precios - Ellie - Su asistente de correo electrónico AI"
+    "title": "Precios - Ellie - Tu Asistente de Email con IA"
   },
-  "title": "Precios simples y asequibles",
-  "promo": "¡Asegúrate de aplicar el código de promoción en la caja para obtener tu descuento!"
+  "header": "Precios",
+  "title": "Respuestas perfectas de correo electrónico en <0>100 veces menos tiempo</0>. ¡Ahorre horas de esfuerzo cada día con Ellie!",
+  "lead": "Todos los planes permiten acceso a nuestras extensiones de Chrome y Firefox. Ellie responderá en cualquier idioma e imitará tu tono.",
+  "promo": "🎉 ¡Feliz Viernes Negro adelantado! ¡Disfruta de un 40% de descuento!",
+  "type": {
+    "personal": "Uso personal",
+    "business": "Para equipos"
+  },
+  "actions": {
+    "free": "Probar de forma gratuita",
+    "casual": "Comprar ahora",
+    "teams": "Crear tu equipo"
+  },
+  "monthly": "mensual",
+  "teamsMonthly": "mensual por asiento",
+  "activate": "Después del pago recibirás una clave de licencia que se usa para activar la extensión del navegador.",
+  "proof": {
+    "lead": "Miles de personas están usando Ellie para redactar sus respuestas de correo electrónico. ¡Empieza a ahorrar tiempo escribiendo correos electrónicos hoy mismo!",
+    "social": "Ellie sabe exactamente lo que quiero decir y la forma exacta de decirlo."
+  },
+  "prices": {
+    "free": {
+      "lead": "Prueba Ellie con las funciones básicas",
+      "features": {
+        "replies": {
+          "label": "<0>2 respuestas</0> al día",
+          "description": "Ellie escribirá esta cantidad de correos electrónicos para ti al día de forma gratuita"
+        },
+        "ai": {
+          "label": "Modelo de IA básico <0>(GPT-3-turbo)</0>",
+          "description": "Así de inteligente será Ellie al redactar tus respuestas. El modelo básico será perfecto para correos electrónicos simples, pero para razonamientos más complejos se requerirán nuestros modelos más inteligentes."
+        }
+      }
+    },
+    "casual": {
+      "lead": "Para personas que están abrumadas con correos electrónicos y necesitan ayuda",
+      "features": {
+        "replies": {
+          "label": "<0>10 respuestas</0> al día",
+          "description": "Ellie escribirá esta cantidad de correos electrónicos para ti al día"
+        },
+        "ai": {
+          "label": "Modelo de IA inteligente <0>(GPT-4)</0>",
+          "description": "Así de inteligente será Ellie al redactar tus respuestas. Nuestro modelo inteligente funcionará muy bien con correos electrónicos más complejos."
+        },
+        "training": {
+          "label": "Entrenamiento Avanzado de IA",
+          "description": "Usando nuestro mecanismo de Entrenamiento Avanzado, puedes enseñarle a Ellie información sobre cualquier cosa. Ellie usará esta información si es relevante al redactar una respuesta."
+        }
+      }
+    },
+    "business": {
+      "lead": "Para pequeños equipos que viven en sus bandejas de entrada enviando muchos correos electrónicos al día.",
+      "features": {
+        "replies": {
+          "label": "<0>100 respuestas</0> al día por asiento",
+          "description": "Ellie escribirá esta cantidad de correos electrónicos para cada miembro de tu equipo al día"
+        },
+        "ai": {
+          "label": "Modelo de IA inteligente <0>(GPT-4)</0>",
+          "description": "Así de inteligente será Ellie al redactar tus respuestas. Nuestro modelo inteligente funcionará muy bien con correos electrónicos más complejos."
+        },
+        "training": {
+          "label": "Entrenamiento Avanzado de IA",
+          "description": "Usando nuestro mecanismo de Entrenamiento Avanzado, puedes enseñarle a Ellie información sobre cualquier cosa. Ellie usará esta información si es relevante al redactar una respuesta."
+        },
+        "roles": {
+          "label": "Roles",
+          "description": "Se le pueden asignar diferentes roles a Ellie basado en el tipo de correo electrónico al que estás respondiendo. Por ejemplo, darle a Ellie acceso a tu documentación de soporte y asignarle un rol de Soporte al Cliente."
+        },
+        "teams": {
+          "label": "Compartición en equipo",
+          "description": "Tu material de Entrenamiento Avanzado y los roles serán compartidos entre todo tu equipo."
+        },
+        "support": {
+          "label": "Soporte por correo electrónico",
+          "description": "Nuestros especialistas de soporte al cliente estarán encantados de asistirte vía correo electrónico dentro de 2 días laborales (usualmente más rápido)."
+        }
+      }
+    },
+    "pro": {
+      "lead": "Para grandes equipos y empresas enviando cientos de correos electrónicos al día.",
+      "features": {
+        "replies": {
+          "label": "<0>Respuestas ilimitadas</0> al día",
+          "description": "Ellie escribirá tantos correos electrónicos como necesites."
+        },
+        "ai": {
+          "label": "Modelo de IA personalizado <0>(GPT-4 afinado)</0>",
+          "description": "Proporciónanos tu archivo de correos electrónicos y ajustaremos un modelo de IA a medida específicamente para ti."
+        },
+        "training": {
+          "label": "Entrenamiento Avanzado de IA",
+          "description": "Usando nuestro mecanismo de Entrenamiento Avanzado, puedes enseñarle a Ellie información sobre cualquier cosa. Ellie usará esta información si es relevante al redactar una respuesta."
+        },
+        "roles": {
+          "label": "Roles",
+          "description": "Se le pueden asignar diferentes roles a Ellie basado en el tipo de correo electrónico al que estás respondiendo. Por ejemplo, darle a Ellie acceso a tu documentación de soporte y asignarle un rol de Soporte al Cliente."
+        },
+        "teams": {
+          "label": "Compartición en equipo",
+          "description": "Tu modelo de IA, material de Entrenamiento Avanzado, y los roles serán compartidos entre todo tu equipo."
+        },
+        "support": {
+          "label": "Soporte por correo electrónico",
+          "description": "Nuestros especialistas de soporte al cliente estarán encantados de asistirte vía correo electrónico dentro de 1 día laboral (usualmente más rápido), y estarán disponibles vía teléfono para ayudarte a configurar Ellie."
+        }
+      }
+    }
+  }
 }

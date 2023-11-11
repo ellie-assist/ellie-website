@@ -1,9 +1,115 @@
-
-
 {
   "meta": {
-    "title": "Tarification - Ellie - Votre assistant de messagerie IA"
+    "title": "Tarifs - Ellie - Votre assistante e-mail IA"
   },
-  "title": "Tarification simple et abordable",
-  "promo": "Assurez-vous d'appliquer le code promotionnel lors du paiement pour obtenir votre remise!"
+  "header": "Tarification",
+  "title": "Des réponses e-mails parfaites en <0>100 fois moins de temps</0>. Économisez des heures d'effort chaque jour avec Ellie !",
+  "lead": "Tous les plans donnent accès à nos extensions Chrome et Firefox. Ellie répondra dans n'importe quelle langue et imitera votre ton.",
+  "promo": "🎉 Joyeux Black Friday en avance ! Profitez de 40% de réduction !",
+  "type": {
+    "personal": "Utilisation personnelle",
+    "business": "Pour les équipes"
+  },
+  "monthly": "mensuel",
+  "teamsMonthly": "mensuel par siège",
+  "actions": {
+    "free": "Essayez gratuitement",
+    "casual": "Achetez maintenant",
+    "teams": "Créez votre équipe"
+  },
+  "activate": "Après le paiement, vous recevrez une clé de licence qui est utilisée pour activer l'extension de navigateur.",
+  "proof": {
+    "lead": "Des milliers de personnes utilisent Ellie pour rédiger leurs réponses par courriel. Commencez à gagner du temps lors de la rédaction de vos courriels dès aujourd'hui !",
+    "social": "Ellie sait exactement ce que je veux dire, et la manière parfaite de le dire."
+  },
+  "prices": {
+    "free": {
+      "lead": "Essayez Ellie avec les fonctionnalités de base",
+      "features": {
+        "replies": {
+          "label": "<0>2 réponses</0> par jour",
+          "description": "Ellie écrira ce nombre d'e-mails pour vous par jour gratuitement"
+        },
+        "ai": {
+          "label": "Modèle d'IA Basique <0>(GPT-3-turbo)</0>",
+          "description": "Voici à quel point Ellie sera intelligente lorsqu’elle rédigera vos réponses. Le modèle de base sera parfait pour les e-mails simples, mais la logique plus complexe nécessitera nos modèles plus intelligents."
+        }
+      }
+    },
+    "casual": {
+      "lead": "Pour les personnes qui sont submergées d'e-mails et qui ont besoin d'aide",
+      "features": {
+        "replies": {
+          "label": "<0>10 réponses</0> par jour",
+          "description": "Ellie écrira ce nombre d'e-mails pour vous par jour"
+        },
+        "ai": {
+          "label": "Modèle d'IA Intelligent <0>(GPT-4)</0>",
+          "description": "Voici à quel point Ellie sera intelligente lorsqu’elle rédigera vos réponses. Notre modèle intelligent fonctionnera très bien avec les e-mails plus complexes."
+        },
+        "training": {
+          "label": "Formation d'IA Avancée",
+          "description": "En utilisant notre mécanisme de Formation Avancée, vous pouvez enseigner à Ellie des informations sur n'importe quoi. Ellie utilisera ces informations si elles sont pertinentes lors de la rédaction d'une réponse."
+        }
+      }
+    },
+    "business": {
+      "lead": "Pour les petites équipes qui passent leur vie dans leurs boîtes de réception à envoyer de nombreux e-mails par jour.",
+      "features": {
+        "replies": {
+          "label": "<0>100 réponses</0> par jour et par siège",
+          "description": "Ellie écrira ce nombre d'e-mails pour chaque membre de votre équipe par jour"
+        },
+        "ai": {
+          "label": "Modèle d'IA Intelligent <0>(GPT-4)</0>",
+          "description": "Voici à quel point Ellie sera intelligente lorsqu’elle rédigera vos réponses. Notre modèle intelligent fonctionnera très bien avec les e-mails plus complexes."
+        },
+        "training": {
+          "label": "Formation d'IA Avancée",
+          "description": "En utilisant notre mécanisme de Formation Avancée, vous pouvez enseigner à Ellie des informations sur n'importe quoi. Ellie utilisera ces informations si elles sont pertinentes lors de la rédaction d'une réponse."
+        },
+        "roles": {
+          "label": "Rôles",
+          "description": "Ellie peut se voir attribuer différents rôles en fonction du type d'e-mail auquel vous répondez. Par exemple, donnez à Ellie l'accès à votre documentation de support et assignez cela à un Rôle de Support Client."
+        },
+        "teams": {
+          "label": "Partage d'équipe",
+          "description": "Votre matériel de Formation Avancée et les Rôles seront partagés entre toute votre équipe."
+        },
+        "support": {
+          "label": "Support par e-mail",
+          "description": "Nos spécialistes du support client seront heureux de vous aider par e-mail dans les 2 jours ouvrables (habituellement plus rapidement)."
+        }
+      }
+    },
+    "pro": {
+      "lead": "Pour les grandes équipes et les entreprises envoyant des centaines d'e-mails par jour.",
+      "features": {
+        "replies": {
+          "label": "<0>Réponses illimitées</0> par jour",
+          "description": "Ellie écrira autant d'e-mails que vous en avez besoin !"
+        },
+        "ai": {
+          "label": "Modèle d'IA personnalisé <0>(GPT-4 affiné)</0>",
+          "description": "Fournissez-nous votre archive d'e-mails et nous peaufinerons un modèle d'IA sur mesure spécialement pour vous !"
+        },
+        "training": {
+          "label": "Formation d'IA Avancée",
+          "description": "En utilisant notre mécanisme de Formation Avancée, vous pouvez enseigner à Ellie des informations sur n'importe quoi. Ellie utilisera ces informations si elles sont pertinentes lors de la rédaction d'une réponse."
+        },
+        "roles": {
+          "label": "Rôles",
+          "description": "Ellie peut se voir attribuer différents rôles en fonction du type d'e-mail auquel vous répondez. Par exemple, donnez à Ellie l'accès à votre documentation de support et assignez cela à un Rôle de Support Client."
+        },
+        "teams": {
+          "label": "Partage d'équipe",
+          "description": "Votre modèle d'IA, le matériel de Formation Avancée et les Rôles seront partagés entre toute votre équipe."
+        },
+        "support": {
+          "label": "Support par e-mail",
+          "description": "Nos spécialistes du support client seront heureux de vous aider par e-mail dans les 1 jours ouvrables (habituellement plus rapidement), et seront disponibles par téléphone pour vous aider à vous mettre en place avec Ellie."
+        }
+      }
+    }
+  }
 }

@@ -3,41 +3,40 @@ import i18next, { changeLanguage, setDefaultNamespace, t } from "i18next";
 import Main from "../../layouts/Main.astro";
 import FAQ from "../../components/FAQ.astro";
 import Proof from "../../components/Proof.astro";
+import Text from "../../components/Text.svelte";
 import Stats from "../../components/Stats.svelte";
-import Stars from "../../components/Stars.astro";
-import { Trans, HeadHrefLangs } from "astro-i18next/components";
+import Stars from "../../components/Stars.svelte";
+import { Trans } from "astro-i18next/components";
 import Video from "../../components/Video.svelte";
+import HeaderText from "../../components/HeaderText.svelte";
+import NewPricingComponent from "../../components/NewPricing.svelte";
+import DownloadComponent from "../../components/Download.svelte";
+import DemoBanner from "../../components/DemoBanner.svelte";
 
 changeLanguage("fr");
 
 setDefaultNamespace("common");
+const p = i18next.getResource(i18next.language, "pricing", "prices", {});
 ---
 
 <Main title={t("meta.title")}>
   <div class="page">
     <div class="hero">
-      <div class="content">
+      <div class="wider-content">
+        <!-- <p class="subtitle">Meet Ellie - your AI email assistant!</p> -->
         <h1 class="hero-title">
-          {t("hero.title")}
-          <svg
-            role="presentation"
-            class="heart"
-            viewBox="0 0 32 32"
-            width="20"
-            height="20"
-            stroke="currentcolor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          >
-            <path
-              d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z"
-            ></path>
-          </svg>
+          <Trans i18nKey="hero.title" ns="common">
+            Professional, bespoke emails, written in your style. <Text important
+              >Save hours every day</Text
+            > in your inbox
+          </Trans>
         </h1>
-        <p class="hero-lead">
+        <p class="hero-lead subtitle">
           {t("hero.description")}
         </p>
+        <div class="discount">
+          <p>{t("hero.discount")}</p>
+        </div>
         <Video
           flat
           innerClass="hero-img"
@@ -49,7 +48,6 @@ setDefaultNamespace("common");
 
     <section class="download-section">
       <div class="container">
-        <Stats client:only shown={i18next.language === "en"} />
         <span class="btn-group">
           <span>
             <a class="btn cta" href="/downloads">
@@ -129,69 +127,48 @@ setDefaultNamespace("common");
       </div>
     </section> -->
 
-    <section class="section image-section image-right">
-      <div class="section-text">
+    <!-- <HeaderText>Features</HeaderText> -->
+    <section class="section-full image-section">
+      <div class="section-text-full">
         <h2>{t("features:context.title")}</h2>
         <Trans i18nKey="context.content" ns="features">
-          <p>
+          <p class="subtitle">
             Ellie takes context from the email thread to
-            <strong>craft intelligent replies</strong>.
+            <Text important>craft intelligent replies</Text>.
           </p>
-          <p>We promise you'll be blown away by Ellie's responses!</p>
+          <p class="subtitle">
+            We promise you'll be blown away by Ellie's responses!
+          </p>
         </Trans>
-        <div class="inline-review">
-          <Stars />
-          <blockquote>
-            <p class="review-text">
-              <Trans i18nKey="jared" ns="testimonials">
-                <span class="review-highlight"
-                  >Ellie knows exactly what I want to say</span
-                >, and the exact right way to say it.
-              </Trans>
-            </p>
-
-            <p class="review-author">- Jared</p>
-          </blockquote>
-        </div>
       </div>
-      <div class="image-container">
-        <img
-          src="/assets/context-email.png"
-          role="presentation"
-          alt="Showing Ellie write a context filled email"
-          class="example-image"
-        />
+      <div class="full-width-image-container">
+        <picture role="presentation" class="context-image">
+          <source
+            class="context-image-vertical"
+            media="(max-width: 850px)"
+            srcset="/assets/images/ellie-context-vertical.png"
+          />
+          <img
+            src="/assets/images/ellie-context.png"
+            alt="Showing Ellie write a context filled email"
+          />
+        </picture>
       </div>
     </section>
 
+    <DemoBanner />
+
     <section class="section image-section image-left">
       <figure>
-        <div class="image-container">
+        <div class="image-container" style="border:0">
           <img
-            src="/assets/training.png"
+            style="border:0"
+            src="/assets/images/ellie-with-file.png"
             role="presentation"
             alt="Showing Ellie learned information about our company taxes, and used that in it's reply"
             class="example-image"
           />
         </div>
-        <figcaption>
-          <svg
-            style={{ position: "relative", top: "1px" }}
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            width="10"
-            height="10"
-            fill="none"
-            stroke="currentcolor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="4"
-          >
-            <path d="M16 14 L16 23 M16 8 L16 10"></path>
-            <circle cx="16" cy="16" r="14"></circle>
-          </svg>
-          {t("features:learning.caption")}
-        </figcaption>
       </figure>
 
       <div class="section-text">
@@ -317,6 +294,22 @@ setDefaultNamespace("common");
       </div>
     </section>
 
+    <hr />
+    <HeaderText>Pricing</HeaderText>
+    <NewPricingComponent translations={p} client:only />
+    <DownloadComponent />
+    <br /><br /><br /><br /><br /><br />
+    <HeaderText>FAQ</HeaderText>
     <FAQ />
   </div>
 </Main>
+
+<style>
+  .subtitle {
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.85;
+    max-width: 570px;
+  }
+</style>

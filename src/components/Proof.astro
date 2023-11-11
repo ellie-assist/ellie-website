@@ -1,15 +1,18 @@
 ---
 import { Trans } from "astro-i18next/components";
 import { t, setDefaultNamespace } from "i18next";
-import Stars from "./Stars.astro";
+import Stats from "./Stats.svelte";
+import Stars from "./Stars.svelte";
 
 setDefaultNamespace("common");
 ---
 
 <section class="proof-section">
   <div class="proof-stars">
-    <Stars large />
-    <p class="proof-rating">{t("proof.rating")}</p>
+    <Stats client:only />
+
+    <!-- <Stars large />
+    <p class="proof-rating">{t("proof.rating")}</p> -->
     <p class="proof-happy">{t("proof.installs")}</p>
   </div>
   <div class="proof-reviews">
@@ -101,5 +104,6 @@ setDefaultNamespace("common");
     font-weight: 400;
     text-align: center;
     margin: 0;
+    font-weight: bold;
   }
 </style>

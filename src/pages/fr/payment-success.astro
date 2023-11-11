@@ -3,6 +3,7 @@ import { setDefaultNamespace, t, changeLanguage } from "i18next";
 import { Trans } from "astro-i18next/components";
 import Main from "../../layouts/Main.astro";
 import LicenceKey from "../../components/LicenceKey.svelte";
+import DownloadComponent from "../../components/Download.svelte";
 
 changeLanguage("fr");
 
@@ -39,8 +40,11 @@ setDefaultNamespace("success");
       <p>
         {t("licenceKeyEmail")}
       </p>
-      <hr />
-      <Trans i18nKey="lead" ns="success">
+    </div>
+
+    <DownloadComponent />
+
+    <!-- <Trans i18nKey="lead" ns="success">
         <p class="lead-text">
           Ellie is a <strong>browser extension</strong>, you can install Ellie
           for Chrome or Firefox with the following buttons:
@@ -79,7 +83,7 @@ setDefaultNamespace("success");
           automatically. Simply click the <strong>🔑 Licence Key</strong> button
           at the top right and enter your licence key!
         </p>
-      </Trans>
-    </div>
+      </Trans> -->
+    <!-- </div> -->
   </div>
 </Main>

@@ -2,6 +2,114 @@
   "meta": {
     "title": "Pricing - Ellie - Your AI Email Assistant"
   },
-  "title": "Simple & affordable pricing",
-  "promo": "Make sure you apply the promo code at the checkout for your discount!"
+  "header": "Pricing",
+  "title": "Perfect email replies in <0>100x less time</0>. Save hours of effort each day with Ellie!",
+  "lead": "All plans allow access to our Chrome and Firefox extensions. Ellie will reply in any language and mimic your tone.",
+  "promo": "🎉 Happy Early Black Friday! Enjoy 40% off!",
+  "type": {
+    "personal": "Personal use",
+    "business": "For Teams"
+  },
+  "actions": {
+    "free": "Try for free",
+    "casual": "Buy now",
+    "teams": "Create your team"
+  },
+  "monthly": "monthly",
+  "teamsMonthly": "monthly per seat",
+  "activate": "After payment you will receive a licence key which is used to activate the browser extension.",
+  "proof": {
+    "lead": "Thousands of people are using Ellie to craft their email replies. Start saving time writing emails today!",
+    "social": "Ellie knows exactly what I want to say, and the exact right way to say it."
+  },
+  "prices": {
+    "free": {
+      "lead": "Try Ellie out with basic features",
+      "features": {
+        "replies": {
+          "label": "<0>2 replies</0> a day",
+          "description": "Ellie will write this many emails for you per day for free"
+        },
+        "ai": {
+          "label": "Basic AI model <0>(GPT-3-turbo)</0>",
+          "description": "This is how smart Ellie will be when crafting your replies. The basic model will be perfect for simple emails, but Ellie more complex reasoning will require our more intelligent models."
+        }
+      }
+    },
+    "casual": {
+      "lead": "For people who are overwhelmed with emails and need help",
+      "features": {
+        "replies": {
+          "label": "<0>10 replies</0> a day",
+          "description": "Ellie will write this many emails for you per day"
+        },
+        "ai": {
+          "label": "Intelligent AI model <0>(GPT-4)</0>",
+          "description": "This is how smart Ellie will be when crafting your replies. Our intelligent model will work great with more complex emails."
+        },
+        "training": {
+          "label": "Advanced AI Training",
+          "description": "Using our Advanced Training mechanism, you can teach Ellie information about anything. Ellie will use this information if it's relevant when crafting a reply."
+        }
+      }
+    },
+    "business": {
+      "lead": "For small teams who live in their inboxes sending many emails a day.",
+      "features": {
+        "replies": {
+          "label": "<0>100 replies</0> a day per seat",
+          "description": "Ellie will write this many emails for each of your team per day"
+        },
+        "ai": {
+          "label": "Intelligent AI model <0>(GPT-4)</0>",
+          "description": "This is how smart Ellie will be when crafting your replies. Our intelligent model will work great with more complex emails."
+        },
+        "training": {
+          "label": "Advanced AI Training",
+          "description": "Using our Advanced Training mechanism, you can teach Ellie information about anything. Ellie will use this information if it's relevant when crafting a reply."
+        },
+        "roles": {
+          "label": "Roles",
+          "description": "Ellie can be assigned different Roles based on the type of email you are replying to. E.g, give Ellie access to your support documentation and assign this to a Customer Support Role."
+        },
+        "teams": {
+          "label": "Team sharing",
+          "description": "Your Advanced Training material, and Roles will shared between your whole team."
+        },
+        "support": {
+          "label": "Email support",
+          "description": "Our customer support specialists will be happy to assist you via email within 2 working days (usually faster)."
+        }
+      }
+    },
+    "pro": {
+      "lead": "For large teams and enterprise sending hundreds of emails a day.",
+      "features": {
+        "replies": {
+          "label": "<0>Unlimited replies</0> a day",
+          "description": "Ellie will write as many emails as you need!"
+        },
+        "ai": {
+          "label": "Customized AI model <0>(fine-tuned GPT-4)</0>",
+          "description": "Provide us with your email archive and we will fine-tune a bespoke AI model specifically for you!"
+        },
+        "training": {
+          "label": "Advanced AI Training",
+          "description": "Using our Advanced Training mechanism, you can teach Ellie information about anything. Ellie will use this information if it's relevant when crafting a reply."
+        },
+        "roles": {
+          "label": "Roles",
+          "description": "Ellie can be assigned different Roles based on the type of email you are replying to. E.g, give Ellie access to your support documentation and assign this to a Customer Support Role."
+        },
+        "teams": {
+          "label": "Team sharing",
+          "description": "Your AI model, Advanced Training material, and Roles will shared between your whole team."
+        },
+        "support": {
+          "label": "Email support",
+          "description": "Our customer support specialists will be happy to assist you via email within 1 working days (usually faster), and will be available via phone to help get you set up with Ellie."
+        }
+      }
+    }
+  }
 }

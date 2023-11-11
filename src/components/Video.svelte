@@ -95,13 +95,14 @@
   }
 
   .video-container {
+    margin: 40px auto 0 auto;
     position: relative;
     padding: 5px 5px 0px 5px;
     overflow: hidden;
     border-radius: 16px;
     border: 1px solid #e1e3e1;
-    margin-top: 40px;
     background-color: #fefefe;
+    max-width: 600px;
   }
 
   .video-container[data-flat="true"] {
