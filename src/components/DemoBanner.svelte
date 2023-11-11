@@ -3,7 +3,7 @@
   import Box from "./Box.svelte";
 </script>
 
-<Box class="demo-banner">
+<div class="demo-banner">
   <div class="demo-content">
     <h4>
       Check out our <strong>demo of Ellie</strong> that has been trained to understand
@@ -12,21 +12,30 @@
     <p />
     <Button href="/demo">Try the demo</Button>
   </div>
-  <div class="demo-image">
-    <img src="/assets/images/native-example.png" alt="" />
-  </div>
-</Box>
+</div>
 
 <style>
+  .demo-banner {
+    background-color: rgb(242, 236, 255);
+    border: 1px solid #5e4c984d;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
   .demo-content {
+    text-align: center;
     text-decoration: none;
     font-weight: 500;
-    padding: 20px 50px 40px 60px;
   }
 
   @media (max-width: 560px) {
     .demo-content {
-      padding: 0 25px 25px 25px;
     }
   }
 
@@ -34,7 +43,6 @@
     position: relative;
     min-height: 100%;
     width: 100%;
-    display: none;
   }
 
   .demo-image img {
@@ -47,10 +55,11 @@
   }
 
   .demo-content h4 {
-    font-size: 1.35em;
+    font-size: 1.15em;
     line-height: 30px;
-    margin-bottom: 0;
-    width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
   }
 
   .demo-content p {
