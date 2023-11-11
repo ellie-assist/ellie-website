@@ -1,6 +1,6 @@
 <script>
   import numeral from "numeral";
-  export let shown;
+  export let shown = true;
 
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
