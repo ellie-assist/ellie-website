@@ -10,9 +10,9 @@
   export let locale;
 
   const stripeParams = new URLSearchParams({
-    prefilled_promo_code: "BLACKFRIDAY40",
+    prefilled_promo_code: "",
     locale,
-    utm_campaign: "bf",
+    utm_campaign: "",
   }).toString();
   const stripeLinks = {
     casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams}`,
@@ -50,7 +50,7 @@
 </script>
 
 <div class="pricing">
-  <div class="discount"><p>{translate("promo")}</p></div>
+  <!-- <div class="discount"><p>{translate("promo")}</p></div> -->
   <div class="pricing-table" data-ref={affiliate_id}>
     <div class="pricing-type">
       <div class="type-header"><span>{translate("type.personal")}</span></div>
@@ -101,11 +101,11 @@
             {translate("prices.casual.lead")}
           </p>
           <div class="prices">
-            <div class="price discounted">
+            <!-- <div class="price discounted">
               <span class="currency">$</span>
               <span class="amount">10</span>
               <span class="person duration">{`/${translate("monthly")}`}</span>
-            </div>
+            </div> -->
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">19</span>
@@ -179,17 +179,17 @@
             {translate("prices.business.lead")}
           </p>
           <div class="prices">
-            <div class="price discounted">
+            <!-- <div class="price discounted">
               <span class="currency">$</span>
               <span class="amount">23</span>
               <span class="person duration"
                 >{`/${translate("teamsMonthly")}`}</span
               >
-            </div>
+            </div> -->
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">39</span>
-              <span class="person">/{`/${translate("teamsMonthly")}`}</span>
+              <span class="person">{`/${translate("teamsMonthly")}`}</span>
             </div>
           </div>
           <ul class="features">
@@ -268,15 +268,15 @@
             {translate("prices.pro.lead")}
           </p>
           <div class="prices">
-            <div class="price discounted">
+            <!-- <div class="price discounted">
               <span class="currency">$</span>
               <span class="amount">47</span>
               <span class="person duration">/{translate("teamsMonthly")}</span>
-            </div>
+            </div> -->
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">79</span>
-              <span class="person">/{translate("teamsMonthly")}</span>
+              <span class="person">{`/${translate("teamsMonthly")}`}</span>
             </div>
           </div>
           <ul class="features">
