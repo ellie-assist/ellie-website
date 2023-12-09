@@ -246,7 +246,7 @@
             </li>
           </ul>
           <div class="buy-cta">
-            <Button
+            <Button href={stripeLinks.business}
               >{translate("actions.teams")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -321,7 +321,7 @@
             </li>
           </ul>
           <div class="buy-cta">
-            <Button
+            <Button href={stripeLinks.professional}
               >{translate("actions.teams")}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
