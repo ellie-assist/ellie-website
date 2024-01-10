@@ -29,7 +29,7 @@
     if (parts.length === 2) return parts.pop().split(";").shift();
   }
 
-  if (document) {
+  if (typeof window !== "undefined") {
     const cookie = getCookie("reflioData");
     if (cookie) {
       affiliate_id = JSON.parse(cookie).affiliate_id;
