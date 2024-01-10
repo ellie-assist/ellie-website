@@ -42,7 +42,7 @@ console.log(p);
     </div>
 
     <div id="submit-container" class="signup">
-      <NewPricingComponent translations={p} locale={locale} />
+      <NewPricingComponent client:only translations={p} locale={locale} />
       <DownloadComponent />
     </div>
 
