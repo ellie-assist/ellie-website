@@ -9,19 +9,8 @@
   export let translations;
   export let locale;
 
-  const stripeParams = new URLSearchParams({
-    prefilled_promo_code: "",
-    locale,
-    utm_campaign: "",
-  }).toString();
-  const stripeLinks = {
-    casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams}`,
-    professional: `https://buy.stripe.com/3cs01G6nU8mc8x24gm?${stripeParams}`,
-    business: `https://buy.stripe.com/9AQ3dS8w2eKA7sY8wD?${stripeParams}`,
-  };
-
-  let affiliate_id = "none";
   let customerEmail = null;
+  let affiliate_id = "none";
 
   function getCookie(name) {
     const value = `; ${document.cookie}`;
@@ -41,6 +30,20 @@
       customerEmail = decodeURIComponent(p.get("e"));
     }
   }
+
+  const stripeParams = new URLSearchParams({
+    // prefilled_promo_code: undefined,
+    locale,
+    // utm_campaign: undefined,
+  });
+  if (customerEmail) {
+    stripeParams.append("prefilled_email", customerEmail);
+  }
+  let stripeLinks = {
+    casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams.toString()}`,
+    professional: `https://buy.stripe.com/3cs01G6nU8mc8x24gm?${stripeParams.toString()}`,
+    business: `https://buy.stripe.com/9AQ3dS8w2eKA7sY8wD?${stripeParams.toString()}`,
+  };
 
   function translate(key) {
     return key.split(".").reduce((out, k) => {
