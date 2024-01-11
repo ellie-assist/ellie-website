@@ -363,7 +363,7 @@
 </div>
 
 <style>
-  .discount {
+  /* .discount {
     margin: -0.5em auto 2.5em auto;
     text-align: center;
     display: inline-block;
@@ -377,7 +377,7 @@
 
   .discount p {
     margin: 0;
-  }
+  } */
 
   .payment-instructions {
     margin-bottom: 2em;
@@ -581,9 +581,9 @@
     display: inline-block;
   }
 
-  .price.discounted + .price {
+  /* .price.discounted + .price {
     font-size: 65%;
-  }
+  } */
 
   .price.discounted + .price .person {
     display: none;

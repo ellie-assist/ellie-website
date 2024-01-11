@@ -46,7 +46,19 @@ jobs:
         run: |
           yarn build
 
-      - name: 🐰 Deploy to Bunny
+      - name: 🐰 Deploy to Bunny      
+        uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
+        with:
+          source: dist          
+          storageZoneName: ellie-website
+          storagePassword: ${{ secrets.STORAGE_PASSWORD }}
+          accessKey: ${{ secrets.STORAGE_KEY }}
+          pullZoneId: 212288
+          upload: true
+          remove: true
+          purgePullZone: true
+
+
         uses: own3d/bunny-action@main
         env:
           BUNNY_STORAGE_USERNAME: ellie-website

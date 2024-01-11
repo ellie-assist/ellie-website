@@ -39,7 +39,7 @@
     }
   }
 
-  .demo-image {
+  /* .demo-image {
     position: relative;
     min-height: 100%;
     width: 100%;
@@ -52,7 +52,7 @@
 
     width: 100%;
     max-width: 500px;
-  }
+  } */
 
   .demo-content h4 {
     font-size: 1.15em;
