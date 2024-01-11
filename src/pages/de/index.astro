@@ -297,7 +297,7 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
 
     <hr />
     <HeaderText>Pricing</HeaderText>
-    <NewPricingComponent translations={p} locale={locale} client:only />
+    <NewPricingComponent translations={p} locale={locale} />
 
     {locale === "en" ? <DownloadComponent /> : null}
 

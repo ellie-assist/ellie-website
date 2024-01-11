@@ -53,7 +53,7 @@ jobs:
           storageZoneName: ellie-website
           storagePassword: ${{ secrets.STORAGE_PASSWORD }}
           accessKey: ${{ secrets.STORAGE_KEY }}
-          pullZoneId: 212288
+          pullZoneId: 1120070
           upload: true
           remove: true
           purgePullZone: true
