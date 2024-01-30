@@ -130,6 +130,7 @@
                 <span class="important">25 replies</span> a day
               </Info>
             </li>
+
             <li>
               <Info
                 tooltip={translate("prices.casual.features.ai.description")}
@@ -205,6 +206,7 @@
                 <span class="important">100 replies</span> a day
               </Info>
             </li>
+
             <li>
               <Info
                 tooltip={translate("prices.business.features.ai.description")}
@@ -292,10 +294,17 @@
             </li>
             <li>
               <Info tooltip={translate("prices.pro.features.ai.description")}>
-                Customized AI model <span class="important"
-                  >(fine-tuned GPT-4)</span
-                ></Info
+                <span class="important">Customized</span> AI model</Info
               >
+            </li>
+            <li>
+              <Info
+                tooltip={translate(
+                  "prices.pro.features.emailTraining.description"
+                )}
+              >
+                Learns from your <span class="important">entire</span> email archive
+              </Info>
             </li>
             <li>
               <Info

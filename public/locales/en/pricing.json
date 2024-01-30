@@ -50,6 +50,10 @@
         "training": {
           "label": "Advanced AI Training",
           "description": "Using our Advanced Training mechanism, you can teach Ellie information about anything. Ellie will use this information if it's relevant when crafting a reply."
+        },
+        "emailTraining": {
+          "label": "Learns from <0>200</0> sent emails",
+          "description": "Provide up to 200 previous sent emails and Ellie will learn how to write emails in your style"
         }
       }
     },
@@ -63,6 +67,10 @@
         "ai": {
           "label": "Intelligent AI model <0>(GPT-4)</0>",
           "description": "This is how smart Ellie will be when crafting your replies. Our intelligent model will work great with more complex emails."
+        },
+        "emailTraining": {
+          "label": "Learns from <0>200</0> sent emails",
+          "description": "Provide up to 200 previous sent emails and Ellie will learn how to write emails in your style"
         },
         "training": {
           "label": "Advanced AI Training",
@@ -90,8 +98,12 @@
           "description": "Ellie will write as many emails as you need!"
         },
         "ai": {
-          "label": "Customized AI model <0>(fine-tuned GPT-4)</0>",
+          "label": "Customized AI model",
           "description": "Provide us with your email archive and we will fine-tune a bespoke AI model specifically for you!"
+        },
+        "emailTraining": {
+          "label": "Learns from your entire mailbox",
+          "description": "Provide us with your email archive, and Ellie will learn how to reply exactly like you"
         },
         "training": {
           "label": "Advanced AI Training",
