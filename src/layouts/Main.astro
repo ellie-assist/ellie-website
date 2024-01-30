@@ -945,8 +945,13 @@ changeLanguage(i18next.language);
       }
 
       .features-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
         padding-top: 35px;
         width: 280px;
+        height: 300px;
         text-align:center;
         list-style: none;
       }
@@ -960,6 +965,13 @@ changeLanguage(i18next.language);
         font-weight: 500;
         opacity: 0.85;
         line-height: 22px;
+      }
+
+      .features-list li:nth-child(1) .feature-example, .features-list li:nth-child(3) .feature-example {
+        transform: rotate(-5deg);
+      }
+      .features-list li:nth-child(2) .feature-example {
+        transform: rotate(5deg);
       }
     </style>
   </body>

@@ -31,7 +31,8 @@
     document.getElementById(`ellie-image-${name}`).style.top = `${
       boxHeight + 70
     }px`;
-    setInterval(startTyping, 1500);
+
+    setTimeout(startTyping, 1200);
   });
 </script>
 

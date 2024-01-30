@@ -1,6 +1,6 @@
 ---
-import EllieHorizontalExample from "../components/Ellie-Horizontal-Example.svelte";
-import EllieVerticalExample from "../components/Ellie-Vertical-Example.svelte";
+import EllieBox from "../components/Ellie-Box.svelte";
+import EllieExample from "../components/Ellie-Example.svelte";
 import i18next, { changeLanguage, setDefaultNamespace, t } from "i18next";
 import Main from "../layouts/Main.astro";
 import FAQ from "../components/FAQ.astro";
@@ -177,7 +177,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </div>
       
       <div class="full-width-image-container">
-        <EllieHorizontalExample 
+        <EllieExample 
           arrow="email-history-arrow" 
           subject="Card being replaced" 
           name="training" 
@@ -200,7 +200,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
         
       </div>
       <div class="full-width-image-container">
-        <EllieHorizontalExample 
+        <EllieExample 
           arrow="pdf-training-arrow" 
           subject="VAT Figures Q4 2022" 
           name="advanced-training" 
@@ -236,12 +236,14 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </div>
     </section> -->
 
+    {locale === "en" ? <DownloadComponent /> : null}
+
     <section class="section-full">
       <div class="section-text-full">
         
-        <h2>
+        <h2 style="max-width: 500px;margin: 0 auto;">
           <Trans i18nKey="extras.title" ns="features">
-            Plus many more powerful features for<br /> <Text important>writing faster emails</Text>
+            Plus many more powerful features for <Text important>writing faster emails</Text>
           </Trans>
         </h2>
         
@@ -249,13 +251,16 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       <ul class="features-list">        
         <li>
           <div class="feature-header">
-          <h4>{t('features:extras.multilingual.title')}</h4>
+            <h4>{t('features:extras.multilingual.title')}</h4>
           </div>
           <p class="feature-desc">
             <Trans i18nKey="extras.multilingual.content" ns="features">
               Ellie will reply in <Text important>any language</Text> to match the email being replied to.
             </Trans>
           </p>
+          <div class="feature-example">
+            <EllieBox client:only name="multilingual" text="Salut Bruce,\n\nMerci de m'avoir répondu si rapidement un dimanche..." />
+          </div>
         </li>
         <li>
           <div class="feature-header">
@@ -266,6 +271,9 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
               Assign Ellie <Text important>different roles for different emails</Text>. Perfect for context switching.
             </Trans>
           </p>
+          <div class="feature-example">
+            <EllieBox client:only name="roles" text="Hi Phillip,\n\nThis is Danielle here from the customer support team..." />
+          </div>
         </li>
         <li>
           <div class="feature-header">
@@ -276,9 +284,14 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
               Provide <Text important>additional context</Text> in each email Ellie writes for the perfect reply.
             </Trans>
           </p>
+          <div class="feature-example">
+            <EllieBox client:only name="context" text="Hey Dave,\n\nI actually got a new job, can you remove me from this list?" />
+          </div>
         </li>
       </ul>
     </section>
+
+    
 
 
     <!-- <section class="section image-section image-left">
@@ -350,7 +363,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
     <HeaderText>{t('pricing:header')}</HeaderText>
     <NewPricingComponent translations={p} locale={locale} />
 
-    {locale === "en" ? <DownloadComponent /> : null}
+    
 
     <br /><br /><br /><br /><br /><br />
     <HeaderText>FAQ</HeaderText>
