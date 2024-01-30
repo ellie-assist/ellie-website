@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "i18n": "npx astro-i18next generate",
-    "dev": "astro dev",
+    "dev": "npx astro-i18next generate && astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

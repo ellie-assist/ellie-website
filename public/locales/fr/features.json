@@ -15,9 +15,32 @@
     "title": "Itérez sur les réponses d'Ellie",
     "content": "Vous pouvez <0>réviser la réponse d'Ellie</0> à quelque chose, pour ajuster exactement ce que vous voulez que Ellie dise. "
   },
+  "emailTraining": {
+    "title": "Ellie apprend de votre historique d'emails",
+    "content": "En fournissant à Ellie vos emails envoyés précédemment, l'IA va <0>apprendre à répondre exactement comme vous</0>.",
+    "exampleInput": "Salut l'équipe,\n\nDésolé, je viens de voir que mon paiement n'a pas été effectué. Ma carte a été remplacée et j'attends la nouvelle par courrier, c'est pourquoi le paiement a échoué.\n\nS'il vous plaît, pouvez-vous maintenir mon abonnement actif. Je vous enverrai les nouveaux détails dès que la carte arrive (7 jours selon ma banque).\n\nMerci beaucoup,\nBruce",
+    "exampleOutput": "Salut Bruce,\n\nMerci de nous avoir contactés et pour votre patience pendant le week-end !\n\nPas de soucis du tout, merci de nous avoir informés, et nous espérons que la nouvelle carte arrivera bientôt !\n\nEntre-temps, j'ai mis en place un rappel pour moi-même de vérifier avec vous dans une semaine environ, juste pour m'assurer que tout se passe bien.\n\nSi vous avez besoin de quelque chose entre-temps, faites-le savoir !\nTout le meilleur,\n---\nLoutre\nSpécialiste du Support @ Acme Inc."
+  },
   "learning": {
-    "title": "Enseignez tout à Ellie!",
-    "content": "Ellie peut <0>apprendre toutes les informations que vous fournissez</0> et utiliser ces informations dans ses réponses.",
-    "caption": "Nous avons fourni à Ellie un PDF contenant nos informations de vente 2022 afin qu'elle puisse maintenant répondre aux courriels concernant nos impôts."
+    "title": "Vous pouvez enseigner n'importe quoi à Ellie !",
+    "content": "Ellie peut <0>apprendre toute information que vous fournissez</0>, et utiliser cette information dans ses réponses.",
+    "caption": "Nous avons fourni à Ellie un pdf contenant nos informations de vente de 2022 afin qu'elle puisse maintenant répondre aux emails concernant nos impôts.",
+    "exampleInput": "Salut James,\n\nPourrais-tu me donner les chiffres de la TVA pour le dernier trimestre de 2022 dont nous avons parlé ? J'ai besoin de savoir combien nous devons.\n\nMerci !\nEric",
+    "exampleOutput": "Salut Eric,\n\nBien sûr, j'ai trouvé les infos de la TVA du 1er octobre au 31 décembre, voici les chiffres pertinents :\n\n1. TVA due pour la période dans les ventes et autres sorties : €485\n2. TVA due pour les acquisitions de biens réalisées en Irlande du Nord en provenance des États membres de l'UE : €0\n3. Total TVA due (c'est le total de 1 et 2) : €485\n4. TVA récupérée dans la période sur les achats et autres entrées : €0\n\nDonc, le total de la TVA due pour le trimestre est de €485.\n\nFaites-moi savoir si vous avez besoin de quelque chose d'autre !\nÀ la vôtre,\nJames"
+  },
+  "extras": {
+    "title": "Et bien d'autres fonctionnalités puissantes pour <0>écrire des emails plus rapidement</0>",
+    "multilingual": {
+      "title": "Multilingue",
+      "content": "Ellie répondra dans <0>toute langue</0> pour correspondre à l'email auquel elle répond."
+    },
+    "roles": {
+      "title": "Rôles",
+      "content": "Assignez à Ellie <0>différents rôles pour différents emails</0>. Parfait pour le changement de contexte."
+    },
+    "context": {
+      "title": "Contexte supplémentaire",
+      "content": "Fournissez <0>un contexte supplémentaire</0> dans chaque email qu'Ellie écrit pour la réponse parfaite."
+    }
   }
 }

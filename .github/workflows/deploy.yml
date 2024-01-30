@@ -57,13 +57,6 @@ jobs:
           upload: true
           remove: true
           purgePullZone: true
-        # uses: own3d/bunny-action@main
-        # env:
-        #   BUNNY_STORAGE_USERNAME: ellie-website
-        #   BUNNY_STORAGE_PASSWORD: ${{ secrets.BUNNY_ZONE_PASSWORD }}
-        #   BUNNY_PULL_ZONE_ID: 212288
-        # with:
-        #   args: deploy --dir=dist
 
       - name: 💬 Report
         uses: appleboy/telegram-action@master

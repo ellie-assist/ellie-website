@@ -15,9 +15,32 @@
     "title": "Itera en las respuestas de Ellie",
     "content": "Puedes <0>revisar la respuesta de Ellie</0> a algo, para ajustar exactamente lo que quieres que diga Ellie. "
   },
+  "emailTraining": {
+    "title": "Ellie aprende de tu historial de correos electrónicos",
+    "content": "Al proporcionar a Ellie tus correos electrónicos enviados previamente, la IA <0>aprenderá a responder exactamente como tú</0>.",
+    "exampleInput": "Hola equipo,\n\nLo siento, acabo de ver que mi pago no se ha procesado. Mi tarjeta ha sido reemplazada y estoy esperando la nueva por correo, por eso falló el pago.\n\nPor favor, pueden mantener activa mi suscripción. Les enviaré los nuevos detalles tan pronto como llegue la tarjeta (7 días según mi banco).\n\nMuchas gracias,\nBruce",
+    "exampleOutput": "Hola Bruce,\n\n¡Gracias por ponerte en contacto y por tu paciencia durante el fin de semana!\n\nNo te preocupes en absoluto, gracias por hacérnoslo saber, y esperamos que la nueva tarjeta llegue pronto.\n\nMientras tanto, he puesto un recordatorio para revisar contigo en una semana o algo así, solo para asegurarnos de que todo está bien.\n\nSi necesitas algo mientras tanto, ¡solo avisa!\nTodo lo mejor,\n---\nOtter\nEspecialista de Soporte @ Acme Inc."
+  },
   "learning": {
-    "title": "¡Enseña cualquier cosa a Ellie!",
-    "content": "Ellie puede <0>aprender cualquier información que proporcione</0> y utilizar esa información en sus respuestas.",
-    "caption": "Proporcionamos a Ellie un pdf que contiene nuestra información de ventas de 2022 para que ahora pueda responder correos electrónicos sobre nuestros impuestos."
+    "title": "¡Puedes enseñarle cualquier cosa a Ellie!",
+    "content": "Ellie puede <0>aprender cualquier información que proporciones</0>, y utilizar esa información en sus respuestas.",
+    "caption": "Le proporcionamos a Ellie un pdf con nuestra información de ventas de 2022 para que ahora pueda responder correos electrónicos sobre nuestros impuestos.",
+    "exampleInput": "Hola James,\n\n¿Podrías conseguirme las cifras del IVA para el último trimestre de 2022 de las que hablamos? Necesito saber cuánto debemos.\n\n¡Gracias!\nEric",
+    "exampleOutput": "Hola Eric,\n\nPor supuesto, encontré la información del IVA del 1 de octubre al 31 de diciembre, aquí están las cifras relevantes:\n\n1. IVA devengado por el periodo en ventas y otras salidas: €485\n2. IVA devengado por adquisiciones de bienes realizadas en Irlanda del Norte procedentes de estados miembros de la UE: €0\n3. Total del IVA devengado (esto es el total de 1 y 2): €485\n4. IVA reclamado en el periodo por compras y otras entradas: €0\n\nAsí que el total del IVA adeudado para el trimestre es de €485.\n\n¡Avísame si necesitas cualquier otra cosa!\nSaludos,\nJames"
+  },
+  "extras": {
+    "title": "Además muchas más características poderosas para <0>escribir correos electrónicos más rápido</0>",
+    "multilingual": {
+      "title": "Multilingüe",
+      "content": "Ellie responderá en <0>cualquier idioma</0> para coincidir con el correo electrónico al que se está respondiendo."
+    },
+    "roles": {
+      "title": "Roles",
+      "content": "Asigna a Ellie <0>diferentes roles para diferentes correos electrónicos</0>. Perfecto para cambiar de contexto."
+    },
+    "context": {
+      "title": "Contexto extra",
+      "content": "Proporciona <0>contexto adicional</0> en cada correo electrónico que Ellie escribe para la respuesta perfecta."
+    }
   }
 }

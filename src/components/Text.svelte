@@ -14,7 +14,7 @@
 
 <style>
   .important {
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    /* text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); */
     font-weight: bold;
     color: var(--btn-color);
   }

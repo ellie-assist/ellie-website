@@ -1,7 +1,7 @@
 {
   "context": {
-    "title": "Ellie understands context",
-    "content": "<0>Ellie takes context from the email thread to <1>craft intelligent replies</1>.</0><2>We promise you'll be blown away by Ellie's responses!</2>"
+    "title": "Ellie understands email context",
+    "content": "<0>Using the context from the email thread Ellie <1>crafts intelligent replies</1> with a personal touch.</0><2>We promise you'll be blown away by Ellie's responses!</2>"
   },
   "tailor": {
     "title": "Tailor Ellie's reply",
@@ -15,9 +15,32 @@
     "title": "Iterate on Ellie's replies",
     "content": "You can <0>revise Ellie's response</0> to something, to tweak exactly what you want Ellie to say. "
   },
+  "emailTraining": {
+    "title": "Ellie learns from your email history",
+    "content": "By providing Ellie with your previous sent emails the AI will <0>learn how to reply exactly like you</0>.",
+    "exampleInput": "Hey team,\n\nSorry, I've just seen that my payment hasn't gone through. My card has been replaced and I'm waiting for the new one in the mail, which is why the payment failed.\n\nPlease can you keep my subscription active. I'll send you the new details as soon as the card arrives (7 days according to my bank).\n\nThanks so much,\nBruce",
+    "exampleOutput": "Hi Bruce,\n\nThanks for getting in touch and for your patience over the weekend!\n\nNo worries at all, thanks for letting us know, and we hope the new card arrives soon!\n\nIn the meantime I've set a reminder for myself to check-in with you in a week or so, just to make sure everything goes through ok.\n\nIf you need anything in the meantime, just shout!\nAll the best,\n---\nOtter\nSupport Specialist @ Acme Inc."
+  },
   "learning": {
-    "title": "Teach Ellie anything!",
+    "title": "You can teach Ellie anything!",
     "content": "Ellie can <0>learn any information you provide</0>, and use that information in it's replies.",
-    "caption": "We provided Ellie with a pdf containing our 2022 sales information so that it can now answer emails about our taxes."
+    "caption": "We provided Ellie with a pdf containing our 2022 sales information so that it can now answer emails about our taxes.",
+    "exampleInput": "Hey James,\n\nCould you get me those VAT figures for the last quarter of 2022 that we spoke about? I need to know how much we owe.\n\nThanks!\nEric",
+    "exampleOutput": "Hey Eric,\n\nOf course, I found the VAT info for 1st October to 31st December, here are the relevant figures:\n\n1. VAT due for the period in sales and other outputs: £485\n2. VAT due for on aquisitions of goods made in Northern Island from EU member states: £0\n3. Total VAT due (this is the total of 1 and 2): £485\n4. VAT reclaimed in the period on purchases and other inputs: £0\n\nSo the total VAT owed to the quarter is £485.\n\nLet me know if you need anything else!\nCheers,\nJames"
+  },
+  "extras": {
+    "title": "Plus many more powerful features for <0>writing faster emails</0>",
+    "multilingual": {
+      "title": "Multilingual",
+      "content": "Ellie will reply in <0>any language</0> to match the email being replied to."
+    },
+    "roles": {
+      "title": "Roles",
+      "content": "Assign Ellie <0>different roles for different emails</0>. Perfect for context switching."
+    },
+    "context": {
+      "title": "Extra context",
+      "content": "Provide <0>additional context</0> in each email Ellie writes for the perfect reply."
+    }
   }
 }

@@ -15,9 +15,32 @@
     "title": "Iterieren Sie über Ellies Antworten",
     "content": "Sie können Ellies Antwort <0>überarbeiten</0>, um genau das zu erhalten, was Sie von Ellie hören möchten. "
   },
+  "emailTraining": {
+    "title": "Ellie lernt aus Ihrer E-Mail-Geschichte",
+    "content": "Indem Sie Ellie Ihre zuvor gesendeten E-Mails zur Verfügung stellen, wird die KI <0>lernen, genau wie Sie zu antworten</0>.",
+    "exampleInput": "Hallo Team,\n\nEs tut mir leid, ich habe gerade gesehen, dass meine Zahlung nicht durchgeführt wurde. Meine Karte wurde ersetzt und ich warte auf die neue in der Post, weshalb die Zahlung fehlgeschlagen ist.\n\nBitte können Sie mein Abonnement aktiv halten. Ich sende Ihnen die neuen Details, sobald die Karte ankommt (7 Tage laut meiner Bank).\n\nVielen Dank,\nBruce",
+    "exampleOutput": "Hallo Bruce,\n\nVielen Dank für Ihre Kontaktaufnahme und Ihre Geduld am Wochenende!\n\nÜberhaupt kein Problem, danke dass Sie uns informiert haben, und wir hoffen, dass die neue Karte bald ankommt!\n\nIn der Zwischenzeit habe ich mir eine Erinnerung gesetzt, in etwa einer Woche bei Ihnen nachzufragen, nur um sicherzustellen, dass alles in Ordnung ist.\n\nWenn Sie in der Zwischenzeit etwas brauchen, melden Sie sich bitte!\nAlles Gute,\n---\nOtter\nSupport-Spezialist bei Acme Inc."
+  },
   "learning": {
-    "title": "Lehren Sie Ellie alles!",
-    "content": "Ellie kann <0>jede von Ihnen bereitgestellte Information lernen</0> und diese Informationen in ihren Antworten verwenden.",
-    "caption": "Wir haben Ellie eine PDF-Datei mit unseren Verkaufsinformationen für 2022 zur Verfügung gestellt, damit sie nun E-Mails zu unseren Steuern beantworten kann."
+    "title": "Sie können Ellie alles beibringen!",
+    "content": "Ellie kann <0>jede Information lernen, die Sie zur Verfügung stellen</0>, und diese Informationen in ihren Antw orten verwenden.",
+    "caption": "Wir haben Ellie eine PDF mit unseren Verkaufsinformationen für 2022 zur Verfügung gestellt, damit sie jetzt E-Mails zu unseren Steuern beantworten kann.",
+    "exampleInput": "Hallo James,\n\nKönntest du mir die Mehrwertsteuerzahlen für das letzte Quartal von 2022 besorgen, über die wir gesprochen haben? Ich muss wissen, wie viel wir schulden.\n\nDanke!\nEric",
+    "exampleOutput": "Hallo Eric,\n\nNatürlich, ich habe die Mehrwertsteuer-Info für den 1. Oktober bis 31. Dezember gefunden. Hier sind die relevanten Zahlen:\n\n1. Fällige Mehrwertsteuer für den Zeitraum für Verkäufe und andere Ausgaben: €485\n2. Mehrwertsteuer fällig für auf den Erwerb von Waren in Nordirland aus EU-Mitgliedsstaaten: €0\n3. Gesamte Mehrwertsteuerschuld (dies ist die Summe von 1 und 2): €485\n4. Im Zeitraum auf Einkäufe und sonstige Eingaben zurückerstattete Mehrwertsteuer: €0\n\nDaher beträgt die gesamte für das Quartal geschuldete Mehrwertsteuer €485.\n\nLassen Sie mich wissen, wenn Sie noch etwas brauchen!\nProst,\nJames"
+  },
+  "extras": {
+    "title": "Plus viele weitere leistungsstarke Funktionen für <0>schnelleres E-Mail-Schreiben</0>",
+    "multilingual": {
+      "title": "Mehrsprachig",
+      "content": "Ellie wird in <0>jeder Sprache</0> antworten, um der Sprache der zu beantwortenden E-Mail zu entsprechen."
+    },
+    "roles": {
+      "title": "Rollen",
+      "content": "Weisen Sie Ellie <0>verschiedene Rollen für verschiedene E-Mails</0> zu. Perfekt für Kontextwechsel."
+    },
+    "context": {
+      "title": "Zusätzlicher Kontext",
+      "content": "Geben Sie <0>zusätzlichen Kontext</0> in jeder E-Mail ein, die Ellie schreibt, für die perfekte Antwort."
+    }
   }
 }

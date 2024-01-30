@@ -1,4 +1,6 @@
 ---
+import EllieHorizontalExample from "../../components/Ellie-Horizontal-Example.svelte";
+import EllieVerticalExample from "../../components/Ellie-Vertical-Example.svelte";
 import i18next, { changeLanguage, setDefaultNamespace, t } from "i18next";
 import Main from "../../layouts/Main.astro";
 import FAQ from "../../components/FAQ.astro";
@@ -18,6 +20,10 @@ changeLanguage("de");
 setDefaultNamespace("common");
 const locale = i18next.language || "en";
 const p = i18next.getResource(i18next.language, "pricing", "", {});
+const exampleAdvancedTrainingInput = i18next.getResource(i18next.language, "features", "learning.exampleInput", {});
+const exampleAdvancedTrainingOutput = i18next.getResource(i18next.language, "features", "learning.exampleOutput", {});
+const exampleEmailTrainingInput = i18next.getResource(i18next.language, "features", "emailTraining.exampleInput", {});
+const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "features", "emailTraining.exampleOutput", {});
 ---
 
 <Main title={t("meta.title")}>
@@ -159,24 +165,58 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
 
     {locale === "en" ? <DemoBanner /> : null}
 
-    <section class="section image-section image-left">
-      <figure>
-        <div class="image-container" style="border:0">
-          <img
-            style="border:0"
-            src="/assets/images/ellie-with-file.png"
-            role="presentation"
-            alt="Showing Ellie learned information about our company taxes, and used that in it's reply"
-            class="example-image"
-          />
-        </div>
-      </figure>
+    <section class="section-full image-section">
+      <div class="section-text-full">
+        <h2>{t("features:emailTraining.title")}</h2>
+        <p class="subtitle">
+          <Trans i18nKey="emailTraining.content" ns="features">
+            By providing Ellie with your previous sent emails the AI will <Text important>learn how to reply exactly like you</Text>.
+          </Trans>
+        </p>        
+        
+      </div>
+      
+      <div class="full-width-image-container">
+        <EllieHorizontalExample 
+          arrow="email-history-arrow" 
+          subject="Card being replaced" 
+          name="training" 
+          input={exampleEmailTrainingInput} 
+          output={exampleEmailTrainingOutput} 
+          client:visible 
+        />
+      </div>
+    </section>
 
-      <div class="section-text">
+    <section class="section-full image-section">
+      <div class="section-text-full">
+        <h2>{t("features:learning.title")}</h2>
+        <p class="subtitle">
+          <Trans i18nKey="learning.content" ns="features">
+            Ellie can <Text important>learn any information you provide from files or websites</Text>, and
+            use that information in it's replies. 
+          </Trans>
+        </p>        
+        
+      </div>
+      <div class="full-width-image-container">
+        <EllieHorizontalExample 
+          arrow="pdf-training-arrow" 
+          subject="VAT Figures Q4 2022" 
+          name="advanced-training" 
+          input={exampleAdvancedTrainingInput} 
+          output={exampleAdvancedTrainingOutput} 
+          client:visible 
+        />      
+      </div>
+    </section>
+
+    <!-- <section class="section-full image-section">
+      <div class="section-text-full">
         <h2>{t("features:learning.title")}</h2>
         <p>
           <Trans i18nKey="learning.content" ns="features">
-            Ellie can <strong>learn any information you provide</strong>, and
+            Ellie can <Text important>learn any information you provide from files or websites</Text>, and
             use that information in it's replies.
           </Trans>
         </p>
@@ -194,41 +234,52 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
           </blockquote>
         </div>
       </div>
+    </section> -->
+
+    <section class="section-full">
+      <div class="section-text-full">
+        
+        <h2>
+          <Trans i18nKey="extras.title" ns="features">
+            Plus many more powerful features for<br /> <Text important>writing faster emails</Text>
+          </Trans>
+        </h2>
+        
+      </div>
+      <ul class="features-list">        
+        <li>
+          <div class="feature-header">
+          <h4>{t('features:extras.multilingual.title')}</h4>
+          </div>
+          <p class="feature-desc">
+            <Trans i18nKey="extras.multilingual.content" ns="features">
+              Ellie will reply in <Text important>any language</Text> to match the email being replied to.
+            </Trans>
+          </p>
+        </li>
+        <li>
+          <div class="feature-header">
+          <h4>{t('features:extras.roles.title')}</h4>
+          </div>
+          <p class="feature-desc">
+            <Trans i18nKey="extras.roles.content" ns="features">
+              Assign Ellie <Text important>different roles for different emails</Text>. Perfect for context switching.
+            </Trans>
+          </p>
+        </li>
+        <li>
+          <div class="feature-header">
+            <h4>{t('features:extras.context.title')}</h4>
+          </div>
+          <p class="feature-desc">
+            <Trans i18nKey="extras.context.content" ns="features">
+              Provide <Text important>additional context</Text> in each email Ellie writes for the perfect reply.
+            </Trans>
+          </p>
+        </li>
+      </ul>
     </section>
 
-    <section class="section image-section image-right">
-      <div class="section-text">
-        <h2>{t("features:multilingual.title")}</h2>
-        <p>
-          <Trans i18nKey="multilingual.content" ns="features">
-            Ellie will reply in <strong>any language</strong> to match the email
-            being replied to.
-          </Trans>
-        </p>
-        <div class="inline-review">
-          <Stars />
-          <blockquote>
-            <p class="review-text">
-              <Trans i18nKey="julie" ns="testimonials">
-                I struggled to compose formal emails in English, but now Ellie
-                writes them and <span class="review-highlight"
-                  >saves me SO much time!</span
-                > 🤩
-              </Trans>
-            </p>
-            <p class="review-author">- Julie Berteaux</p>
-          </blockquote>
-        </div>
-      </div>
-      <div class="image-container">
-        <img
-          src="/assets/language.png"
-          role="presentation"
-          alt="Showing Ellie write a context filled email"
-          class="example-image"
-        />
-      </div>
-    </section>
 
     <!-- <section class="section image-section image-left">
       <div class="section-text">
@@ -265,7 +316,7 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
       />
     </section> -->
 
-    <section class="section image-section image-left">
+    <!-- <section class="section image-section image-left">
       <Video
         innerClass="hero-img"
         client:visible
@@ -293,10 +344,10 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
           </blockquote>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <hr />
-    <HeaderText>Pricing</HeaderText>
+    <!-- <hr /> -->
+    <HeaderText>{t('pricing:header')}</HeaderText>
     <NewPricingComponent translations={p} locale={locale} />
 
     {locale === "en" ? <DownloadComponent /> : null}
