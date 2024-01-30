@@ -29,15 +29,16 @@
       .getBoundingClientRect().height;
 
     document.getElementById(`ellie-image-${name}`).style.top = `${
-      boxHeight + 70
+      boxHeight + 60
     }px`;
-
+    document.getElementById(`ellie-reply-box-${name}`).style.top = `${
+      boxHeight + 160
+    }px`;
     setTimeout(startTyping, 1200);
   });
 </script>
 
 <div class="ellie-example">
-  <!-- <div class="vertical-box"> -->
   <div class="box">
     <div class="subject">
       <span class="label">Subject</span>
@@ -48,15 +49,15 @@
 
   <div class="ellie-image-container" id="ellie-image-{name}">
     <picture role="presentation" class="ellie-reply-image">
-      <source
+      <!-- <source
         media="(max-width: 850px)"
         srcset="/assets/images/arrows/{arrow}.png"
-      />
+      /> -->
       <img src="/assets/images/arrows/{arrow}.png" alt="" />
     </picture>
   </div>
 
-  <div class="box ellie-reply">
+  <div class="box ellie-reply" id="ellie-reply-box-{name}">
     <div class="subject">
       <span class="label">Subject</span>
       <span class="value">RE: {subject}</span>
@@ -75,10 +76,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
-    width: 630px;
+    width: 100%;
+    width: 95vw;
+    max-width: 630px;
     min-height: 420px;
     z-index: 2;
+    padding: 0 15px;
   }
 
   @media (max-width: 850px) {
@@ -87,19 +90,11 @@
     }
   }
 
-  .ellie-example.vertical {
-    flex-direction: column;
-  }
-
-  .ellie-example.vertical .ellie-reply-image {
-    min-width: 200px;
-    margin: -4px 0 -2px 0;
-  }
-
-  .vertical-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  @media (max-width: 550px) {
+    .ellie-example {
+      min-height: 600px;
+      margin-bottom: 100px;
+    }
   }
 
   .box {
@@ -110,7 +105,6 @@
     border-radius: 10px;
     border: 1px solid #e1e3e1;
     background-color: #fefefe;
-    /* width: 100%; */
     width: 450px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -120,10 +114,33 @@
       -4px -4px 5px rgba(255, 255, 255, 1),
       2px 2px 5px rgba(0, 0, 0, 0.1);
   }
-  .box.ellie-reply {
-    left: 180px;
-    top: 90px;
+
+  @media (max-width: 700px) {
+    .box {
+      width: 350px;
+    }
   }
+
+  @media (max-width: 550px) {
+    .box {
+      width: 100%;
+    }
+  }
+
+  .box.ellie-reply {
+    left: 100%;
+    top: 90px;
+    transform: translate(-100%, -200px);
+  }
+
+  @media (max-width: 550px) {
+    .box.ellie-reply {
+      top: 290px;
+      left: auto;
+      transform: none;
+    }
+  }
+
   .subject {
     margin-bottom: 10px;
     border-bottom: 1px solid #e1e3e1;
@@ -149,11 +166,7 @@
     z-index: 2;
   }
   .ellie-reply-image {
-    /* height: 100px; */
-    /* margin-top: 14px; */
     width: 120px;
-    /* min-width: 120px; */
-    /* min-width: 160px; */
     margin: -4px 0 -2px 0;
     min-width: 220px;
   }
@@ -163,8 +176,7 @@
       margin: -4px 0 -2px 0;
     }
   }
-  .ellie-reply {
-  }
+
   .typed-text {
     padding: 4px 8px;
     font-size: 13px;
@@ -182,19 +194,5 @@
   }
   .typed-text.invisible {
     visibility: hidden;
-  }
-
-  .typed-text::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    border-right: 2px solid black;
-    animation: blinkCursor 0.75s steps(40) infinite;
-  }
-
-  @keyframes blinkCursor {
-    50% {
-      border-color: transparent;
-    }
   }
 </style>
