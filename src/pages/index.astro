@@ -13,7 +13,6 @@ import Video from "../components/Video.svelte";
 import HeaderText from "../components/HeaderText.svelte";
 import NewPricingComponent from "../components/NewPricing.svelte";
 import DownloadComponent from "../components/Download.svelte";
-import DemoBanner from "../components/DemoBanner.svelte";
 
 changeLanguage("en");
 
@@ -163,7 +162,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </div>
     </section>
 
-    {locale === "en" ? <DemoBanner /> : null}
+    <!-- {locale === "en" ? <DemoBanner /> : null} -->
 
     <section class="section-full image-section">
       <div class="section-text-full">

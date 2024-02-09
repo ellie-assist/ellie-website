@@ -13,7 +13,6 @@ import Video from "../../components/Video.svelte";
 import HeaderText from "../../components/HeaderText.svelte";
 import NewPricingComponent from "../../components/NewPricing.svelte";
 import DownloadComponent from "../../components/Download.svelte";
-import DemoBanner from "../../components/DemoBanner.svelte";
 
 changeLanguage("ru");
 
@@ -163,7 +162,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </div>
     </section>
 
-    {locale === "en" ? <DemoBanner /> : null}
+    <!-- {locale === "en" ? <DemoBanner /> : null} -->
 
     <section class="section-full image-section">
       <div class="section-text-full">
@@ -291,75 +290,6 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </ul>
     </section>
 
-    
-
-
-    <!-- <section class="section image-section image-left">
-      <div class="section-text">
-        <h2>{t("features:iterate.title")}</h2>
-
-        <p>
-          <Trans i18nKey="iterate.content" ns="features">
-            You can <strong>revise</strong> Ellie's response to something, to tweak
-            exactly what you want Ellie to say.
-          </Trans>
-        </p>
-
-        <div class="inline-review">
-          <Stars />
-          <blockquote>
-            <p class="review-text">
-              <Trans i18nKey="hicham" ns="testimonials">
-                Very easy to use.
-                <span class="review-highlight"
-                  >Ellie has made writing emails so much faster!</span
-                >
-                Thank you!
-              </Trans>
-            </p>
-            <p class="review-author">- Hicham Annik</p>
-          </blockquote>
-        </div>
-      </div>
-
-      <Video
-        innerClass="hero-img"
-        client:visible
-        url="https://ellie.b-cdn.net/revisions.mov"
-      />
-    </section> -->
-
-    <!-- <section class="section image-section image-left">
-      <Video
-        innerClass="hero-img"
-        client:visible
-        url="https://ellie.b-cdn.net/context.mov"
-      />
-      <div class="section-text">
-        <h2>{t("features:tailor.title")}</h2>
-        <p>
-          <Trans i18nKey="tailor.content" ns="features">
-            You can provide <strong>extra context</strong> to Ellie for the perfect
-            reply for every email.
-          </Trans>
-        </p>
-        <div class="inline-review">
-          <Stars />
-          <blockquote>
-            <p class="review-text">
-              <Trans i18nKey="joan" ns="testimonials">
-                With Ellie
-                <span class="review-highlight">I can answer every email</span>
-                and not waste any time.
-              </Trans>
-            </p>
-            <p class="review-author">- Joan</p>
-          </blockquote>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <hr /> -->
     <HeaderText>{t('pricing:header')}</HeaderText>
     <NewPricingComponent translations={p} locale={locale} />
 
