@@ -10,6 +10,7 @@ export default {
     "pricing",
     "downloads",
     "success",
+    "upgrade",
   ],
   defaultNamespace: "common",
 };

@@ -6,8 +6,11 @@
 
   // const p = i18next.getResource(i18next.language, "pricing", "prices", {});
   // debugger;
+  export let ignoreBasic = false;
   export let translations;
   export let locale;
+  export let discountText = "";
+  export let discountPercentage = 0;
 
   let customerEmail = null;
   let affiliate_id = "none";
@@ -53,62 +56,70 @@
 </script>
 
 <div class="pricing">
-  <!-- <div class="discount"><p>{translate("promo")}</p></div> -->
+  {#if discountText}<div class="discount"><p>{discountText}</p></div>{/if}
   <div class="pricing-table" data-ref={affiliate_id}>
     <div class="pricing-type">
       <div class="type-header"><span>{translate("type.personal")}</span></div>
       <div class="pricing-boxes">
-        <div class="pricing-box">
-          <h3 class="pricing-title">Basic</h3>
-          <p class="description">
-            {translate("prices.free.lead")}<br /><br />
-          </p>
-          <div class="price">
-            <span class="currency">$</span>
-            <span class="amount">0</span>
-          </div>
-          <ul class="features">
-            <li>
-              <Info
-                tooltip={translate("prices.free.features.replies.description")}
-                ><span class="important">3 simple replies</span> a day</Info
+        {#if !ignoreBasic}
+          <div class="pricing-box">
+            <h3 class="pricing-title">Basic</h3>
+            <p class="description">
+              {translate("prices.free.lead")}<br /><br />
+            </p>
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">0</span>
+            </div>
+            <ul class="features">
+              <li>
+                <Info
+                  tooltip={translate(
+                    "prices.free.features.replies.description"
+                  )}><span class="important">3 simple replies</span> a day</Info
+                >
+              </li>
+              <li>
+                <Info tooltip={translate("prices.free.features.ai.description")}
+                  >Basic AI model <span class="important">(GPT-3-turbo)</span
+                  ></Info
+                >
+              </li>
+            </ul>
+            <div class="buy-cta">
+              <Button muted href="/downloads"
+                >{translate("actions.free")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="arrow"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  /></svg
+                ></Button
               >
-            </li>
-            <li>
-              <Info tooltip={translate("prices.free.features.ai.description")}
-                >Basic AI model <span class="important">(GPT-3-turbo)</span
-                ></Info
-              >
-            </li>
-          </ul>
-          <div class="buy-cta">
-            <Button muted href="/downloads"
-              >{translate("actions.free")}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="arrow"
-                ><path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                /></svg
-              ></Button
-            >
+            </div>
           </div>
-        </div>
+        {/if}
         <div class="pricing-box">
           <h3 class="pricing-title">Casual</h3>
           <p class="description">
             {translate("prices.casual.lead")}
           </p>
           <div class="prices">
-            <!-- <div class="price discounted">
-              <span class="currency">$</span>
-              <span class="amount">10</span>
-              <span class="person duration">{`/${translate("monthly")}`}</span>
-            </div> -->
+            {#if discountPercentage > 0}
+              <div class="price discounted">
+                <span class="currency">$</span>
+                <span class="amount"
+                  >{(19 - 19 * (discountPercentage / 100)).toFixed(2)}</span
+                >
+                <span class="person duration">{`/${translate("monthly")}`}</span
+                >
+              </div>
+            {/if}
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">19</span>
@@ -116,11 +127,6 @@
             </div>
           </div>
           <ul class="features">
-            <!-- <li>
-              <Info tooltip={translate("prices.casual.features.replies.description")}>
-                <span class="important">100 simple replies</span> a day
-              </Info>
-            </li> -->
             <li>
               <Info
                 tooltip={translate(
@@ -144,7 +150,7 @@
                   "prices.casual.features.training.description"
                 )}
               >
-                Advanced AI training
+                Knowledge base training
               </Info>
             </li>
             <li>
@@ -183,13 +189,16 @@
             {translate("prices.business.lead")}
           </p>
           <div class="prices">
-            <!-- <div class="price discounted">
-              <span class="currency">$</span>
-              <span class="amount">23</span>
-              <span class="person duration"
-                >{`/${translate("teamsMonthly")}`}</span
-              >
-            </div> -->
+            {#if discountPercentage > 0}
+              <div class="price discounted">
+                <span class="currency">$</span>
+                <span class="amount"
+                  >{(39 - 39 * (discountPercentage / 100)).toFixed(2)}</span
+                >
+                <span class="person duration">{`/${translate("monthly")}`}</span
+                >
+              </div>
+            {/if}
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">39</span>
@@ -220,7 +229,7 @@
                   "prices.business.features.training.description"
                 )}
               >
-                Advanced AI training
+                Knowledge base training
               </Info>
             </li>
             <li>
@@ -273,11 +282,16 @@
             {translate("prices.pro.lead")}
           </p>
           <div class="prices">
-            <!-- <div class="price discounted">
-              <span class="currency">$</span>
-              <span class="amount">47</span>
-              <span class="person duration">/{translate("teamsMonthly")}</span>
-            </div> -->
+            {#if discountPercentage > 0}
+              <div class="price discounted">
+                <span class="currency">$</span>
+                <span class="amount"
+                  >{(79 - 79 * (discountPercentage / 100)).toFixed(2)}</span
+                >
+                <span class="person duration">{`/${translate("monthly")}`}</span
+                >
+              </div>
+            {/if}
             <div class="price">
               <span class="currency">$</span>
               <span class="amount">79</span>
@@ -310,7 +324,7 @@
               <Info
                 tooltip={translate("prices.pro.features.training.description")}
               >
-                Advanced AI training
+                Knowledge base training
               </Info>
             </li>
             <li>
@@ -372,7 +386,7 @@
 </div>
 
 <style>
-  /* .discount {
+  .discount {
     margin: -0.5em auto 2.5em auto;
     text-align: center;
     display: inline-block;
@@ -386,7 +400,7 @@
 
   .discount p {
     margin: 0;
-  } */
+  }
 
   .payment-instructions {
     margin-bottom: 2em;
@@ -475,6 +489,7 @@
     flex-direction: row;
     gap: 0;
     height: 100%;
+    justify-content: center;
   }
 
   .pricing-box {
@@ -498,6 +513,10 @@
     bottom: 0;
     width: 2px;
     background-color: #f2edec;
+  }
+
+  .pricing-box:only-child::after {
+    display: none;
   }
 
   @media (max-width: 560px) {
