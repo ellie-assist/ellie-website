@@ -32,7 +32,7 @@
   <p>
     <span class="proof-emails">{repliesGenerated}</span> professional emails
     already generated for<br />
-    <span class="proof-emails">100s</span> of happy customers!
+    <span class="proof-emails">hundreds</span> of happy customers!
   </p>
 </div>
 

@@ -61,6 +61,9 @@
             }, 2000);
           })
           .catch((err) => {
+            setTimeout(() => {
+              discountText = "Sorry, no discounts available right now 🤐";
+            }, 1000);
             console.error(err);
           });
       } else {
