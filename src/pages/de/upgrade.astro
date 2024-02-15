@@ -37,9 +37,10 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
 
     <div id="submit-container" class="signup">
       <NewPricingComponent 
+        client:only
+        showDiscount={true}
         ignoreBasic={true} 
-        discountText={t("discount")} 
-        discountPercentage={20} 
+        fetchDiscount={true}       
         translations={p} 
         locale={locale} 
       />

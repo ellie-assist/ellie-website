@@ -291,7 +291,7 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
     </section>
 
     <HeaderText>{t('pricing:header')}</HeaderText>
-    <NewPricingComponent translations={p} locale={locale} />
+    <NewPricingComponent client:only translations={p} locale={locale} />
 
     
 

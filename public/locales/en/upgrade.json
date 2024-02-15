@@ -1,6 +1,9 @@
 {
+  "meta": {
+    "title": "Upgrade - Upgrade your Ellie plan"
+  },
   "header": "Upgrade your Ellie",
   "discount": "You're elligible for a 20% discount for 3 months 🎉",
-  "title": "Thank you for using Ellie! Get more replies to <0>boost your email efficiency by 100x</0>!",
+  "title": "Thank you for using Ellie! Get more replies to <0>boost your email efficiency by 100x</0>",
   "lead": "Ellie creates much better replies with one of our paid plans. You'll be able to enhance Ellie by uploading additional knowledge documents, creating Roles, and letting Ellie learn from your sent emails folder!"
 }

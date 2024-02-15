@@ -2,15 +2,21 @@
   import Button from "./Button.svelte";
   import Info from "./Info.svelte";
   import Review from "./Review.svelte";
-  // import i18next from "i18next";
+  import { Confetti } from "svelte-confetti";
 
-  // const p = i18next.getResource(i18next.language, "pricing", "prices", {});
-  // debugger;
   export let ignoreBasic = false;
   export let translations;
   export let locale;
-  export let discountText = "";
-  export let discountPercentage = 0;
+  export let showDiscount = false;
+
+  const BASE_URL = window.location.href.includes("localhost")
+    ? "http://localhost:3113"
+    : "https://api.tryellie.com";
+
+  let currentPlan;
+  let coupon;
+  let discountText = "Checking if you're eligible for a discount...";
+  let discountPercentage = 0;
 
   let customerEmail = null;
   let affiliate_id = "none";
@@ -20,43 +26,91 @@
     const parts = value.split(`; ${name}=`);
     if (parts.length === 2) return parts.pop().split(";").shift();
   }
-
-  if (typeof window !== "undefined") {
-    const cookie = getCookie("reflioData");
-    if (cookie) {
-      affiliate_id = JSON.parse(cookie).affiliate_id;
-    }
-
-    console.log("Ref data", affiliate_id);
-    const p = new URLSearchParams(window.location.search);
-    if (p.has("e")) {
-      customerEmail = decodeURIComponent(p.get("e"));
-    }
-  }
-
-  const stripeParams = new URLSearchParams({
-    // prefilled_promo_code: undefined,
-    locale,
-    // utm_campaign: undefined,
-  });
-  if (customerEmail) {
-    stripeParams.append("prefilled_email", customerEmail);
-  }
-  let stripeLinks = {
-    casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams.toString()}`,
-    professional: `https://buy.stripe.com/3cs01G6nU8mc8x24gm?${stripeParams.toString()}`,
-    business: `https://buy.stripe.com/9AQ3dS8w2eKA7sY8wD?${stripeParams.toString()}`,
-  };
-
   function translate(key) {
     return key.split(".").reduce((out, k) => {
       return out[k] ?? "";
     }, translations);
   }
+
+  try {
+    if (typeof window !== "undefined") {
+      const cookie = getCookie("reflioData");
+      if (cookie) {
+        affiliate_id = JSON.parse(cookie).affiliate_id;
+      }
+
+      console.log("Ref data", affiliate_id);
+      const p = new URLSearchParams(window.location.search);
+      if (p.has("e")) {
+        customerEmail = decodeURIComponent(p.get("e"));
+      }
+      if (p.has("u")) {
+        const q = new URLSearchParams({ uuid: p.get("u") });
+        fetch(`${BASE_URL}/checkout/upgrade?${q}`)
+          .then((upgradeData) => {
+            if (upgradeData.ok) {
+              return upgradeData.json();
+            }
+          })
+          .then((response) => {
+            currentPlan = response.upgradeFrom;
+            setTimeout(() => {
+              discountText = response.discountText;
+              discountPercentage = response.discount;
+              coupon = response.coupon;
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      } else {
+        setTimeout(() => {
+          discountText = "Sorry, no discounts available right now 🤐";
+        }, 2000);
+      }
+    }
+  } catch (err) {
+    console.error(err);
+  }
+
+  let stripeLinks;
+  $: {
+    const stripeParams = new URLSearchParams({
+      locale,
+    });
+    if (customerEmail) {
+      stripeParams.append("prefilled_email", customerEmail);
+    }
+    if (coupon) {
+      stripeParams.append("prefilled_promo_code", coupon);
+    }
+
+    stripeLinks = {
+      casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams.toString()}`,
+      professional: `https://buy.stripe.com/3cs01G6nU8mc8x24gm?${stripeParams.toString()}`,
+      business: `https://buy.stripe.com/9AQ3dS8w2eKA7sY8wD?${stripeParams.toString()}`,
+    };
+  }
 </script>
 
 <div class="pricing">
-  {#if discountText}<div class="discount"><p>{discountText}</p></div>{/if}
+  {#if showDiscount && discountText}
+    <div class="discount">
+      <p>{discountText}</p>
+      <div class="confetti">
+        {#if discountPercentage > 0}
+          <Confetti amount="200" x={[-1.5, 1.5]} />
+        {/if}
+      </div>
+    </div>
+  {/if}
+  <p
+    style={`opacity: ${discountPercentage > 0 ? 0.75 : 0}`}
+    class={`payment-instructions`}
+  >
+    Discount applies to your first 3 months, a coupon will be automatically
+    applied at checkout.
+  </p>
   <div class="pricing-table" data-ref={affiliate_id}>
     <div class="pricing-type">
       <div class="type-header"><span>{translate("type.personal")}</span></div>
@@ -110,7 +164,7 @@
             {translate("prices.casual.lead")}
           </p>
           <div class="prices">
-            {#if discountPercentage > 0}
+            {#if discountPercentage && currentPlan !== "casual" > 0}
               <div class="price discounted">
                 <span class="currency">$</span>
                 <span class="amount"
@@ -162,20 +216,24 @@
             </li>
           </ul>
           <div class="buy-cta">
-            <Button href={stripeLinks.casual}
-              >{translate("actions.casual")}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="arrow"
-                ><path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                /></svg
-              ></Button
-            >
+            {#if currentPlan !== "casual"}
+              <Button href={stripeLinks.casual}>
+                {translate("actions.casual")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="arrow"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  /></svg
+                >
+              </Button>
+            {:else}
+              <div class="current-plan">Your current plan</div>
+            {/if}
           </div>
         </div>
       </div>
@@ -189,13 +247,14 @@
             {translate("prices.business.lead")}
           </p>
           <div class="prices">
-            {#if discountPercentage > 0}
+            {#if discountPercentage > 0 && currentPlan !== "business"}
               <div class="price discounted">
                 <span class="currency">$</span>
                 <span class="amount"
                   >{(39 - 39 * (discountPercentage / 100)).toFixed(2)}</span
                 >
-                <span class="person duration">{`/${translate("monthly")}`}</span
+                <span class="person duration"
+                  >{`/${translate("teamsMonthly")}`}</span
                 >
               </div>
             {/if}
@@ -260,20 +319,24 @@
             </li>
           </ul>
           <div class="buy-cta">
-            <Button href={stripeLinks.business}
-              >{translate("actions.teams")}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="arrow"
-                ><path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                /></svg
-              ></Button
-            >
+            {#if currentPlan !== "business"}
+              <Button href={stripeLinks.business}>
+                {translate("actions.teams")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="arrow"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  /></svg
+                >
+              </Button>
+            {:else}
+              <div class="current-plan">Your current plan</div>
+            {/if}
           </div>
         </div>
         <div class="pricing-box">
@@ -282,13 +345,14 @@
             {translate("prices.pro.lead")}
           </p>
           <div class="prices">
-            {#if discountPercentage > 0}
+            {#if discountPercentage > 0 && currentPlan !== "professional"}
               <div class="price discounted">
                 <span class="currency">$</span>
                 <span class="amount"
                   >{(79 - 79 * (discountPercentage / 100)).toFixed(2)}</span
                 >
-                <span class="person duration">{`/${translate("monthly")}`}</span
+                <span class="person duration"
+                  >{`/${translate("teamsMonthly")}`}</span
                 >
               </div>
             {/if}
@@ -347,20 +411,24 @@
             </li>
           </ul>
           <div class="buy-cta">
-            <Button href={stripeLinks.professional}
-              >{translate("actions.teams")}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="arrow"
-                ><path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                /></svg
-              >
-            </Button>
+            {#if currentPlan !== "professional"}
+              <Button href={stripeLinks.professional}
+                >{translate("actions.teams")}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="arrow"
+                  ><path
+                    fill-rule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  /></svg
+                >
+              </Button>
+            {:else}
+              <div class="current-plan">Your current plan</div>
+            {/if}
           </div>
         </div>
       </div>
@@ -387,7 +455,8 @@
 
 <style>
   .discount {
-    margin: -0.5em auto 2.5em auto;
+    position: relative;
+    margin: -0.5em auto 0.5em auto;
     text-align: center;
     display: inline-block;
     padding: 5px 10px;
@@ -458,6 +527,11 @@
     justify-content: center;
     gap: 10px;
     margin: 0 auto;
+  }
+
+  .current-plan {
+    padding: 10px;
+    font-weight: 500;
   }
 
   @media (max-width: 1200px) {
@@ -617,27 +691,30 @@
     display: none;
   }
 
+  .price.discounted + .price .amount {
+    opacity: 0.75;
+  }
   .price.discounted + .price .amount:after {
     content: "";
-    width: 52px;
-    height: 3px;
+    width: 60px;
+    height: 5px;
     background-color: red;
     position: absolute;
     left: 14px;
     top: 40%;
     border-radius: 2px;
     transform: rotate(-30deg);
-    opacity: 0.75;
+    opacity: 1;
   }
 
   .price .amount {
-    font-size: 3.2em;
+    font-size: 2.5em;
     font-weight: bold;
     padding-left: 20px;
   }
 
   .price .currency {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     opacity: 0.5;
     position: absolute;
@@ -645,8 +722,16 @@
   }
 
   .price .person {
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: bold;
     opacity: 0.5;
+  }
+
+  .confetti {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: 10px;
+    height: 2px;
   }
 </style>

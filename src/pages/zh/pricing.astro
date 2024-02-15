@@ -13,15 +13,14 @@ changeLanguage("zh");
 setDefaultNamespace("pricing");
 const locale = i18next.language || "en";
 const p = i18next.getResource(i18next.language, "pricing", "", {});
-console.log(p);
 ---
 
 <Main title={t("meta.title")}> 
 
   <div class="page">
     <div class="wider-content">
-      <HeaderText
-        ><Trans i18nKey="header" ns="pricing">Pricing</Trans>
+      <HeaderText>
+        {t('header')}
       </HeaderText>
       <div class="price-title">
         <h1 class="title">
@@ -40,7 +39,7 @@ console.log(p);
     </div>
 
     <div id="submit-container" class="signup">
-      <NewPricingComponent translations={p} locale={locale} />
+      <NewPricingComponent client:only translations={p} locale={locale} />
       <DownloadComponent />
     </div>
 

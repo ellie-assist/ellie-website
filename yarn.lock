@@ -3409,6 +3409,11 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
+svelte-confetti@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/svelte-confetti/-/svelte-confetti-1.3.2.tgz#1ef99ad5807adfc452b01a4bee306dc25ccd00a0"
+  integrity sha512-R+JwFTC7hIgWVA/OuXrkj384B7CMoceb0t9VacyW6dORTQg0pWojVBB8Bo3tM30cLEQE48Fekzqgx+XSzHESMA==
+
 svelte-hmr@^0.15.1:
   version "0.15.1"
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.1.tgz#d11d878a0bbb12ec1cba030f580cd2049f4ec86b"
