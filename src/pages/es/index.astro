@@ -133,7 +133,6 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </div>
     </section> -->
 
-    <!-- <HeaderText>Features</HeaderText> -->
     <section class="section-full image-section">
       <div class="section-text-full">
         <h2>{t("features:context.title")}</h2>
@@ -171,18 +170,18 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
           <Trans i18nKey="emailTraining.content" ns="features">
             By providing Ellie with your previous sent emails the AI will <Text important>learn how to reply exactly like you</Text>.
           </Trans>
-        </p>        
-        
+        </p>
+
       </div>
-      
+
       <div class="full-width-image-container">
-        <EllieExample 
-          arrow="email-history-arrow" 
-          subject="Card being replaced" 
-          name="training" 
-          input={exampleEmailTrainingInput} 
-          output={exampleEmailTrainingOutput} 
-          client:visible 
+        <EllieExample
+          arrow="email-history-arrow"
+          subject="Card being replaced"
+          name="training"
+          input={exampleEmailTrainingInput}
+          output={exampleEmailTrainingOutput}
+          client:visible
         />
       </div>
     </section>
@@ -193,20 +192,20 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
         <p class="subtitle">
           <Trans i18nKey="learning.content" ns="features">
             Ellie can <Text important>learn any information you provide from files or websites</Text>, and
-            use that information in it's replies. 
+            use that information in it's replies.
           </Trans>
-        </p>        
-        
+        </p>
+
       </div>
       <div class="full-width-image-container">
-        <EllieExample 
-          arrow="pdf-training-arrow" 
-          subject="VAT Figures Q4 2022" 
-          name="advanced-training" 
-          input={exampleAdvancedTrainingInput} 
-          output={exampleAdvancedTrainingOutput} 
-          client:visible 
-        />      
+        <EllieExample
+          arrow="pdf-training-arrow"
+          subject="VAT Figures Q4 2022"
+          name="advanced-training"
+          input={exampleAdvancedTrainingInput}
+          output={exampleAdvancedTrainingOutput}
+          client:visible
+        />
       </div>
     </section>
 
@@ -239,15 +238,15 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
 
     <section class="section-full">
       <div class="section-text-full">
-        
+
         <h2 style="max-width: 500px;margin: 0 auto;">
           <Trans i18nKey="extras.title" ns="features">
             Plus many more powerful features for <Text important>writing faster emails</Text>
           </Trans>
         </h2>
-        
+
       </div>
-      <ul class="features-list">        
+      <ul class="features-list">
         <li>
           <div class="feature-header">
             <h4>{t('features:extras.multilingual.title')}</h4>
@@ -290,10 +289,18 @@ const exampleEmailTrainingOutput = i18next.getResource(i18next.language, "featur
       </ul>
     </section>
 
-    <HeaderText>{t('pricing:header')}</HeaderText>
+    <!-- <HeaderText>{t('pricing:header')}</HeaderText> -->
+
+    <div class="wider-content section-text-full">
+      <h2 class="price-title">
+        <Trans i18nKey="pricing.title" ns="common">
+          Perfect email replies in <Text important>100x less time</Text>. Save hours of effort each day with Ellie!
+        </Trans>
+      </h2>
+    </div>
     <NewPricingComponent client:only translations={p} locale={locale} />
 
-    
+
 
     <br /><br /><br /><br /><br /><br />
     <HeaderText>FAQ</HeaderText>

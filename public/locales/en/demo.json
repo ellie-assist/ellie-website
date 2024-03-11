@@ -7,7 +7,7 @@
   },
   "header": "<0>Get help from Ellie!</0>",
   "lead": "<0>Ellie has been trained to help you with any questions about itself, just enter your question below as if you were sending us an email, and Ellie will reply!</0>",
-  "upgrade": "<0>You can train Ellie to learn about any topic with our <1>Pro plan</1>.</0>",
+  "upgrade": "<0>You can train Ellie to learn about any topic with our Knowledge Base feature available on our <1>paid plans</1>.</0>",
   "outro": "<0>Note: Due to the nature of OpenAI and LLMs, even when trained on a dataset the replies wont always be 100% accurate - so it's still important to check Ellie's output for mistakes.</0>",
   "source": "Data for this reply was sourced from:",
   "askBtn": "Ask Ellie",

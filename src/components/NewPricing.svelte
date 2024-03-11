@@ -142,6 +142,15 @@
                   ></Info
                 >
               </li>
+              <li>
+                <Info
+                  tooltip={translate(
+                    "prices.free.features.emailTraining.description"
+                  )}
+                >
+                  Basic email training
+                </Info>
+              </li>
             </ul>
             <div class="buy-cta">
               <Button muted href="/downloads"
@@ -199,6 +208,15 @@
                 tooltip={translate("prices.casual.features.ai.description")}
               >
                 Intelligent AI model <span class="important">(GPT-4)</span>
+              </Info>
+            </li>
+            <li>
+              <Info
+                tooltip={translate(
+                  "prices.casual.features.emailTraining.description"
+                )}
+              >
+                Email training
               </Info>
             </li>
             <li>
@@ -283,6 +301,15 @@
                 tooltip={translate("prices.business.features.ai.description")}
               >
                 Intelligent AI model <span class="important">(GPT-4)</span>
+              </Info>
+            </li>
+            <li>
+              <Info
+                tooltip={translate(
+                  "prices.business.features.emailTraining.description"
+                )}
+              >
+                Email training
               </Info>
             </li>
             <li>
@@ -384,7 +411,7 @@
                   "prices.pro.features.emailTraining.description"
                 )}
               >
-                Learns from your <span class="important">entire</span> email archive
+                Email training <span class="important">(on your entire email archive)</span>
               </Info>
             </li>
             <li>
