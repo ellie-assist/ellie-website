@@ -5,9 +5,11 @@
 <style>
   .page-header {
     text-align: center;
-    font-size: 12px;
     font-weight: 800;
-    color: var(--btn-color);
     margin-bottom: 2em;
+  }
+  .page-header h2 {
+    font-size: 28px;
+    line-height: 38px;
   }
 </style>

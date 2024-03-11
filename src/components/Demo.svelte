@@ -74,11 +74,14 @@
   >
   <pre class="output" id="demo-output">{output}</pre>
   {#if source.length}
-    <p data-visible={isDone} class="source">
+    <ol data-visible={isDone} class="source">
       {translations.source}
-      {#each source as s, index}<a href={s}>{s}</a
-        >{#if index === source.length}.{:else},{/if}{/each}.
-    </p>
+      {#each source as s, index}
+        <li>
+          <a href={s}>{s}</a>
+        </li>
+      {/each}
+    </ol>
   {/if}
 </div>
 
@@ -118,7 +121,7 @@
     font-size: 12px;
     margin-top: 0.25em;
     margin-bottom: 4em;
-    padding-left: 4px;
+    padding-left: 20px;
     line-height: 18px;
   }
 

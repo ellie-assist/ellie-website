@@ -7,7 +7,7 @@
   },
   "header": "<0>Obtenez de l'aide d'Ellie !</0>",
   "lead": "<0>Ellie a été entraînée pour vous aider avec toutes les questions à propos d'elle-même, il vous suffit de saisir votre question ci-dessous comme si vous nous envoyiez un e-mail, et Ellie vous répondra !</0>",
-  "upgrade": "<0>Vous pouvez entraîner Ellie à apprendre n'importe quel sujet avec notre <1>plan Pro</1>.</0>",
+  "upgrade": "<0>Tu peux entraîner Ellie pour apprendre sur n'importe quel sujet avec notre fonctionnalité de Base de Connaissances disponible dans nos <1>formules payantes</1>.</0>",
   "outro": "<0>Remarque : En raison de la nature d'OpenAI et des LLM, même lorsqu'ils sont entraînés sur un ensemble de données, les réponses ne seront pas toujours à 100% précises - il est donc toujours important de vérifier la sortie d'Ellie pour les erreurs.</0>",
   "source": "Les données pour cette réponse ont été sourcées à partir de :",
   "askBtn": "Demander à Ellie",

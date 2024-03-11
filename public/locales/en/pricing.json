@@ -27,12 +27,16 @@
       "lead": "Try Ellie out with basic features",
       "features": {
         "replies": {
-          "label": "<0>2 replies</0> a day",
+          "label": "<0>3 simple replies</0> a day",
           "description": "Ellie will write this many emails for you per day for free"
         },
         "ai": {
           "label": "Basic AI model <0>(GPT-3-turbo)</0>",
           "description": "This is how smart Ellie will be when crafting your replies. The basic model will be perfect for simple emails, but Ellie more complex reasoning will require our more intelligent models."
+        },
+        "emailTraining": {
+          "label": "Learns from <0>10</0> sent emails",
+          "description": "Provide up to 10 previous sent emails and Ellie will learn how to write emails in your style"
         }
       }
     },
@@ -69,8 +73,8 @@
           "description": "This is how smart Ellie will be when crafting your replies. Our intelligent model will work great with more complex emails."
         },
         "emailTraining": {
-          "label": "Learns from <0>200</0> sent emails",
-          "description": "Provide up to 200 previous sent emails and Ellie will learn how to write emails in your style"
+          "label": "Learns from <0>1000</0> sent emails",
+          "description": "Provide up to 1000 previous sent emails and Ellie will learn how to write emails in your style"
         },
         "training": {
           "label": "Advanced AI Training",
