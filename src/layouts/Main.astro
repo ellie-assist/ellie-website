@@ -11,7 +11,7 @@ setDefaultNamespace("common");
 changeLanguage(i18next.language);
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang={i18next.language}>
   <head>
     <title>{title}</title>
@@ -83,8 +83,7 @@ changeLanguage(i18next.language);
       is:inline
       async
       src="https://reflio.com/js/reflio.min.js"
-      data-reflio="fy2wqlhdijvhha9"
-    ></script>
+      data-reflio="fy2wqlhdijvhha9"></script>
   </head>
 
   <body>
@@ -317,7 +316,8 @@ changeLanguage(i18next.language);
         text-decoration: none;
         border: 1px solid var(--btn-color-border);
         padding: 0;
-        transition: background-color 200ms ease-in-out,
+        transition:
+          background-color 200ms ease-in-out,
           outline 200ms ease-in-out;
       }
 
@@ -766,6 +766,10 @@ changeLanguage(i18next.language);
         font-size: 18px;
       }
 
+      p strong {
+        font-weight: 500;
+      }
+
       .inline-review {
         margin-top: 55px;
       }
@@ -942,7 +946,7 @@ changeLanguage(i18next.language);
         flex-wrap: wrap;
         gap: 40px;
         justify-content: center;
-        padding:0;
+        padding: 0;
       }
 
       .features-list li {
@@ -953,7 +957,7 @@ changeLanguage(i18next.language);
         padding-top: 35px;
         width: 280px;
         height: 300px;
-        text-align:center;
+        text-align: center;
         list-style: none;
       }
 
@@ -968,11 +972,20 @@ changeLanguage(i18next.language);
         line-height: 22px;
       }
 
-      .features-list li:nth-child(1) .feature-example, .features-list li:nth-child(3) .feature-example {
+      .features-list li:nth-child(1) .feature-example,
+      .features-list li:nth-child(3) .feature-example {
         transform: rotate(-5deg);
       }
       .features-list li:nth-child(2) .feature-example {
         transform: rotate(5deg);
+      }
+
+      .warn {
+        background-color: #ffb593;
+        padding: 0.75em;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 14px;
       }
     </style>
   </body>
