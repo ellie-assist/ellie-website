@@ -50,25 +50,10 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.0
         with:
           source: dist
-          storageZoneName: ellie-website
+          storageZoneName: ellie-website-1
           storagePassword: ${{ secrets.STORAGE_PASSWORD }}
           accessKey: ${{ secrets.STORAGE_KEY }}
-          pullZoneId: 1120070
+          pullZoneId: 2519791
           upload: true
           remove: true
           purgePullZone: true
-
-      - name: 💬 Report
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: 🚀 Deployed Ellie website from main
-
-      - name: 💬 Report Failure
-        if: failure()
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.TELEGRAM_TO }}
-          token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: 💩 Ellie website deploy failed
