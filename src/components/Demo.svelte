@@ -5,7 +5,7 @@
 
   const BASE_URL = window.location.href.includes("localhost")
     ? "http://localhost:3113"
-    : "https://api.tryellie.com";
+    : "https://new-api.tryellie.com";
 
   let inputText = translations.replyText;
 

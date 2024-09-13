@@ -4,8 +4,8 @@
 
   const apiUrl = window.location.href.includes("localhost")
     ? "http://localhost:3113"
-    : "https://api.tryellie.com";
-  // const apiUrl = "https://api.tryellie.com";
+    : "https://new-api.tryellie.com";
+  // const apiUrl = "https://new-api.tryellie.com";
   let opacity = 1;
   let totalUsers = 0;
   let repliesGenerated = 0;
