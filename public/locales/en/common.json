@@ -25,7 +25,7 @@
     "demo": "Try a demo"
   },
   "external": {
-    "phBadgeAlt": "Ellie - Your AI Email Assistant - 💌 GPT-3 powered assistant that can reply to your emails! | Product Hunt"
+    "phBadgeAlt": "Ellie - Your AI Email Assistant - 💌 GPT powered assistant that can reply to your emails! | Product Hunt"
   },
   "footer": {
     "description": "Powered by OpenAI, learns your writing style and replies to emails as if you wrote them.",
