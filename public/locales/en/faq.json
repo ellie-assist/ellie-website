@@ -58,24 +58,5 @@
       "Your email replies are only used by Ellie to generate a response. We don't store the email data and promise to never share, sell, or do anything shady with your data.",
       "The reason we can promise this is because we're independent developers, with no investment or other outside funding. We survive by building cool products and getting cool people to pay for them, and don't need to sacrifice our ethics!"
     ]
-  },
-  "eight": {
-    "title": "Who are you!?",
-    "links": [
-      "https://twitter.com/dinkydani21",
-      "https://twitter.com/jamesivings"
-    ],
-    "content": [
-      "Nice to meet you! We are <0>Danielle</0> and <1>James</1>, two nomad developers travelling the world on our small sailboat and building cool stuff!"
-    ]
-  },
-  "nine": {
-    "title": "Can we write a story about Ellie?",
-    "links": [
-      "mailto:hi@tryellie.com"
-    ],
-    "content": [
-      "If you're a member of the press and want to chat, <0>send us an email!</0>"
-    ]
   }
 }
