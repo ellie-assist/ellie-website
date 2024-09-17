@@ -89,9 +89,9 @@
     }
 
     stripeLinks = {
-      casual: `https://buy.stripe.com/7sI29OcMifOEdRm8wB?${stripeParams.toString()}`,
-      professional: `https://buy.stripe.com/3cs01G6nU8mc8x24gm?${stripeParams.toString()}`,
-      business: `https://buy.stripe.com/9AQ3dS8w2eKA7sY8wD?${stripeParams.toString()}`,
+      casual: `https://buy.stripe.com/dR64i80kZ6nQ2IMeUU?${stripeParams.toString()}`,
+      professional: `https://buy.stripe.com/5kA01Sd7L7rU1EI6oq?${stripeParams.toString()}`,
+      business: `https://buy.stripe.com/cN29Cs6JncMe6Z29AB?${stripeParams.toString()}`,
     };
   }
 </script>
