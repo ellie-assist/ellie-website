@@ -15,6 +15,17 @@ const p = i18next.getResource(i18next.language, "pricing", "", {});
 ---
 
 <Main title={t("meta.title")}> 
+  <script>
+    import posthog from "posthog-js"; 
+    // Get the query parameter 'u'
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('u');
+
+    // Call posthog identify if userId is present
+    if (userId) {
+      posthog.identify(userId);
+    }
+  </script>
 
   <div class="page">
     <div class="wider-content">
